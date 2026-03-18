@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="컴퓨터를 몰라도 괜찮아, 2주 뒤엔 내 손으로 게임을 만든다! 프로그래밍 경험이 전혀 없는 고등학생도 혼자서 완주할 수 있는 C언어 입문 자기주도 학습서입니다.">
+        <meta name="description" content="시뮬레이션에서 실제 도로까지, CARLA 시뮬레이터와 RC카를 활용하여 직접 만들며 이해하는 8주 완성 Physical AI 자율주행 프로젝트 교과서입니다.">
       
       
         <meta name="author" content="Created with EduFlow">
       
       
-        <link rel="canonical" href="https://baesy5.github.io/c_language_01/chapter04/">
+        <link rel="canonical" href="https://baesy5.github.io/physical_AI_01/chapter04/">
       
       
         <link rel="prev" href="../chapter03/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>데이터를 담는 상자 — 변수와 자료형 - 처음 만드는 나의 첫 C언어 게임</title>
+        <title>Python 핵심 복습: 자율주행에 쓰이는 문법 - Physical AI: 자율주행으로 배우는 인공지능</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#chapter-4-python" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-header__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-header__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            처음 만드는 나의 첫 C언어 게임
+            Physical AI: 자율주행으로 배우는 인공지능
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              데이터를 담는 상자 — 변수와 자료형
+              Python 핵심 복습: 자율주행에 쓰이는 문법
             
           </span>
         </div>
@@ -234,19 +234,41 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../chapter01/" class="md-tabs__link">
           
   
   
     
   
-  Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+  Part 1 - [1권] Part 1: Physical AI의 세계로
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2: Python과 개발 환경 준비
 
         </a>
       </li>
@@ -262,13 +284,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter06/" class="md-tabs__link">
+        <a href="../chapter07/" class="md-tabs__link">
           
   
   
     
   
-  Part 2 - [1권] 프로그램에 판단력 불어넣기
+  Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
 
         </a>
       </li>
@@ -284,13 +306,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter09/" class="md-tabs__link">
+        <a href="../chapter10/" class="md-tabs__link">
           
   
   
     
   
-  Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+  Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
 
         </a>
       </li>
@@ -306,13 +328,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter13/" class="md-tabs__link">
+        <a href="../chapter15/" class="md-tabs__link">
           
   
   
     
   
-  Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+  Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
 
         </a>
       </li>
@@ -328,13 +350,35 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter16/" class="md-tabs__link">
+        <a href="../chapter18/" class="md-tabs__link">
           
   
   
     
   
-  Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+  Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter22/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 7 - [2권] Part 7: 프로젝트 완성과 발표
 
         </a>
       </li>
@@ -364,13 +408,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-nav__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-nav__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    처음 만드는 나의 첫 C언어 게임
+    Physical AI: 자율주행으로 배우는 인공지능
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -406,16 +450,10 @@
       
   
   
-    
   
   
-  
     
     
-      
-        
-      
-        
       
         
       
@@ -427,29 +465,26 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
     
@@ -460,12 +495,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
           </label>
@@ -485,7 +520,7 @@
   <span class="md-ellipsis">
     
   
-    왜 C언어를 배워야 할까? — 이 책의 사용법
+    Physical AI란 무엇인가?
   
 
     
@@ -513,7 +548,7 @@
   <span class="md-ellipsis">
     
   
-    내 컴퓨터에 작업실 꾸미기 — 개발 환경 설치
+    자율주행의 원리: 인지-판단-제어
   
 
     
@@ -541,7 +576,7 @@
   <span class="md-ellipsis">
     
   
-    처음 만나는 C언어 — Hello, World!
+    시뮬레이션이 중요한 이유
   
 
     
@@ -554,6 +589,78 @@
   
 
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -578,7 +685,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 담는 상자 — 변수와 자료형
+    Python 핵심 복습: 자율주행에 쓰이는 문법
   
 
     
@@ -596,7 +703,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 담는 상자 — 변수와 자료형
+    Python 핵심 복습: 자율주행에 쓰이는 문법
   
 
     
@@ -622,29 +729,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 이 장의 학습 목표
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         💡 왜 이걸 배우나요?
@@ -655,7 +751,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -667,10 +763,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 변수 — 이름표가 붙은 상자 📦
+        개념 1: 리스트(List) — 센서 데이터의 줄 세우기
       
     </span>
   </a>
@@ -678,10 +774,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 자료형 — 상자의 종류 🏷️
+        개념 2: 딕셔너리(Dictionary) — 차량 상태 이름표 붙이기
       
     </span>
   </a>
@@ -692,162 +788,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 변수의 선언과 값 저장 ✍️
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-scanf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: scanf — 사용자에게 값 입력받기 ⌨️
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기: "자기소개 프로그램" 만들기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기: &#34;자기소개 프로그램&#34; 만들기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 기본 틀 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 변수 선언하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 사용자에게 입력받기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: 입력받은 값 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: 컴파일하고 실행하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 계산 추가하기 — 10년 후 나이
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 자주 하는 실수
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-scanf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: scanf에서 &amp;를 빼먹는다
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: 자료형과 서식 지정자가 안 맞는다
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-char" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 3: char 값에 큰따옴표를 쓴다
+        개념 3: 반복문과 조건문 — 데이터를 훑고 판단하기
       
     </span>
   </a>
@@ -858,7 +799,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        실수 4: 변수를 선언하지 않고 사용한다
+        개념 4: 함수와 클래스 — 코드를 깔끔하게 정리하기
       
     </span>
   </a>
@@ -871,33 +812,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 스스로 점검하기
+        🔨 따라하기: 규칙 기반 자율주행 시뮬레이터 만들기
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 더 해보기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 더 해보기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 규칙 기반 자율주행 시뮬레이터 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        도전 과제: 온도 변환기 🌡️
+        Step 1: 가상 센서 데이터 준비하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 주행 판단 함수 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 차량 상태를 딕셔너리로 관리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 반복문으로 전체 데이터 처리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 클래스로 리팩토링하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: 실행 및 결과 확인
       
     </span>
   </a>
@@ -910,21 +895,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 이 장의 핵심 정리
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 다음 장으로
+        📝 전체 코드
       
     </span>
   </a>
@@ -954,7 +928,7 @@
   <span class="md-ellipsis">
     
   
-    컴퓨터에게 계산 시키기 — 연산자 활용
+    NumPy와 이미지 데이터 다루기
   
 
     
@@ -967,73 +941,6 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1049,63 +956,7 @@
   <span class="md-ellipsis">
     
   
-    갈림길에서 선택하기 — if 조건문
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter07/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    같은 일을 반복하기 — for와 while 반복문
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter08/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    여기까지 잘 왔어! — 중간 점검 미니 게임 만들기
+    CARLA 시뮬레이터 설치와 첫 주행
   
 
     
@@ -1134,8 +985,6 @@
   
     
     
-      
-        
       
         
       
@@ -1166,7 +1015,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
     
@@ -1182,11 +1031,67 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CARLA 센서 시스템 이해하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자율주행 학습 데이터 수집하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1202,91 +1107,7 @@
   <span class="md-ellipsis">
     
   
-    왜 코드를 나눠야 할까? — 함수가 필요한 이유
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter10/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    나만의 함수 만들기 — 함수 정의와 호출
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter11/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수에 값을 주고받기 — 매개변수와 반환값 깊이 이해하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter12/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수로 코드를 리모델링하자 — 업다운 게임 리팩토링
+    데이터 전처리와 증강
   
 
     
@@ -1315,6 +1136,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1345,7 +1170,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
     
@@ -1361,11 +1186,95 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    딥러닝 기초: 신경망의 원리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    합성곱 신경망(CNN) 이해하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End 자율주행 모델 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1381,7 +1290,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 줄 세우기 — 배열 기초
+    모델 학습과 하이퍼파라미터 튜닝
   
 
     
@@ -1409,7 +1318,102 @@
   <span class="md-ellipsis">
     
   
-    여러 선택지 깔끔하게 처리하기 — switch문과 게임 메뉴
+    CARLA에서 자율주행 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    차선 인식과 차선 유지
   
 
     
@@ -1430,14 +1434,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter15/" class="md-nav__link">
+      <a href="../chapter16/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    게임에 우연을 더하자 — 난수와 유용한 함수들
+    장애물 감지와 비상 정지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    통합 자율주행 시스템 완성 (시뮬레이션)
   
 
     
@@ -1475,8 +1507,6 @@
       
         
       
-        
-      
     
     
     
@@ -1490,17 +1520,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
     
@@ -1511,72 +1541,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    게임을 설계하자 — 기획부터 함수 구조 짜기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter17/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    직접 만드는 가위바위보 게임 — 코딩 실전
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1592,7 +1566,7 @@
   <span class="md-ellipsis">
     
   
-    보너스 도전! OX 퀴즈 게임 만들기
+    라즈베리파이와 RC카 하드웨어 구성
   
 
     
@@ -1620,7 +1594,7 @@
   <span class="md-ellipsis">
     
   
-    내 코드 다듬기 — 자주 틀리는 오류 모음과 디버깅 팁
+    센서 연결과 실시간 데이터 수집
   
 
     
@@ -1648,7 +1622,186 @@
   <span class="md-ellipsis">
     
   
-    축하해, 게임 개발자! — 다음 단계로 나아가기
+    Sim-to-Real: 모델 이식과 최적화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RC카 자율주행 실전 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자율주행 시스템 최종 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트 문서화와 발표 준비
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    최종 발표와 자율주행 시연
   
 
     
@@ -1696,29 +1849,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장에서 배우는 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 이 장의 학습 목표
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         💡 왜 이걸 배우나요?
@@ -1729,7 +1871,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1741,10 +1883,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 변수 — 이름표가 붙은 상자 📦
+        개념 1: 리스트(List) — 센서 데이터의 줄 세우기
       
     </span>
   </a>
@@ -1752,10 +1894,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 자료형 — 상자의 종류 🏷️
+        개념 2: 딕셔너리(Dictionary) — 차량 상태 이름표 붙이기
       
     </span>
   </a>
@@ -1766,162 +1908,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 변수의 선언과 값 저장 ✍️
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-scanf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: scanf — 사용자에게 값 입력받기 ⌨️
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기: "자기소개 프로그램" 만들기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기: &#34;자기소개 프로그램&#34; 만들기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 기본 틀 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 변수 선언하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 사용자에게 입력받기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: 입력받은 값 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: 컴파일하고 실행하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 계산 추가하기 — 10년 후 나이
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 자주 하는 실수
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-scanf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: scanf에서 &amp;를 빼먹는다
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: 자료형과 서식 지정자가 안 맞는다
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-char" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 3: char 값에 큰따옴표를 쓴다
+        개념 3: 반복문과 조건문 — 데이터를 훑고 판단하기
       
     </span>
   </a>
@@ -1932,7 +1919,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        실수 4: 변수를 선언하지 않고 사용한다
+        개념 4: 함수와 클래스 — 코드를 깔끔하게 정리하기
       
     </span>
   </a>
@@ -1945,33 +1932,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 스스로 점검하기
+        🔨 따라하기: 규칙 기반 자율주행 시뮬레이터 만들기
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 더 해보기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 더 해보기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 규칙 기반 자율주행 시뮬레이터 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        도전 과제: 온도 변환기 🌡️
+        Step 1: 가상 센서 데이터 준비하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 주행 판단 함수 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 차량 상태를 딕셔너리로 관리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 반복문으로 전체 데이터 처리하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 클래스로 리팩토링하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: 실행 및 결과 확인
       
     </span>
   </a>
@@ -1984,21 +2015,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 이 장의 핵심 정리
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 다음 장으로
+        📝 전체 코드
       
     </span>
   </a>
@@ -2022,428 +2042,481 @@
 
 
 
-<h1 id="_1">📦 데이터를 담는 상자 — 변수와 자료형<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="chapter-4-python">Chapter 4. Python 핵심 복습: 자율주행에 쓰이는 문법<a class="headerlink" href="#chapter-4-python" title="Permanent link">&para;</a></h1>
+<p><strong>Part 2 | [1권] Python과 개발 환경 준비</strong></p>
 <hr />
-<h2 id="_2">🎯 이 장의 학습 목표<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>이 장을 마치면 다음을 할 수 있습니다:</p>
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 변수가 무엇인지 이해하고 <code>int</code>, <code>float</code>, <code>char</code> 자료형을 구분할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 변수를 선언하고 값을 저장·변경하는 코드를 작성할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>scanf</code>를 사용하여 사용자로부터 값을 입력받을 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 입력받은 값으로 간단한 계산을 수행하는 프로그램을 만들 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 리스트와 딕셔너리를 사용하여 센서 데이터와 차량 상태를 저장·관리할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 반복문과 조건문을 활용하여 연속적인 센서 데이터를 판단하는 코드를 작성할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 함수를 정의하여 규칙 기반 주행 로직(정지, 감속, 전진)을 구현할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 클래스를 사용하여 센서와 차량을 하나의 객체로 묶어 관리할 수 있다</li>
 </ul>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 2시간</p>
 <hr />
-<h2 id="_3">📚 미리 알아야 할 것<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>지난 장에서 우리는 <code>printf</code>를 사용해 화면에 글자를 출력하는 방법을 배웠어요. "Hello, World!"를 출력하며 C 프로그램의 기본 구조도 익혔죠.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>이 구조가 기억나시죠? 오늘은 여기에 <strong>데이터를 저장하고 활용하는 능력</strong>을 더해볼 거예요! 🎉</p>
-<hr />
-<h2 id="_4">💡 왜 이걸 배우나요?<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>지금까지 우리가 만든 프로그램은 항상 <strong>같은 말만</strong> 했어요. "Hello, World!"를 출력하라고 하면 언제나 똑같은 문장만 보여줬죠.</p>
-<p>하지만 진짜 프로그램은 다릅니다. 계산기는 <strong>사용자가 입력한 숫자</strong>에 따라 다른 결과를 보여주고, 게임은 <strong>플레이어의 점수</strong>를 기억하고 업데이트해요.</p>
-<p>이런 일을 하려면 <strong>데이터를 어딘가에 저장</strong>해둘 수 있어야 합니다. 그 "어딘가"가 바로 오늘 배울 <strong>변수</strong>예요!</p>
-<hr />
-<h2 id="_5">📚 핵심 개념<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="1">개념 1: 변수 — 이름표가 붙은 상자 📦<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작해 볼게요.</strong></p>
-<p>여러분의 책상 위에 상자가 하나 있다고 상상해 보세요. 이 상자에는 "나이"라는 이름표가 붙어 있고, 안에는 숫자 <strong>25</strong>가 들어 있어요. 나중에 생일이 지나면 25를 꺼내고 <strong>26</strong>을 넣을 수도 있겠죠.</p>
-<p>이것이 바로 <strong>변수(variable)</strong>입니다!</p>
-<p><strong>정확한 정의:</strong></p>
+<h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>🔑 <strong>변수</strong>란 데이터를 저장해두는 메모리 공간에 이름을 붙인 것입니다. 이름을 통해 값을 저장하거나, 저장된 값을 꺼내 쓸 수 있어요.</p>
+<p><strong>생각해보기 🤔</strong>
+자율주행 차량에는 카메라, 라이다, 레이더, GPS 등 수많은 센서가 달려 있습니다. 매 순간 수백 개의 숫자 데이터가 쏟아져 들어옵니다. 이 데이터를 <strong>어디에 저장</strong>하고, <strong>어떻게 반복해서 읽고</strong>, <strong>어떤 조건일 때 어떻게 행동할지</strong> 결정하는 것—이 모든 작업의 기초가 바로 Python 문법입니다.</p>
 </blockquote>
-<p><strong>예시로 확인해 볼까요?</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span></code></pre></div>
-<p>이 한 줄이 하는 일을 풀어서 설명하면:</p>
-<ul>
-<li><code>int</code> → 이 상자는 <strong>정수(整數)</strong>를 담는 상자야!</li>
-<li><code>age</code> → 이 상자의 이름은 <strong>age</strong>야!</li>
-<li><code>= 25</code> → 이 상자에 <strong>25</strong>를 넣어줘!</li>
-</ul>
+<p>Chapter 3에서 개발 환경을 구축했으니, 이제는 그 환경 위에서 실제로 코드를 작성할 차례입니다. 이 장에서는 Python 문법을 <strong>"자율주행"이라는 맥락</strong> 안에서 복습합니다. 단순한 문법 나열이 아니라, "센서 값을 리스트에 저장한다", "장애물 거리에 따라 정지·감속·전진을 판단한다"처럼 <strong>목적이 있는 코드</strong>를 작성합니다.</p>
 <div class="mermaid">flowchart LR
-    A["int age = 25;"] --&gt; B["자료형: int\n(정수 전용 상자)"]
-    A --&gt; C["변수 이름: age\n(상자의 이름표)"]
-    A --&gt; D["값: 25\n(상자 안에 든 것)"]</div>
-<blockquote>
-<p>💡 <strong>잠깐!</strong> "변수"라는 이름에서 힌트를 얻을 수 있어요. <strong>변</strong>할 수 있는 <strong>수</strong>, 즉 안에 든 값이 바뀔 수 있다는 뜻이에요!</p>
-</blockquote>
+    A["🛰️ 센서 데이터 수집"] --&gt; B["📦 자료구조에 저장&lt;br/&gt;(리스트, 딕셔너리)"]
+    B --&gt; C["🔄 반복문으로 처리"]
+    C --&gt; D["❓ 조건문으로 판단"]
+    D --&gt; E["🚗 주행 명령 출력"]</div>
+<p>위 흐름이 바로 이 장에서 만들어볼 코드의 전체 구조입니다.</p>
 <hr />
-<h3 id="2">개념 2: 자료형 — 상자의 종류 🏷️<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작합니다.</strong></p>
-<p>택배 상자에도 종류가 있죠? 책을 담는 상자, 과일을 담는 상자, 깨지기 쉬운 물건을 담는 상자… 각각 크기와 용도가 다릅니다.</p>
-<p>프로그래밍에서도 마찬가지예요. 담으려는 데이터의 <strong>종류</strong>에 따라 상자의 타입이 달라집니다. 이것을 <strong>자료형(data type)</strong>이라고 해요.</p>
-<p><strong>정확한 정의:</strong></p>
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-list">개념 1: 리스트(List) — 센서 데이터의 줄 세우기<a class="headerlink" href="#1-list" title="Permanent link">&para;</a></h3>
+<p><strong>1) 비유로 시작</strong></p>
+<p>놀이공원 매표소 앞에 사람들이 <strong>한 줄로</strong> 서 있는 모습을 떠올려 보세요. 첫 번째 사람, 두 번째 사람… 순서가 있고, 몇 번째 사람인지 번호로 찾을 수 있습니다. Python의 <strong>리스트</strong>가 정확히 이런 구조입니다. 자율주행에서는 라이다 센서가 측정한 거리값들을 시간 순서대로 한 줄로 저장할 때 리스트를 사용합니다.</p>
+<p><strong>2) 정확한 정의</strong></p>
+<p>리스트는 <strong>순서가 있는 데이터의 모음</strong>입니다. 대괄호 <code>[]</code> 안에 쉼표로 구분하여 값을 넣으며, 각 값에는 <strong>인덱스(index)</strong>라는 번호가 0번부터 부여됩니다.</p>
+<p><strong>3) 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 라이다 센서가 측정한 전방 장애물까지의 거리 (단위: 미터)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">lidar_distances</span> <span class="o">=</span> <span class="p">[</span><span class="mf">12.5</span><span class="p">,</span> <span class="mf">8.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 첫 번째 측정값 (인덱스 0)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">lidar_distances</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># 출력: 12.5</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 마지막 측정값 (인덱스 -1)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">lidar_distances</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># 출력: 2.0</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 새로운 측정값 추가</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">lidar_distances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">lidar_distances</span><span class="p">)</span>      <span class="c1"># 출력: [12.5, 8.3, 5.1, 3.7, 2.0, 1.5]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># 데이터 개수 확인</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lidar_distances</span><span class="p">))</span> <span class="c1"># 출력: 6</span>
+</span></code></pre></div>
 <blockquote>
-<p>🔑 <strong>자료형</strong>이란 변수에 저장할 데이터의 종류와 크기를 지정하는 것입니다.</p>
+<p><strong>알아보기 📌</strong>
+- <code>append()</code>: 리스트 끝에 값을 추가합니다.
+- <code>len()</code>: 리스트에 들어있는 값의 개수를 반환합니다.
+- 인덱스는 <strong>0부터 시작</strong>합니다. 5개의 데이터가 있으면 인덱스는 0~4입니다.</p>
 </blockquote>
-<p>오늘 배울 세 가지 자료형을 소개할게요:</p>
-<p><strong><code>int</code> — 정수를 담는 상자</strong>
-- 소수점이 없는 숫자를 담아요
-- 예: <code>1</code>, <code>42</code>, <code>-7</code>, <code>0</code>, <code>1000</code></p>
-<p><strong><code>float</code> — 소수점 숫자를 담는 상자</strong>
-- 소수점이 있는 숫자를 담아요
-- 예: <code>3.14</code>, <code>98.6</code>, <code>-0.5</code>, <code>100.0</code></p>
-<p><strong><code>char</code> — 글자 하나를 담는 작은 상자</strong>
-- 딱 한 글자만 담을 수 있어요
-- 예: <code>'A'</code>, <code>'z'</code>, <code>'7'</code>, <code>'!'</code>
-- ⚠️ 반드시 <strong>작은따옴표</strong>(<code>' '</code>)로 감싸요</p>
+<p><strong>슬라이싱(Slicing)</strong>으로 리스트의 일부분만 꺼낼 수도 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 최근 3개 측정값만 가져오기</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">recent</span> <span class="o">=</span> <span class="n">lidar_distances</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">recent</span><span class="p">)</span>  <span class="c1"># 출력: [2.0, 1.5] → 위 append 후 기준 [3.7, 2.0, 1.5]</span>
+</span></code></pre></div>
+<hr />
+<h3 id="2-dictionary">개념 2: 딕셔너리(Dictionary) — 차량 상태 이름표 붙이기<a class="headerlink" href="#2-dictionary" title="Permanent link">&para;</a></h3>
+<p><strong>1) 비유로 시작</strong></p>
+<p>도서관의 카드 목록을 생각해 보세요. "제목 → 책의 위치"처럼, <strong>이름(키, key)</strong>을 말하면 <strong>값(value)</strong>을 바로 찾아줍니다. 리스트가 "몇 번째?"로 찾는다면, 딕셔너리는 <strong>"무슨 이름으로?"</strong>로 찾습니다.</p>
+<p><strong>2) 정확한 정의</strong></p>
+<p>딕셔너리는 <strong>키(key)와 값(value)의 쌍으로 이루어진 자료구조</strong>입니다. 중괄호 <code>{}</code> 안에 <code>키: 값</code> 형태로 저장하며, 키를 통해 값에 빠르게 접근합니다.</p>
+<p><strong>3) 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 자율주행 차량의 현재 상태</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">vehicle_status</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>           <span class="c1"># 현재 속도 (km/h)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="s2">&quot;gear&quot;</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span>           <span class="c1"># 기어 상태</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s2">&quot;battery&quot;</span><span class="p">:</span> <span class="mi">85</span><span class="p">,</span>         <span class="c1"># 배터리 잔량 (%)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="s2">&quot;is_moving&quot;</span><span class="p">:</span> <span class="kc">True</span>      <span class="c1"># 주행 중 여부</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># 현재 속도 확인</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">vehicle_status</span><span class="p">[</span><span class="s2">&quot;speed&quot;</span><span class="p">])</span>      <span class="c1"># 출력: 60</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># 속도 변경</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">vehicle_status</span><span class="p">[</span><span class="s2">&quot;speed&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">40</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">vehicle_status</span><span class="p">[</span><span class="s2">&quot;speed&quot;</span><span class="p">])</span>      <span class="c1"># 출력: 40</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># 새로운 정보 추가</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">vehicle_status</span><span class="p">[</span><span class="s2">&quot;steering_angle&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">5.2</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">vehicle_status</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기 📌</strong>
+- 키는 보통 <strong>문자열(str)</strong> 을 사용합니다.
+- 존재하지 않는 키로 접근하면 <code>KeyError</code>가 발생합니다. 안전하게 접근하려면 <code>.get()</code> 메서드를 사용하세요.</p>
+</blockquote>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 안전한 접근 방법</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">temp</span> <span class="o">=</span> <span class="n">vehicle_status</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;temperature&quot;</span><span class="p">,</span> <span class="s2">&quot;정보 없음&quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>  <span class="c1"># 출력: 정보 없음</span>
+</span></code></pre></div>
 <div class="mermaid">flowchart TB
-    subgraph INT ["🔢 int (정수)"]
-        I1["42"]
-        I2["-7"]
-        I3["0"]
+    subgraph 리스트["📋 리스트 (List)"]
+        L0["[0] 12.5"]
+        L1["[1] 8.3"]
+        L2["[2] 5.1"]
     end
-    subgraph FLOAT ["🔣 float (소수점)"]
-        F1["3.14"]
-        F2["98.6"]
-        F3["-0.5"]
-    end
-    subgraph CHAR ["🔤 char (글자 하나)"]
-        C1["'A'"]
-        C2["'z'"]
-        C3["'!'"]
+    subgraph 딕셔너리["📖 딕셔너리 (Dictionary)"]
+        D1["'speed' → 60"]
+        D2["'gear' → 'D'"]
+        D3["'battery' → 85"]
     end</div>
-<p><strong>예시 코드:</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">          </span><span class="c1">// 정수 10</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">float</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">36.5</span><span class="p">;</span><span class="w"> </span><span class="c1">// 소수점 숫자 36.5</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span><span class="w">         </span><span class="c1">// 글자 하나 A</span>
-</span></code></pre></div>
 <blockquote>
-<p>💡 <strong>팁!</strong> C 언어에서는 변수를 만들 때 반드시 자료형을 먼저 적어야 해요. "이 상자에는 정수를 넣을 거야!"라고 미리 알려주는 거죠.</p>
+<p><strong>정리하기 ✏️</strong>
+- <strong>리스트</strong>: 순서가 중요할 때 (시간순 센서 데이터)
+- <strong>딕셔너리</strong>: 이름으로 빠르게 찾을 때 (차량 상태 정보)</p>
 </blockquote>
 <hr />
-<h3 id="3">개념 3: 변수의 선언과 값 저장 ✍️<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작해요.</strong></p>
-<p>상자를 사용하려면 두 단계가 필요하죠? ① 상자를 <strong>준비</strong>하고 ② 물건을 <strong>넣는</strong> 것. 변수도 마찬가지예요.</p>
-<p><strong>정확한 정의:</strong></p>
+<h3 id="3">개념 3: 반복문과 조건문 — 데이터를 훑고 판단하기<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>1) 비유로 시작</strong></p>
+<p>공장 컨베이어 벨트 위를 흘러가는 제품을 검사원이 하나씩 살펴보며 "합격/불합격"을 판정하는 모습을 떠올려 보세요. <strong>반복문(for)</strong>은 컨베이어 벨트처럼 데이터를 하나씩 꺼내주고, <strong>조건문(if)</strong>은 검사원처럼 "이 값이 기준을 넘는가?"를 판단합니다.</p>
+<p><strong>2) 정확한 정의</strong></p>
 <ul>
-<li><strong>선언(declaration)</strong>: 변수를 만드는 것. "이런 종류의 상자를 하나 준비해줘!"</li>
-<li><strong>대입(assignment)</strong>: 변수에 값을 넣는 것. "이 상자에 이 값을 넣어줘!"</li>
+<li><strong>for문</strong>: 리스트 등의 자료구조에서 값을 하나씩 꺼내 반복 실행합니다.</li>
+<li><strong>if-elif-else문</strong>: 조건이 참(True)인지 거짓(False)인지에 따라 다른 코드를 실행합니다.</li>
 </ul>
-<p><strong>예시로 확인:</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// 방법 1: 선언과 대입을 따로</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">        </span><span class="c1">// 상자 준비 (선언)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span><span class="w">       </span><span class="c1">// 값 넣기 (대입)</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">// 방법 2: 선언과 동시에 대입 (초기화)</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span><span class="w">   </span><span class="c1">// 상자 준비하면서 바로 값 넣기</span>
+<p><strong>3) 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 라이다 센서 거리 데이터</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">lidar_distances</span> <span class="o">=</span> <span class="p">[</span><span class="mf">12.5</span><span class="p">,</span> <span class="mf">8.3</span><span class="p">,</span> <span class="mf">5.1</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># 각 거리에 대해 위험도 판단</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">for</span> <span class="n">distance</span> <span class="ow">in</span> <span class="n">lidar_distances</span><span class="p">:</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">:</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m → 🔴 위험! 정지 필요&quot;</span><span class="p">)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">7.0</span><span class="p">:</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m → 🟡 주의! 감속 필요&quot;</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m → 🟢 안전, 전진 가능&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p><strong>값은 바꿀 수 있어요!</strong> (그래서 "변수"잖아요 😄)</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span><span class="w">    </span><span class="c1">// 처음에 80점</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">95</span><span class="p">;</span><span class="w">        </span><span class="c1">// 95점으로 변경!</span>
-</span></code></pre></div>
-<p>여기서 <code>=</code>는 수학의 "같다"가 아니라, <strong>"오른쪽 값을 왼쪽에 넣어라"</strong>라는 뜻이에요. 프로그래밍에서는 이것을 <strong>대입 연산자</strong>라고 부릅니다.</p>
-<div class="mermaid">flowchart LR
-    A["score = 80"] --&gt;|"처음"| B["📦 score\n안에 80"]
-    B --&gt;|"score = 95 실행"| C["📦 score\n안에 95"]
-    style B fill:#ffe0b2
-    style C fill:#c8e6c9</div>
-<blockquote>
-<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요? 변수는 상자, 자료형은 상자의 종류, 대입은 상자에 값 넣기. 이 세 가지만 기억하면 돼요. 어렵지 않죠? 😊</p>
-</blockquote>
-<hr />
-<h3 id="4-scanf">개념 4: <code>scanf</code> — 사용자에게 값 입력받기 ⌨️<a class="headerlink" href="#4-scanf" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작합니다.</strong></p>
-<p>지금까지의 <code>printf</code>가 프로그램이 <strong>말하는</strong> 것이었다면, <code>scanf</code>는 프로그램이 <strong>듣는</strong> 것이에요. 사용자가 키보드로 입력한 값을 변수에 저장해 줍니다.</p>
-<p><strong>정확한 정의:</strong></p>
-<blockquote>
-<p>🔑 <strong>scanf</strong>는 사용자의 키보드 입력을 받아 변수에 저장하는 함수입니다.</p>
-</blockquote>
-<p><strong>기본 사용법:</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span><span class="w">  </span><span class="c1">// 사용자가 입력한 정수를 age에 저장</span>
-</span></code></pre></div>
-<p>여기서 중요한 것 두 가지:</p>
-<ul>
-<li><strong><code>%d</code></strong> → "정수를 입력받을 거야"라는 뜻 (서식 지정자)</li>
-<li><strong><code>&amp;age</code></strong> → "age 상자의 <strong>주소</strong>를 알려줄게, 여기에 넣어줘!" (<code>&amp;</code>는 "주소"를 의미)</li>
-</ul>
-<p>각 자료형에 맞는 서식 지정자가 있어요:</p>
-<ul>
-<li><strong><code>%d</code></strong> → <code>int</code> (정수)</li>
-<li><strong><code>%f</code></strong> → <code>float</code> (소수점 숫자)</li>
-<li><strong><code>%c</code></strong> → <code>char</code> (글자 하나)</li>
-</ul>
-<div class="mermaid">flowchart LR
-    A["⌨️ 사용자가\n25를 입력"] --&gt;|"scanf('%d', &amp;age)"| B["📦 age\n안에 25 저장"]
-    style A fill:#e1bee7
-    style B fill:#c8e6c9</div>
-<blockquote>
-<p>⚠️ <strong>주의!</strong> <code>scanf</code>에서 변수 이름 앞에 <code>&amp;</code>를 빼먹으면 프로그램이 오류를 일으켜요. 이것은 입문자가 가장 많이 하는 실수 중 하나입니다. 꼭 기억하세요!</p>
-</blockquote>
-<hr />
-<h2 id="_6">🔨 따라하기: "자기소개 프로그램" 만들기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>배운 개념을 모두 활용해서, <strong>사용자가 이름의 첫 글자, 나이, 키를 입력하면 자기소개를 출력하는 프로그램</strong>을 만들어 봅시다!</p>
-<hr />
-<h3 id="step-1">Step 1: 기본 틀 만들기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<p>에디터를 열고 새 파일 <code>introduce.c</code>를 만드세요. 먼저 기본 구조만 작성합니다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 이 구조가 자연스럽게 느껴진다면, 이전 장을 잘 배운 거예요!</p>
-</blockquote>
-<hr />
-<h3 id="step-2">Step 2: 변수 선언하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><code>main</code> 함수 안에 세 가지 변수를 선언합니다. 어떤 자료형을 써야 할지 생각해 보세요.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">initial</span><span class="p">;</span><span class="w">       </span><span class="c1">// 이름의 첫 글자 (글자 하나 → char)</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span><span class="w">            </span><span class="c1">// 나이 (정수 → int)</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">height</span><span class="p">;</span><span class="w">       </span><span class="c1">// 키 (소수점 → float)</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>왜 이런 자료형을 골랐을까요?
-- 이름의 첫 글자 → 글자 <strong>하나</strong>니까 <code>char</code>
-- 나이 → 25살, 30살처럼 <strong>정수</strong>니까 <code>int</code>
-- 키 → 175.5cm처럼 <strong>소수점</strong>이 있을 수 있으니까 <code>float</code></p>
-<hr />
-<h3 id="step-3">Step 3: 사용자에게 입력받기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
-<p><code>printf</code>로 안내 메시지를 보여준 뒤, <code>scanf</code>로 값을 입력받습니다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">initial</span><span class="p">;</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;이름의 첫 글자를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">initial</span><span class="p">);</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;나이를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키(cm)를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
-</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>💡 <strong>포인트!</strong> <code>printf</code>로 먼저 안내하고, <code>scanf</code>로 입력받는 패턴이 보이시나요? 이 <strong>"안내 → 입력"</strong> 패턴은 앞으로 계속 사용하게 될 거예요.</p>
-</blockquote>
-<hr />
-<h3 id="step-4">Step 4: 입력받은 값 출력하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
-<p>이제 저장된 값을 <code>printf</code>로 출력합니다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">initial</span><span class="p">;</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;이름의 첫 글자를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">initial</span><span class="p">);</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;나이를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키(cm)를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">=== 자기소개 ===</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;이름 첫 글자: %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">initial</span><span class="p">);</span>
-</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;나이: %d살</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키: %.1fcm</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
-</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>💡 <strong><code>%.1f</code>가 뭔가요?</strong> 소수점 아래 <strong>1자리</strong>까지만 보여달라는 뜻이에요. <code>%.2f</code>라고 쓰면 소수점 아래 2자리까지 보여줍니다.</p>
-</blockquote>
-<hr />
-<h3 id="step-5">Step 5: 컴파일하고 실행하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
-<p>터미널에서 다음 명령어를 입력하세요:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>gcc introduce.c -o introduce
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>./introduce
-</span></code></pre></div>
-<p>실행하면 이런 식으로 동작합니다:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>이름의 첫 글자를 입력하세요: J
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>나이를 입력하세요: 25
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>키(cm)를 입력하세요: 175.5
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>=== 자기소개 ===
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>이름 첫 글자: J
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>나이: 25살
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>키: 175.5cm
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 여러분이 입력한 값이 그대로 출력되면 성공이에요! 🎉 축하합니다!</p>
-</blockquote>
-<hr />
-<h3 id="step-6-10">Step 6: 계산 추가하기 — 10년 후 나이<a class="headerlink" href="#step-6-10" title="Permanent link">&para;</a></h3>
-<p>변수의 진짜 힘은 <strong>값을 가지고 계산할 수 있다</strong>는 것입니다. 출력 부분 아래에 한 줄을 추가해 볼게요:</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키: %.1fcm</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="c1">// 여기부터 추가!</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">future_age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;10년 후 나이: %d살</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">future_age</span><span class="p">);</span>
-</span></code></pre></div>
-<p>다시 컴파일하고 실행하면:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>10년 후 나이: 35살
-</span></code></pre></div>
-<p><code>age</code>에 저장된 25에 10을 더해서 <code>future_age</code>라는 새 변수에 저장한 것이에요. 이렇게 <strong>변수끼리 계산</strong>도 할 수 있습니다!</p>
-<blockquote>
-<p>💡 <strong>여기까지 정말 잘 따라오셨어요!</strong> 변수를 선언하고, 값을 입력받고, 계산까지 했어요. 이것이 프로그래밍의 핵심 흐름입니다. 👏</p>
-</blockquote>
-<hr />
-<h2 id="_7">📝 전체 코드<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">initial</span><span class="p">;</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">height</span><span class="p">;</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;이름의 첫 글자를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">initial</span><span class="p">);</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;나이를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>
-</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키(cm)를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>
-</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">=== 자기소개 ===</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;이름 첫 글자: %c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">initial</span><span class="p">);</span>
-</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;나이: %d살</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;키: %.1fcm</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
-</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>
-</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">future_age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;10년 후 나이: %d살</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">future_age</span><span class="p">);</span>
-</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>
-</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="p">}</span>
-</span></code></pre></div>
-<hr />
-<h2 id="_8">⚠️ 자주 하는 실수<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="1-scanf">실수 1: <code>scanf</code>에서 <code>&amp;</code>를 빼먹는다<a class="headerlink" href="#1-scanf" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">// ❌ 잘못된 코드</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1">// ✅ 올바른 코드</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> <code>printf</code>에서는 <code>&amp;</code>가 없으니까, <code>scanf</code>에서도 빼먹기 쉬워요.</li>
-<li><strong>이렇게 해결해요:</strong> <code>scanf</code>에는 항상 <code>&amp;</code>가 붙는다고 기억하세요. <code>&amp;</code>는 "이 상자의 <strong>주소</strong>를 알려줄게, 여기에 값을 넣어줘"라는 의미예요.</li>
-</ul>
-<h3 id="2_1">실수 2: 자료형과 서식 지정자가 안 맞는다<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// ❌ int 변수인데 %f를 사용</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span><span class="w">    </span><span class="c1">// 이상한 값이 출력됨!</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1">// ✅ int 변수에는 %d를 사용</span>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span><span class="w">    </span><span class="c1">// 25가 정상 출력</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> 자료형마다 메모리에 저장되는 방식이 달라서, 잘못된 서식 지정자를 쓰면 엉뚱한 값이 나와요.</li>
-<li><strong>이렇게 해결해요:</strong> <code>int</code>↔<code>%d</code>, <code>float</code>↔<code>%f</code>, <code>char</code>↔<code>%c</code> — 이 짝꿍을 외워두세요!</li>
-</ul>
-<h3 id="3-char">실수 3: <code>char</code> 값에 큰따옴표를 쓴다<a class="headerlink" href="#3-char" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1">// ❌ 큰따옴표 사용</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A&quot;</span><span class="p">;</span><span class="w">     </span><span class="c1">// 오류 발생!</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1">// ✅ 작은따옴표 사용</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="kt">char</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span><span class="w">     </span><span class="c1">// 정상 작동</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> C 언어에서 큰따옴표(<code>"A"</code>)는 <strong>문자열</strong>(여러 글자)을 의미하고, 작은따옴표(<code>'A'</code>)는 <strong>문자 하나</strong>를 의미해요. <code>char</code>는 글자 하나만 담으니까 작은따옴표를 써야 합니다.</li>
-<li><strong>이렇게 해결해요:</strong> <code>char</code>는 <strong>작은따옴표</strong>! 이것만 기억하세요.</li>
-</ul>
-<h3 id="4">실수 4: 변수를 선언하지 않고 사용한다<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// ❌ 선언 없이 사용</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span><span class="w">             </span><span class="c1">// age라는 상자가 없는데 값을 넣으려 함!</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1">// ✅ 먼저 선언 후 사용</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">;</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> 상자를 준비하지 않았는데 물건을 넣으려는 것과 같아요.</li>
-<li><strong>이렇게 해결해요:</strong> 변수는 <strong>반드시 선언 먼저</strong>, 사용은 그 다음!</li>
-</ul>
-<hr />
-<h2 id="_9">✅ 스스로 점검하기<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>다음 질문에 스스로 답해 보세요:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 변수가 무엇인지 한 문장으로 설명할 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>int</code>, <code>float</code>, <code>char</code>의 차이를 알고, 상황에 맞는 자료형을 고를 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>int number = 10;</code> 이 코드에서 자료형, 변수 이름, 값이 각각 무엇인지 구분할 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>scanf</code>를 사용해서 사용자 입력을 받는 코드를 직접 작성할 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>scanf</code>에서 <code>&amp;</code>를 왜 붙여야 하는지 설명할 수 있나요?</li>
-</ul>
-<blockquote>
-<p>3개 이상 체크할 수 있다면, 이 장을 충분히 이해한 거예요! 전부 체크했다면 완벽합니다! 🌟</p>
-</blockquote>
-<hr />
-<h2 id="_10">🚀 더 해보기<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<p>자신감이 붙었다면, 아래 미니 프로젝트에 도전해 보세요!</p>
-<h3 id="_11">도전 과제: 온도 변환기 🌡️<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<p>사용자에게 섭씨 온도를 입력받아 화씨로 변환하는 프로그램을 만들어 보세요.</p>
-<p><strong>변환 공식:</strong> 화씨 = 섭씨 × 1.8 + 32</p>
-<p><strong>힌트:</strong>
-- 섭씨와 화씨 모두 소수점이 있을 수 있으니 <code>float</code>를 사용하세요
-- <code>scanf</code>로 입력받고, 계산한 뒤, <code>printf</code>로 출력하면 돼요</p>
-<p><strong>실행 예시:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>섭씨 온도를 입력하세요: 36.5
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>화씨 온도: 97.7
+<p><strong>실행 결과:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>거리 12.5m → 🟢 안전, 전진 가능
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>거리 8.3m → 🟢 안전, 전진 가능
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>거리 5.1m → 🟡 주의! 감속 필요
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>거리 3.7m → 🟡 주의! 감속 필요
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>거리 2.0m → 🔴 위험! 정지 필요
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>거리 1.5m → 🔴 위험! 정지 필요
 </span></code></pre></div></p>
-<p>혼자 힘으로 작성해 본 뒤, 아래 정답을 확인하세요!</p>
-<details>
-<summary>정답 보기 (직접 시도한 후 클릭!)</summary>
-
-<div class="language-c highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">celsius</span><span class="p">;</span>
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">fahrenheit</span><span class="p">;</span>
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;섭씨 온도를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%f&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">celsius</span><span class="p">);</span>
-</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
-</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span><span class="n">fahrenheit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">celsius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">1.8</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span>
-</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>
-</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;화씨 온도: %.1f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fahrenheit</span><span class="p">);</span>
-</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
-</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="p">}</span>
+<p><strong>while문</strong>은 조건이 참인 동안 계속 반복합니다. 자율주행에서는 "차량이 동작하는 동안 계속 센서를 읽어라"와 같은 상황에 사용합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 간단한 주행 루프 시뮬레이션</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">is_running</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">step</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">while</span> <span class="n">is_running</span><span class="p">:</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="c1"># 가상 센서값 생성 (1~20m 사이 랜덤)</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">distance</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="n">step</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Step </span><span class="si">{</span><span class="n">step</span><span class="si">}</span><span class="s2">] 전방 거리: </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m&quot;</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">2.0</span><span class="p">:</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  → 긴급 정지! 주행 종료.&quot;</span><span class="p">)</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>        <span class="n">is_running</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="k">if</span> <span class="n">step</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>  <span class="c1"># 안전장치: 최대 10번만 반복</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  → 시뮬레이션 종료.&quot;</span><span class="p">)</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>        <span class="n">is_running</span> <span class="o">=</span> <span class="kc">False</span>
 </span></code></pre></div>
-
-</details>
-
-<hr />
-<h2 id="_12">📌 이 장의 핵심 정리<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<ul>
-<li>✅ <strong>변수</strong>는 데이터를 저장하는 이름 붙은 메모리 공간이에요</li>
-<li>✅ <strong>자료형</strong>은 변수에 담을 데이터의 종류를 지정해요 — <code>int</code>(정수), <code>float</code>(소수점), <code>char</code>(글자 하나)</li>
-<li>✅ <code>=</code>는 "같다"가 아니라 <strong>"오른쪽 값을 왼쪽에 넣어라"</strong>는 대입 연산자예요</li>
-<li>✅ <strong><code>scanf</code></strong>는 사용자 입력을 변수에 저장하며, 변수 앞에 반드시 <strong><code>&amp;</code></strong>를 붙여야 해요</li>
-<li>✅ 서식 지정자 짝꿍: <code>int</code>↔<code>%d</code>, <code>float</code>↔<code>%f</code>, <code>char</code>↔<code>%c</code></li>
-</ul>
-<hr />
-<h2 id="_13">🔗 다음 장으로<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<p>이번 장에서 변수에 값을 저장하고 간단한 덧셈(<code>age + 10</code>)을 해봤어요. 하지만 프로그래밍에서는 더하기 말고도 빼기, 곱하기, 나누기, 그리고 <strong>나머지 구하기</strong>까지 다양한 연산을 할 수 있답니다.</p>
-<p>다음 장 <strong>"계산기를 만들자 — 연산자와 표현식"</strong> 에서는 C 언어의 다양한 연산자를 배우고, 진짜 동작하는 계산기 프로그램을 만들어 볼 거예요. 변수에 저장한 데이터를 마음껏 활용하는 방법을 알게 됩니다! 🧮</p>
 <blockquote>
-<p>오늘 배운 변수와 자료형은 앞으로 <strong>모든 프로그램의 기초</strong>가 됩니다. 충분히 연습하고 다음 장으로 넘어가세요. 천천히, 하지만 꾸준히! 💪</p>
+<p><strong>생각해보기 🤔</strong>
+위 코드에서 <code>if step &gt;= 10</code> 안전장치가 없으면 어떻게 될까요? <code>distance</code>가 계속 2.0 이상이면 <strong>무한 반복(infinite loop)</strong>에 빠집니다. while문을 쓸 때는 항상 <strong>종료 조건</strong>을 확인하세요!</p>
 </blockquote>
+<p><strong>논리 연산자</strong>로 여러 조건을 조합할 수도 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">speed</span> <span class="o">=</span> <span class="mi">45</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">distance</span> <span class="o">=</span> <span class="mf">4.5</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># and: 두 조건 모두 참일 때</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="mi">30</span> <span class="ow">and</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;속도가 빠르고 거리가 가까움 → 강한 감속!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># or: 하나라도 참이면</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="mi">80</span> <span class="ow">or</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">2.0</span><span class="p">:</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;긴급 상황!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c1"># not: 조건 반전</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="n">is_raining</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">is_raining</span><span class="p">:</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;맑은 날씨 → 일반 모드 주행&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="4">개념 4: 함수와 클래스 — 코드를 깔끔하게 정리하기<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p><strong>1) 비유로 시작</strong></p>
+<p>레스토랑에서 "스테이크 하나 주세요"라고 주문하면, 셰프가 알아서 고기를 굽고 소스를 뿌려 완성된 접시를 내줍니다. 주문하는 사람은 요리 과정을 몰라도 됩니다. <strong>함수(function)</strong>가 바로 이런 역할입니다—복잡한 과정을 <strong>이름 하나</strong>로 묶어두고, 필요할 때 호출하면 됩니다.</p>
+<p>그리고 <strong>클래스(class)</strong>는 이 레스토랑 자체를 설계하는 <strong>설계도</strong>입니다. "이 레스토랑에는 셰프가 있고, 메뉴가 있고, 주문을 받는 기능이 있다"처럼, 관련된 데이터와 기능을 하나로 묶습니다.</p>
+<p><strong>2) 정확한 정의</strong></p>
+<ul>
+<li><strong>함수</strong>: 특정 작업을 수행하는 코드 블록. <code>def</code> 키워드로 정의하며, 입력(매개변수)을 받아 결과(반환값)를 돌려줍니다.</li>
+<li><strong>클래스</strong>: 관련 데이터(속성)와 함수(메서드)를 하나의 틀로 묶은 설계도. <code>class</code> 키워드로 정의합니다.</li>
+</ul>
+<p><strong>3) 함수 예시</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">decide_action</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="sd">    전방 거리(m)를 받아 주행 명령을 반환하는 함수</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="sd">    매개변수:</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="sd">        distance (float): 전방 장애물까지의 거리 (미터)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="sd">    반환값:</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="sd">        str: &quot;STOP&quot;, &quot;SLOW&quot;, &quot;GO&quot; 중 하나</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">:</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>        <span class="k">return</span> <span class="s2">&quot;STOP&quot;</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">7.0</span><span class="p">:</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>        <span class="k">return</span> <span class="s2">&quot;SLOW&quot;</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>        <span class="k">return</span> <span class="s2">&quot;GO&quot;</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="c1"># 함수 호출</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="n">action</span> <span class="o">=</span> <span class="n">decide_action</span><span class="p">(</span><span class="mf">4.5</span><span class="p">)</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;주행 명령: </span><span class="si">{</span><span class="n">action</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># 출력: 주행 명령: SLOW</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기 📌</strong>
+- <code>def</code>: 함수를 정의하는 키워드
+- <code>distance</code>: <strong>매개변수(parameter)</strong> — 함수에 전달되는 입력값
+- <code>return</code>: 함수의 결과를 돌려주는 키워드
+- <code>"""..."""</code>: <strong>독스트링(docstring)</strong> — 함수의 설명을 적는 곳</p>
+</blockquote>
+<p><strong>4) 클래스 예시</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">AutonomousVehicle</span><span class="p">:</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;자율주행 차량을 표현하는 클래스&quot;&quot;&quot;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;생성자: 차량 객체가 만들어질 때 실행&quot;&quot;&quot;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>        <span class="c1"># 차량 이름</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>          <span class="c1"># 현재 속도</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># 주행 상태</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;차량 시동 걸기&quot;&quot;&quot;</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: 시동이 걸렸습니다.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">drive</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;센서 거리에 따라 주행 판단&quot;&quot;&quot;</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span><span class="p">:</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: 먼저 시동을 걸어주세요.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>            <span class="k">return</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">:</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: 정지! (거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m)&quot;</span><span class="p">)</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>        <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">7.0</span><span class="p">:</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">20</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: 감속 → </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">speed</span><span class="si">}</span><span class="s2">km/h (거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m)&quot;</span><span class="p">)</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: 전진 → </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">speed</span><span class="si">}</span><span class="s2">km/h (거리 </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">m)&quot;</span><span class="p">)</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="c1"># 객체(인스턴스) 생성 및 사용</span>
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="n">my_car</span> <span class="o">=</span> <span class="n">AutonomousVehicle</span><span class="p">(</span><span class="s2">&quot;테스트카 1호&quot;</span><span class="p">)</span>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="n">my_car</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="n">my_car</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mf">10.0</span><span class="p">)</span>
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="n">my_car</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mf">5.5</span><span class="p">)</span>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="n">my_car</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mf">1.8</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>테스트카 1호: 시동이 걸렸습니다.
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>테스트카 1호: 전진 → 60km/h (거리 10.0m)
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>테스트카 1호: 감속 → 20km/h (거리 5.5m)
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>테스트카 1호: 정지! (거리 1.8m)
+</span></code></pre></div></p>
+<div class="mermaid">classDiagram
+    class AutonomousVehicle {
+        - name: str
+        - speed: int
+        - is_running: bool
+        + start()
+        + drive(distance)
+    }
+    note for AutonomousVehicle "속성(데이터)과 메서드(기능)를\n하나로 묶은 설계도"</div>
+<blockquote>
+<p><strong>정리하기 ✏️</strong>
+- <strong>함수</strong>: 반복되는 작업을 이름 붙여 재사용 (예: <code>decide_action()</code>)
+- <strong>클래스</strong>: 관련된 데이터 + 함수를 하나의 객체로 묶기 (예: <code>AutonomousVehicle</code>)
+- <strong>self</strong>: 클래스 내부에서 "이 객체 자신"을 가리키는 키워드</p>
+</blockquote>
+<hr />
+<h2 id="_4">🔨 따라하기: 규칙 기반 자율주행 시뮬레이터 만들기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이제 배운 개념을 모두 조합하여 <strong>가상 센서 데이터를 읽고 주행 판단을 내리는 프로그램</strong>을 단계별로 만들어 봅시다.</p>
+<h3 id="step-1">Step 1: 가상 센서 데이터 준비하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 10초 동안 라이다 센서가 측정한 전방 거리 데이터 (미터)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">sensor_data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">15.2</span><span class="p">,</span> <span class="mf">12.8</span><span class="p">,</span> <span class="mf">9.4</span><span class="p">,</span> <span class="mf">7.1</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+</span></code></pre></div>
+<blockquote>
+<p>실제 자율주행에서는 센서가 실시간으로 데이터를 보내지만, 여기서는 미리 준비된 리스트를 사용합니다. 장애물에 점점 가까워지는 상황을 시뮬레이션합니다.</p>
+</blockquote>
+<h3 id="step-2">Step 2: 주행 판단 함수 만들기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">decide_action</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="sd">    전방 거리를 기반으로 주행 명령을 결정한다.</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="sd">    규칙:</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="sd">        - 3m 미만: STOP (정지)</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="sd">        - 3m 이상 7m 미만: SLOW (감속, 20km/h)</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="sd">        - 7m 이상: GO (전진, 60km/h)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">:</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>        <span class="k">return</span> <span class="s2">&quot;STOP&quot;</span><span class="p">,</span> <span class="mi">0</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">7.0</span><span class="p">:</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>        <span class="k">return</span> <span class="s2">&quot;SLOW&quot;</span><span class="p">,</span> <span class="mi">20</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>        <span class="k">return</span> <span class="s2">&quot;GO&quot;</span><span class="p">,</span> <span class="mi">60</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기 📌</strong> 함수가 <code>return "STOP", 0</code>처럼 <strong>쉼표로 두 개의 값</strong>을 반환하면, Python은 이를 <strong>튜플(tuple)</strong>로 묶어 돌려줍니다. 호출할 때 <code>action, speed = decide_action(5.0)</code>처럼 받을 수 있습니다.</p>
+</blockquote>
+<h3 id="step-3">Step 3: 차량 상태를 딕셔너리로 관리하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 차량 상태 딕셔너리</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">car_state</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;READY&quot;</span><span class="p">,</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="s2">&quot;total_stops&quot;</span><span class="p">:</span> <span class="mi">0</span>    <span class="c1"># 정지 횟수 누적</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="step-4">Step 4: 반복문으로 전체 데이터 처리하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🚗 자율주행 시뮬레이션 시작&quot;</span><span class="p">)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">distance</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sensor_data</span><span class="p">):</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="c1"># 주행 판단</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="n">action</span><span class="p">,</span> <span class="n">speed</span> <span class="o">=</span> <span class="n">decide_action</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="c1"># 차량 상태 업데이트</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>    <span class="n">car_state</span><span class="p">[</span><span class="s2">&quot;speed&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">speed</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>    <span class="n">car_state</span><span class="p">[</span><span class="s2">&quot;action&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">action</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;STOP&quot;</span><span class="p">:</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>        <span class="n">car_state</span><span class="p">[</span><span class="s2">&quot;total_stops&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>    <span class="c1"># 상태 출력</span>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>    <span class="k">if</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;STOP&quot;</span><span class="p">:</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🔴&quot;</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>    <span class="k">elif</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;SLOW&quot;</span><span class="p">:</span>
+</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🟡&quot;</span>
+</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🟢&quot;</span>
+</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>
+</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">초] 거리: </span><span class="si">{</span><span class="n">distance</span><span class="si">:</span><span class="s2">&gt;5.1f</span><span class="si">}</span><span class="s2">m | &quot;</span>
+</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>          <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">emoji</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">action</span><span class="si">:</span><span class="s2">&gt;4</span><span class="si">}</span><span class="s2"> | 속도: </span><span class="si">{</span><span class="n">speed</span><span class="si">}</span><span class="s2">km/h&quot;</span><span class="p">)</span>
+</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a>
+</span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+</span><span id="__span-14-28"><a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;시뮬레이션 종료! 총 정지 횟수: </span><span class="si">{</span><span class="n">car_state</span><span class="p">[</span><span class="s1">&#39;total_stops&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">회&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기 📌</strong>
+- <code>enumerate()</code>: 리스트를 반복할 때 <strong>인덱스(i)</strong>와 <strong>값(distance)</strong>을 동시에 가져옵니다.
+- <code>f"..."</code> 안의 <code>{distance:&gt;5.1f}</code>: 소수점 1자리, 전체 5칸 오른쪽 정렬 포맷입니다.</p>
+</blockquote>
+<h3 id="step-5">Step 5: 클래스로 리팩토링하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>Step 1~4의 코드를 <strong>클래스 하나</strong>로 깔끔하게 정리해 봅시다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">SimpleAutoPilot</span><span class="p">:</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;간단한 규칙 기반 자율주행 시뮬레이터&quot;&quot;&quot;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;READY&quot;</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">total_stops</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">log</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># 주행 기록 저장</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">decide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;거리에 따른 주행 판단&quot;&quot;&quot;</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>        <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">3.0</span><span class="p">:</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;STOP&quot;</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">total_stops</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>        <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mf">7.0</span><span class="p">:</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;SLOW&quot;</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">20</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;GO&quot;</span>
+</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>
+</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>        <span class="c1"># 기록 저장</span>
+</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>            <span class="s2">&quot;distance&quot;</span><span class="p">:</span> <span class="n">distance</span><span class="p">,</span>
+</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">,</span>
+</span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed</span>
+</span><span id="__span-15-29"><a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>        <span class="p">})</span>
+</span><span id="__span-15-30"><a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>
+</span><span id="__span-15-31"><a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sensor_data</span><span class="p">):</span>
+</span><span id="__span-15-32"><a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;센서 데이터 리스트를 받아 전체 시뮬레이션 실행&quot;&quot;&quot;</span>
+</span><span id="__span-15-33"><a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🚗 [</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">] 시뮬레이션 시작!&quot;</span><span class="p">)</span>
+</span><span id="__span-15-34"><a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">45</span><span class="p">)</span>
+</span><span id="__span-15-35"><a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>
+</span><span id="__span-15-36"><a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">distance</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sensor_data</span><span class="p">):</span>
+</span><span id="__span-15-37"><a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">decide</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</span><span id="__span-15-38"><a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a>
+</span><span id="__span-15-39"><a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;STOP&quot;</span><span class="p">:</span>
+</span><span id="__span-15-40"><a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>                <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🔴&quot;</span>
+</span><span id="__span-15-41"><a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;SLOW&quot;</span><span class="p">:</span>
+</span><span id="__span-15-42"><a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>                <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🟡&quot;</span>
+</span><span id="__span-15-43"><a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>            <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-15-44"><a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a>                <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🟢&quot;</span>
+</span><span id="__span-15-45"><a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>
+</span><span id="__span-15-46"><a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">초] </span><span class="si">{</span><span class="n">distance</span><span class="si">:</span><span class="s2">&gt;5.1f</span><span class="si">}</span><span class="s2">m | &quot;</span>
+</span><span id="__span-15-47"><a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>                  <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">emoji</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="si">:</span><span class="s2">&gt;4</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">speed</span><span class="si">}</span><span class="s2">km/h&quot;</span><span class="p">)</span>
+</span><span id="__span-15-48"><a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>
+</span><span id="__span-15-49"><a id="__codelineno-15-49" name="__codelineno-15-49" href="#__codelineno-15-49"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">45</span><span class="p">)</span>
+</span><span id="__span-15-50"><a id="__codelineno-15-50" name="__codelineno-15-50" href="#__codelineno-15-50"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;총 정지: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">total_stops</span><span class="si">}</span><span class="s2">회 | &quot;</span>
+</span><span id="__span-15-51"><a id="__codelineno-15-51" name="__codelineno-15-51" href="#__codelineno-15-51"></a>              <span class="sa">f</span><span class="s2">&quot;기록 수: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">)</span><span class="si">}</span><span class="s2">개</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="step-6">Step 6: 실행 및 결과 확인<a class="headerlink" href="#step-6" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 센서 데이터 준비</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mf">15.2</span><span class="p">,</span> <span class="mf">12.8</span><span class="p">,</span> <span class="mf">9.4</span><span class="p">,</span> <span class="mf">7.1</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># 시뮬레이터 생성 및 실행</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">pilot</span> <span class="o">=</span> <span class="n">SimpleAutoPilot</span><span class="p">(</span><span class="s2">&quot;테스트카 A&quot;</span><span class="p">)</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="n">pilot</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="c1"># 기록 활용: 가장 가까웠던 순간 확인</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="n">closest</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">pilot</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s2">&quot;distance&quot;</span><span class="p">])</span>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;가장 가까운 순간: </span><span class="si">{</span><span class="n">closest</span><span class="p">[</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">m → </span><span class="si">{</span><span class="n">closest</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>🚗 [테스트카 A] 시뮬레이션 시작!
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>---------------------------------------------
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>[ 1초]  15.2m | 🟢   GO | 60km/h
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>[ 2초]  12.8m | 🟢   GO | 60km/h
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>[ 3초]   9.4m | 🟢   GO | 60km/h
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>[ 4초]   7.1m | 🟢   GO | 60km/h
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>[ 5초]   5.3m | 🟡 SLOW | 20km/h
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>[ 6초]   4.0m | 🟡 SLOW | 20km/h
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>[ 7초]   3.2m | 🟡 SLOW | 20km/h
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>[ 8초]   2.5m | 🔴 STOP | 0km/h
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>[ 9초]   1.8m | 🔴 STOP | 0km/h
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>[10초]   1.0m | 🔴 STOP | 0km/h
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>---------------------------------------------
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>총 정지: 3회 | 기록 수: 10개
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>가장 가까운 순간: 1.0m → STOP
+</span></code></pre></div></p>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>아래 코드를 그대로 복사하여 Python 파일로 저장하고 실행해 보세요.</p>
+<p>```python
+"""
+Chapter 4 - 규칙 기반 자율주행 시뮬레이터
+파일명: ch04_autopilot_sim.py
+"""</p>
+<p>class SimpleAutoPilot:
+    """간단한 규칙 기반 자율주행 시뮬레이터"""</p>
+<div class="codehilite"><pre><span></span><code><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span>
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="k">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;READY&quot;</span>
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="n">total_stops</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="nf">log</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">[]</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">decide</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="ss">&quot;&quot;&quot;거리에 따른 주행 판단&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3.0</span><span class="err">:</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="k">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;STOP&quot;</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">total_stops</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="n">elif</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">7.0</span><span class="err">:</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="k">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;SLOW&quot;</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span>
+<span class="w">    </span><span class="k">else</span><span class="err">:</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="k">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;GO&quot;</span>
+<span class="w">        </span><span class="n">self</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span>
+
+<span class="w">    </span><span class="n">self</span><span class="p">.</span><span class="nf">log</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="err">{</span>
+<span class="w">        </span><span class="ss">&quot;distance&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">distance</span><span class="p">,</span>
+<span class="w">        </span><span class="ss">&quot;action&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="k">action</span><span class="p">,</span>
+<span class="w">        </span><span class="ss">&quot;speed&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">speed</span>
+<span class="w">    </span><span class="err">}</span><span class="p">)</span>
+
+<span class="n">def</span><span class="w"> </span><span class="n">run</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">sensor_data</span><span class="p">)</span><span class="err">:</span>
+<span class="w">    </span><span class="ss">&quot;&quot;&quot;센서 데이터 리스트를 받아 전체 시뮬레이션 실행&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="k">print</span><span class="p">(</span><span class="n">f</span>
+</code></pre></div>
 
 
 

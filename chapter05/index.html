@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="컴퓨터를 몰라도 괜찮아, 2주 뒤엔 내 손으로 게임을 만든다! 프로그래밍 경험이 전혀 없는 고등학생도 혼자서 완주할 수 있는 C언어 입문 자기주도 학습서입니다.">
+        <meta name="description" content="시뮬레이션에서 실제 도로까지, CARLA 시뮬레이터와 RC카를 활용하여 직접 만들며 이해하는 8주 완성 Physical AI 자율주행 프로젝트 교과서입니다.">
       
       
         <meta name="author" content="Created with EduFlow">
       
       
-        <link rel="canonical" href="https://baesy5.github.io/c_language_01/chapter05/">
+        <link rel="canonical" href="https://baesy5.github.io/physical_AI_01/chapter05/">
       
       
         <link rel="prev" href="../chapter04/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>컴퓨터에게 계산 시키기 — 연산자 활용 - 처음 만드는 나의 첫 C언어 게임</title>
+        <title>NumPy와 이미지 데이터 다루기 - Physical AI: 자율주행으로 배우는 인공지능</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-05" class="md-skip">
+        <a href="#chapter-5-numpy" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-header__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-header__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            처음 만드는 나의 첫 C언어 게임
+            Physical AI: 자율주행으로 배우는 인공지능
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              컴퓨터에게 계산 시키기 — 연산자 활용
+              NumPy와 이미지 데이터 다루기
             
           </span>
         </div>
@@ -234,19 +234,41 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../chapter01/" class="md-tabs__link">
           
   
   
     
   
-  Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+  Part 1 - [1권] Part 1: Physical AI의 세계로
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2: Python과 개발 환경 준비
 
         </a>
       </li>
@@ -262,13 +284,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter06/" class="md-tabs__link">
+        <a href="../chapter07/" class="md-tabs__link">
           
   
   
     
   
-  Part 2 - [1권] 프로그램에 판단력 불어넣기
+  Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
 
         </a>
       </li>
@@ -284,13 +306,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter09/" class="md-tabs__link">
+        <a href="../chapter10/" class="md-tabs__link">
           
   
   
     
   
-  Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+  Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
 
         </a>
       </li>
@@ -306,13 +328,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter13/" class="md-tabs__link">
+        <a href="../chapter15/" class="md-tabs__link">
           
   
   
     
   
-  Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+  Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
 
         </a>
       </li>
@@ -328,13 +350,35 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter16/" class="md-tabs__link">
+        <a href="../chapter18/" class="md-tabs__link">
           
   
   
     
   
-  Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+  Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter22/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 7 - [2권] Part 7: 프로젝트 완성과 발표
 
         </a>
       </li>
@@ -364,13 +408,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-nav__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-nav__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    처음 만드는 나의 첫 C언어 게임
+    Physical AI: 자율주행으로 배우는 인공지능
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -406,16 +450,10 @@
       
   
   
-    
   
   
-  
     
     
-      
-        
-      
-        
       
         
       
@@ -427,29 +465,26 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
     
@@ -460,12 +495,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
           </label>
@@ -485,7 +520,7 @@
   <span class="md-ellipsis">
     
   
-    왜 C언어를 배워야 할까? — 이 책의 사용법
+    Physical AI란 무엇인가?
   
 
     
@@ -513,7 +548,7 @@
   <span class="md-ellipsis">
     
   
-    내 컴퓨터에 작업실 꾸미기 — 개발 환경 설치
+    자율주행의 원리: 인지-판단-제어
   
 
     
@@ -541,7 +576,7 @@
   <span class="md-ellipsis">
     
   
-    처음 만나는 C언어 — Hello, World!
+    시뮬레이션이 중요한 이유
   
 
     
@@ -554,6 +589,78 @@
   
 
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -569,7 +676,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 담는 상자 — 변수와 자료형
+    Python 핵심 복습: 자율주행에 쓰이는 문법
   
 
     
@@ -606,7 +713,7 @@
   <span class="md-ellipsis">
     
   
-    컴퓨터에게 계산 시키기 — 연산자 활용
+    NumPy와 이미지 데이터 다루기
   
 
     
@@ -624,7 +731,7 @@
   <span class="md-ellipsis">
     
   
-    컴퓨터에게 계산 시키기 — 연산자 활용
+    NumPy와 이미지 데이터 다루기
   
 
     
@@ -653,7 +760,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장의 학습 목표
+        🎯 이 장에서 배우는 것
       
     </span>
   </a>
@@ -664,17 +771,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         💡 왜 이걸 배우나요?
       
     </span>
@@ -683,7 +779,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -695,22 +791,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 산술 연산자 — 다섯 가지 계산 도구 🧮
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 1: 산술 연산자 — 다섯 가지 계산 도구 🧮">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        개념 1: NumPy 배열 — 숫자를 담는 격자판
       
     </span>
   </a>
@@ -721,7 +805,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기
       
     </span>
   </a>
@@ -732,7 +816,18 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
+        개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장
       
     </span>
   </a>
@@ -743,24 +838,24 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 정수 나눗셈의 함정 — 소수점이 사라진다! 🕵️
+        🔨 따라하기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="개념 2: 정수 나눗셈의 함정 — 소수점이 사라진다! 🕵️">
+    <nav class="md-nav" aria-label="🔨 따라하기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
+  <a href="#step-1-numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 비유로 시작
+        Step 1: NumPy 배열 만들고 탐색하기
       
     </span>
   </a>
@@ -768,10 +863,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_2" class="md-nav__link">
+  <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 2: 슬라이싱으로 배열의 일부 추출하기
       
     </span>
   </a>
@@ -779,38 +874,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
+  <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 3: 나머지 연산자(%) — 숨은 영웅 🦸
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 3: 나머지 연산자(%) — 숨은 영웅 🦸">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        Step 3: 간단한 이미지를 직접 만들어보기
       
     </span>
   </a>
@@ -818,10 +885,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_3" class="md-nav__link">
+  <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 4: 실제 이미지 읽고 변환하기
       
     </span>
   </a>
@@ -829,38 +896,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_3" class="md-nav__link">
+  <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: 연산 우선순위와 괄호 — 계산 순서의 비밀 📐
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 4: 연산 우선순위와 괄호 — 계산 순서의 비밀 📐">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        Step 5: 이미지 밝기 조절하기
       
     </span>
   </a>
@@ -868,29 +907,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_4" class="md-nav__link">
+  <a href="#step-6-hsv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 6: 특정 색상 추출하기 (HSV 필터링)
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -903,132 +926,10 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기: 나만의 계산기 프로그램 만들기 🖩
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기: 나만의 계산기 프로그램 만들기 🖩">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 프로젝트 준비
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-scanner" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Scanner로 두 숫자 입력받기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 다섯 가지 연산 수행하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: 결과 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: 소수점 나눗셈 결과도 추가하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 보너스 — 시간 변환 기능 추가 ⏰
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 자주 하는 실수
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: 정수 나눗셈 결과가 이상해요! 😱
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: 0으로 나누기 — 프로그램이 죽어요! 💀
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1040,73 +941,6 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1122,63 +956,7 @@
   <span class="md-ellipsis">
     
   
-    갈림길에서 선택하기 — if 조건문
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter07/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    같은 일을 반복하기 — for와 while 반복문
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter08/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    여기까지 잘 왔어! — 중간 점검 미니 게임 만들기
+    CARLA 시뮬레이터 설치와 첫 주행
   
 
     
@@ -1207,8 +985,6 @@
   
     
     
-      
-        
       
         
       
@@ -1239,7 +1015,7 @@
   <span class="md-ellipsis">
     
   
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
     
@@ -1255,11 +1031,67 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CARLA 센서 시스템 이해하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자율주행 학습 데이터 수집하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1275,91 +1107,7 @@
   <span class="md-ellipsis">
     
   
-    왜 코드를 나눠야 할까? — 함수가 필요한 이유
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter10/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    나만의 함수 만들기 — 함수 정의와 호출
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter11/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수에 값을 주고받기 — 매개변수와 반환값 깊이 이해하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter12/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수로 코드를 리모델링하자 — 업다운 게임 리팩토링
+    데이터 전처리와 증강
   
 
     
@@ -1388,6 +1136,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1418,7 +1170,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
     
@@ -1434,11 +1186,95 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    딥러닝 기초: 신경망의 원리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    합성곱 신경망(CNN) 이해하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End 자율주행 모델 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1454,7 +1290,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 줄 세우기 — 배열 기초
+    모델 학습과 하이퍼파라미터 튜닝
   
 
     
@@ -1482,7 +1318,102 @@
   <span class="md-ellipsis">
     
   
-    여러 선택지 깔끔하게 처리하기 — switch문과 게임 메뉴
+    CARLA에서 자율주행 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    차선 인식과 차선 유지
   
 
     
@@ -1503,14 +1434,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter15/" class="md-nav__link">
+      <a href="../chapter16/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    게임에 우연을 더하자 — 난수와 유용한 함수들
+    장애물 감지와 비상 정지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    통합 자율주행 시스템 완성 (시뮬레이션)
   
 
     
@@ -1548,8 +1507,6 @@
       
         
       
-        
-      
     
     
     
@@ -1563,17 +1520,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
     
@@ -1584,72 +1541,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    게임을 설계하자 — 기획부터 함수 구조 짜기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter17/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    직접 만드는 가위바위보 게임 — 코딩 실전
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1665,7 +1566,7 @@
   <span class="md-ellipsis">
     
   
-    보너스 도전! OX 퀴즈 게임 만들기
+    라즈베리파이와 RC카 하드웨어 구성
   
 
     
@@ -1693,7 +1594,7 @@
   <span class="md-ellipsis">
     
   
-    내 코드 다듬기 — 자주 틀리는 오류 모음과 디버깅 팁
+    센서 연결과 실시간 데이터 수집
   
 
     
@@ -1721,7 +1622,186 @@
   <span class="md-ellipsis">
     
   
-    축하해, 게임 개발자! — 다음 단계로 나아가기
+    Sim-to-Real: 모델 이식과 최적화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RC카 자율주행 실전 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자율주행 시스템 최종 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트 문서화와 발표 준비
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    최종 발표와 자율주행 시연
   
 
     
@@ -1772,7 +1852,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장의 학습 목표
+        🎯 이 장에서 배우는 것
       
     </span>
   </a>
@@ -1783,17 +1863,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         💡 왜 이걸 배우나요?
       
     </span>
@@ -1802,7 +1871,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1814,22 +1883,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 산술 연산자 — 다섯 가지 계산 도구 🧮
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 1: 산술 연산자 — 다섯 가지 계산 도구 🧮">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        개념 1: NumPy 배열 — 숫자를 담는 격자판
       
     </span>
   </a>
@@ -1840,7 +1897,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기
       
     </span>
   </a>
@@ -1851,7 +1908,18 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
+        개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-opencv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장
       
     </span>
   </a>
@@ -1862,24 +1930,24 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 정수 나눗셈의 함정 — 소수점이 사라진다! 🕵️
+        🔨 따라하기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="개념 2: 정수 나눗셈의 함정 — 소수점이 사라진다! 🕵️">
+    <nav class="md-nav" aria-label="🔨 따라하기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_2" class="md-nav__link">
+  <a href="#step-1-numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 비유로 시작
+        Step 1: NumPy 배열 만들고 탐색하기
       
     </span>
   </a>
@@ -1887,10 +1955,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_2" class="md-nav__link">
+  <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 2: 슬라이싱으로 배열의 일부 추출하기
       
     </span>
   </a>
@@ -1898,38 +1966,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
+  <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 3: 나머지 연산자(%) — 숨은 영웅 🦸
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 3: 나머지 연산자(%) — 숨은 영웅 🦸">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        Step 3: 간단한 이미지를 직접 만들어보기
       
     </span>
   </a>
@@ -1937,10 +1977,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_3" class="md-nav__link">
+  <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 4: 실제 이미지 읽고 변환하기
       
     </span>
   </a>
@@ -1948,38 +1988,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_3" class="md-nav__link">
+  <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: 연산 우선순위와 괄호 — 계산 순서의 비밀 📐
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 4: 연산 우선순위와 괄호 — 계산 순서의 비밀 📐">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 비유로 시작
+        Step 5: 이미지 밝기 조절하기
       
     </span>
   </a>
@@ -1987,29 +1999,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_4" class="md-nav__link">
+  <a href="#step-6-hsv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 정확한 정의
+        Step 6: 특정 색상 추출하기 (HSV 필터링)
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2022,132 +2018,10 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기: 나만의 계산기 프로그램 만들기 🖩
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기: 나만의 계산기 프로그램 만들기 🖩">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 프로젝트 준비
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-scanner" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Scanner로 두 숫자 입력받기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 다섯 가지 연산 수행하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: 결과 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: 소수점 나눗셈 결과도 추가하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 보너스 — 시간 변환 기능 추가 ⏰
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 자주 하는 실수
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: 정수 나눗셈 결과가 이상해요! 😱
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: 0으로 나누기 — 프로그램이 죽어요! 💀
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2168,402 +2042,417 @@
 
 
 
-<h1 id="chapter-05">Chapter 05: 컴퓨터에게 계산 시키기 — 연산자 활용<a class="headerlink" href="#chapter-05" title="Permanent link">&para;</a></h1>
+<h1 id="chapter-5-numpy">Chapter 5: NumPy와 이미지 데이터 다루기<a class="headerlink" href="#chapter-5-numpy" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>이 장을 마치면 다음을 할 수 있습니다:</p>
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 산술 연산자(+, -, *, /, %)를 사용하여 계산 프로그램을 만들 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 정수 나눗셈과 나머지 연산의 차이를 이해하고 설명할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 연산 우선순위와 괄호 사용법을 이해할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 여러 변수와 연산자를 조합하여 의미 있는 결과를 출력할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> NumPy 배열을 생성하고 기본 연산(덧셈, 슬라이싱 등)을 수행할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이미지가 숫자 배열(픽셀값)로 구성되어 있음을 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> OpenCV로 이미지를 읽고, 그레이스케일 변환·크기 조정·영역 자르기를 수행할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 특정 색상 범위를 필터링하여 원하는 색만 추출할 수 있다</li>
 </ul>
-<p><strong>예상 학습 시간</strong>: 약 1시간 30분</p>
 <hr />
-<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>이전 장에서 우리는 <strong>변수</strong>라는 개념을 배웠어요. 기억나시나요?</p>
-<ul>
-<li><strong>변수</strong>는 데이터를 담는 이름표 붙은 상자였죠</li>
-<li><code>int</code>, <code>double</code>, <code>String</code> 같은 <strong>자료형</strong>도 배웠어요</li>
-<li><code>System.out.println()</code>으로 화면에 결과를 출력하는 것도요</li>
-<li><code>Scanner</code>를 사용해 키보드로 값을 입력받는 방법도 살짝 맛봤어요</li>
-</ul>
-<p>이번 장에서는 그 상자(변수)에 담긴 숫자들을 가지고 <strong>계산</strong>을 해볼 거예요! 😄</p>
-<hr />
-<h2 id="_3">💡 왜 이걸 배우나요?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>컴퓨터(Computer)라는 이름 자체가 <strong>"계산하는 기계"</strong>라는 뜻이에요. 컴퓨터가 탄생한 가장 근본적인 이유가 바로 <strong>계산</strong>이죠.</p>
-<p>우리가 일상에서 당연하게 하는 계산들을 떠올려 봐요:</p>
-<ul>
-<li>🛒 마트에서 장보기: "사과 3개 × 1,500원 = 4,500원"</li>
-<li>💰 더치페이: "총 금액 45,000원 ÷ 3명 = 1인당 15,000원"</li>
-<li>🎮 게임 점수: "기본 점수 100 + 보너스 50 = 총 150점"</li>
-<li>📊 평균 계산: "(80 + 90 + 70) ÷ 3 = 80점"</li>
-</ul>
-<p>프로그래밍에서 <strong>연산자(Operator)</strong>는 이런 계산을 컴퓨터에게 시키는 <strong>명령 기호</strong>예요. 연산자를 알면, 컴퓨터를 나만의 초고속 계산기로 쓸 수 있습니다!</p>
+<h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>🎯 <strong>이 장의 핵심 한 줄</strong>: 연산자는 컴퓨터에게 "이 숫자들로 이런 계산을 해!"라고 말하는 기호입니다.</p>
+<p><strong>생각해보기</strong> 🤔</p>
+<p>자율주행 자동차의 카메라가 도로를 찍었습니다. 이 사진 한 장은 컴퓨터 내부에서 어떤 모습일까요? 사람의 눈에는 "도로 위에 흰색 차선이 보이는 사진"이지만, 컴퓨터에게는 그저 <strong>수십만 개의 숫자 덩어리</strong>일 뿐입니다.</p>
 </blockquote>
-<hr />
-<h2 id="_4">📚 핵심 개념<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="1">개념 1: 산술 연산자 — 다섯 가지 계산 도구 🧮<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<h4 id="1_1">1. 비유로 시작<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
-<p>여러분의 책상 위에 <strong>계산기</strong>가 있다고 상상해 보세요. 계산기에는 <code>+</code>, <code>-</code>, <code>×</code>, <code>÷</code> 버튼이 있죠? Java에도 이와 똑같은 버튼들이 있어요. 다만 생김새가 약간 달라요. 키보드로 쉽게 입력할 수 있도록 기호가 조금 바뀐 거예요.</p>
-<h4 id="2">2. 정확한 정의<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
-<p><strong>산술 연산자(Arithmetic Operator)</strong>란, 숫자 데이터에 대해 수학적 계산을 수행하는 기호입니다. Java에는 다섯 가지 기본 산술 연산자가 있어요.</p>
+<p>자율주행 AI가 "저기 차선이 있다", "앞에 사람이 서 있다"를 판단하려면, 먼저 이 숫자 덩어리를 능숙하게 다룰 줄 알아야 합니다. 이때 사용하는 핵심 도구가 바로 <strong>NumPy</strong>와 <strong>OpenCV</strong>입니다.</p>
 <ul>
-<li><strong><code>+</code></strong> (덧셈): 두 수를 더합니다</li>
-<li><strong><code>-</code></strong> (뺄셈): 왼쪽 수에서 오른쪽 수를 뺍니다</li>
-<li><strong><code>*</code></strong> (곱셈): 두 수를 곱합니다 — 수학의 × 대신 별표(*)를 써요</li>
-<li><strong><code>/</code></strong> (나눗셈): 왼쪽 수를 오른쪽 수로 나눕니다 — 수학의 ÷ 대신 슬래시(/)를 써요</li>
-<li><strong><code>%</code></strong> (나머지): 나눈 후 <strong>나머지</strong>만 구합니다 — 이건 새로운 거예요!</li>
+<li><strong>NumPy</strong>: 대량의 숫자 데이터를 빠르게 처리하는 Python 라이브러리</li>
+<li><strong>OpenCV</strong>: 이미지와 영상을 처리하는 대표적인 컴퓨터 비전 라이브러리</li>
 </ul>
-<h4 id="3">3. 예시로 확인<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">   </span><span class="c1">// 13   (덧셈)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">   </span><span class="c1">// 7    (뺄셈)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">   </span><span class="c1">// 30   (곱셈)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">   </span><span class="c1">// 3    (나눗셈 — 어라? 3.33...이 아니네?)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1    (나머지 — 10 ÷ 3 = 3 나머지 1)</span>
+<p>이번 장에서는 NumPy로 숫자 배열을 다루는 기초를 익힌 뒤, 실제 이미지를 열어서 변환하고 저장하는 과정까지 직접 실습합니다. 이 과정은 앞으로 배울 객체 인식, 차선 검출 등 <strong>모든 자율주행 비전 기술의 출발점</strong>입니다.</p>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-numpy">개념 1: NumPy 배열 — 숫자를 담는 격자판<a class="headerlink" href="#1-numpy" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작</strong> 🎯</p>
+<p>엑셀 스프레드시트를 떠올려 보세요. 행과 열로 이루어진 칸에 숫자가 빼곡히 들어 있습니다. NumPy 배열(ndarray)은 이 스프레드시트와 비슷합니다. 다만 <strong>수학 연산에 특화</strong>되어 있어서, 수십만 개의 숫자를 한 번에 더하거나 곱하는 작업을 눈 깜짝할 사이에 처리합니다.</p>
+<p><strong>정확한 정의</strong> 📖</p>
+<p><strong>NumPy 배열(ndarray)</strong>은 같은 자료형의 숫자들이 격자 형태로 저장된 다차원 데이터 구조입니다. Python 기본 리스트보다 연산 속도가 수십~수백 배 빠릅니다.</p>
+<p><strong>예시로 확인</strong> 💻</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 1차원 배열: 센서 5개의 온도 값</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">36.5</span><span class="p">,</span> <span class="mf">37.0</span><span class="p">,</span> <span class="mf">36.8</span><span class="p">,</span> <span class="mf">37.2</span><span class="p">,</span> <span class="mf">36.9</span><span class="p">])</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>        <span class="c1"># [36.5 37.  36.8 37.2 36.9]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;numpy.ndarray&#39;&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 2차원 배열: 3행 4열 격자</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">])</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (3, 4) → 3행 4열</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>  <span class="c1"># int64 → 정수형</span>
 </span></code></pre></div>
+<p>배열에는 중요한 속성이 세 가지 있습니다.</p>
+<ul>
+<li><strong>shape</strong>: 배열의 크기 (행, 열, …)</li>
+<li><strong>dtype</strong>: 저장된 숫자의 자료형 (int64, float64, uint8 등)</li>
+<li><strong>ndim</strong>: 차원 수 (1차원, 2차원, 3차원…)</li>
+</ul>
 <blockquote>
-<p>💡 <strong>잠깐!</strong> <code>10 / 3</code>의 결과가 <code>3</code>이라고요? <code>3.333...</code>이 아니고요? 네, 맞아요! 이것이 바로 다음에 배울 <strong>정수 나눗셈</strong>의 비밀이에요.</p>
+<p><strong>알아보기</strong> 📌</p>
+<p><code>uint8</code>은 0~255 범위의 정수를 저장하는 자료형입니다. 이미지의 밝기 값이 정확히 이 범위에 해당하기 때문에, 이미지 데이터는 거의 항상 <code>uint8</code> 타입으로 저장됩니다.</p>
 </blockquote>
+<hr />
+<h3 id="2">개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작</strong> ✂️</p>
+<p>종이에 인쇄된 표에서 "3행부터 5행까지, 2열부터 4열까지"를 가위로 오려낸다고 상상해 보세요. NumPy에서는 이런 작업을 <strong>슬라이싱(slicing)</strong>이라 부르며, 코드 한 줄로 처리합니다.</p>
+<p><strong>정확한 정의</strong> 📖</p>
+<ul>
+<li><strong>배열 연산</strong>: 배열 전체에 동일한 수학 연산을 한꺼번에 적용하는 것 (벡터화 연산)</li>
+<li><strong>슬라이싱</strong>: 배열의 특정 범위를 인덱스로 지정하여 잘라내는 것</li>
+</ul>
+<p><strong>예시로 확인</strong> 💻</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 배열 연산: 모든 원소에 동시 적용</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">95</span><span class="p">])</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>    <span class="c1"># [85 95 80 90 100]  ← 전체에 5점 추가</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>    <span class="c1"># [160 180 150 170 190]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">&gt;</span> <span class="mi">85</span><span class="p">)</span>   <span class="c1"># [False  True False False  True]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># 2차원 배열 슬라이싱</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">],</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">120</span><span class="p">]</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">])</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>      <span class="c1"># 30 → 0행 2열의 값</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>       <span class="c1"># [50 60 70 80] → 1행 전체</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">])</span>       <span class="c1"># [40 80 120] → 3열 전체</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>   <span class="c1"># [[20 30] [60 70]] → 0~1행, 1~2열</span>
+</span></code></pre></div>
+<p>슬라이싱 문법 <code>[시작:끝]</code>에서 <strong>시작은 포함, 끝은 미포함</strong>입니다.</p>
+<div class="mermaid">graph LR
+    A["data[0:2, 1:3]"] --&gt; B["행: 0부터 2 미만&lt;br/&gt;(0행, 1행)"]
+    A --&gt; C["열: 1부터 3 미만&lt;br/&gt;(1열, 2열)"]
+    B --&gt; D["결과: 2×2 부분 배열"]
+    C --&gt; D</div>
+<blockquote>
+<p><strong>정리하기</strong> 📋</p>
+<ul>
+<li>배열 연산은 <strong>반복문 없이</strong> 모든 원소에 한꺼번에 적용됩니다</li>
+<li>슬라이싱은 <code>[행범위, 열범위]</code> 형태로 원하는 영역을 추출합니다</li>
+<li>이 두 가지가 이미지 처리의 기본 도구입니다</li>
+</ul>
+</blockquote>
+<hr />
+<h3 id="3">개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작</strong> 🎨</p>
+<p>모자이크 벽화를 가까이서 보면 작은 색 타일의 집합입니다. 멀리서 보면 하나의 그림으로 보이죠. 디지털 이미지도 마찬가지입니다. 수만 개의 <strong>픽셀(pixel)</strong>이라는 작은 색 점이 모여 하나의 사진을 만듭니다.</p>
+<p><strong>정확한 정의</strong> 📖</p>
+<p>디지털 이미지는 <strong>높이 × 너비 × 채널</strong> 크기의 3차원 NumPy 배열입니다.</p>
+<ul>
+<li><strong>높이(height)</strong>: 세로 픽셀 수</li>
+<li><strong>너비(width)</strong>: 가로 픽셀 수</li>
+<li><strong>채널(channel)</strong>: 색상 정보의 수 (그레이스케일은 1, 컬러는 3)</li>
+</ul>
+<p><strong>예시로 확인</strong> 💻</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># 그레이스케일 이미지: 4×5 픽셀 (높이 4, 너비 5)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 0 = 완전한 검정, 255 = 완전한 흰색</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">gray_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">gray_image</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (4, 5) → 높이 4, 너비 5</span>
+</span></code></pre></div>
+<p>컬러 이미지는 3개의 채널을 가집니다.</p>
+<div class="mermaid">graph TD
+    A["컬러 이미지&lt;br/&gt;(480, 640, 3)"] --&gt; B["채널 0: Blue&lt;br/&gt;파란색 밝기 480×640"]
+    A --&gt; C["채널 1: Green&lt;br/&gt;초록색 밝기 480×640"]
+    A --&gt; D["채널 2: Red&lt;br/&gt;빨간색 밝기 480×640"]
+
+    style B fill:#4444ff,color:#fff
+    style C fill:#44aa44,color:#fff
+    style D fill:#ff4444,color:#fff</div>
+<blockquote>
+<p><strong>알아보기</strong> 📌</p>
+<p>OpenCV는 색상 순서가 <strong>BGR</strong>(파랑-초록-빨강)입니다. 우리가 일반적으로 쓰는 RGB 순서와 반대라는 점을 꼭 기억하세요! 이것은 OpenCV를 처음 사용할 때 가장 많이 실수하는 부분입니다.</p>
+</blockquote>
+<hr />
+<h3 id="4-opencv">개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장<a class="headerlink" href="#4-opencv" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작</strong> 📷</p>
+<p>카메라로 사진을 찍고(읽기), 필터를 적용하고(변환), 갤러리에 저장하는(저장) 과정을 떠올려 보세요. OpenCV도 정확히 같은 순서로 이미지를 처리합니다.</p>
+<p><strong>정확한 정의</strong> 📖</p>
+<p><strong>OpenCV(Open Source Computer Vision Library)</strong>는 이미지와 영상을 처리하기 위한 오픈소스 라이브러리입니다. Python에서는 <code>cv2</code>라는 이름으로 사용합니다.</p>
+<p><strong>핵심 함수 세 가지</strong></p>
+<ul>
+<li><code>cv2.imread()</code> → 이미지 파일을 NumPy 배열로 읽기</li>
+<li><code>cv2.cvtColor()</code> → 색상 공간 변환 (컬러 ↔ 그레이스케일 등)</li>
+<li><code>cv2.imwrite()</code> → NumPy 배열을 이미지 파일로 저장</li>
+</ul>
+<p><strong>예시로 확인</strong> 💻</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 이미지 읽기</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;road.jpg&#39;</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;numpy.ndarray&#39;&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (480, 640, 3) → 높이, 너비, 채널</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># 그레이스케일 변환</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">gray</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1"># (480, 640) → 채널이 사라짐</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># 크기 조정</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">resized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">320</span><span class="p">,</span> <span class="mi">240</span><span class="p">))</span>  <span class="c1"># (너비, 높이) 순서 주의!</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">resized</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (240, 320, 3)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># 이미지 저장</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_gray.jpg&#39;</span><span class="p">,</span> <span class="n">gray</span><span class="p">)</span>
+</span></code></pre></div>
 <div class="mermaid">flowchart LR
-    A["10"] --- PLUS["+"] --- B1["3"] --- R1["= 13"]
-    C["10"] --- MINUS["-"] --- D1["3"] --- R2["= 7"]
-    E["10"] --- MULT["*"] --- F1["3"] --- R3["= 30"]
-    G["10"] --- DIV["/"] --- H1["3"] --- R4["= 3"]
-    I["10"] --- MOD["%"] --- J1["3"] --- R5["= 1"]</div>
-<hr />
-<h3 id="2_1">개념 2: 정수 나눗셈의 함정 — 소수점이 사라진다! 🕵️<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
-<h4 id="1_2">1. 비유로 시작<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
-<p>피자 1판(8조각)을 3명이 <strong>공평하게</strong> 나눠 먹는다고 해봐요.</p>
-<ul>
-<li>한 사람당 <strong>2조각</strong>씩 먹을 수 있어요</li>
-<li>그러면 <strong>2조각</strong>이 남죠</li>
-</ul>
-<p>수학적으로는 8 ÷ 3 = 2.666...이지만, 피자를 실제로 나눌 때는 "한 사람당 2조각, 나머지 2조각"이라고 말하는 게 자연스럽죠. <strong>정수 나눗셈</strong>이 바로 이 방식이에요!</p>
-<h4 id="2_2">2. 정확한 정의<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h4>
-<p><strong>정수(int)끼리 나누면, 결과도 정수</strong>입니다. 소수점 아래는 그냥 <strong>잘려 나가요(버림)</strong>. 반올림이 아니라 버림이에요!</p>
-<p>이걸 <strong>정수 나눗셈(Integer Division)</strong>이라고 해요.</p>
-<h4 id="3_1">3. 예시로 확인<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// 정수 ÷ 정수 = 정수 (소수점 버림!)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">   </span><span class="c1">// 3    (3.333... → 3)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 3    (3.5 → 3)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 0    (0.5 → 0)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">// 소수점을 살리고 싶다면? double을 사용!</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mf">10.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">   </span><span class="c1">// 3.3333333333333335</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mf">7.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 3.5</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mf">1.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 0.5</span>
-</span></code></pre></div>
-<p>핵심 규칙을 정리하면:</p>
-<ul>
-<li><strong><code>int / int</code></strong> → 결과는 <code>int</code> (소수점 사라짐)</li>
-<li><strong><code>double / int</code></strong> 또는 <strong><code>int / double</code></strong> → 결과는 <code>double</code> (소수점 살아남)</li>
-</ul>
-<div class="mermaid">flowchart TD
-    Q{"나누기 연산에서&lt;br/&gt;둘 다 int인가?"}
-    Q --&gt;|"둘 다 int"| A["결과: int&lt;br/&gt;소수점 버림!&lt;br/&gt;10 / 3 → 3"]
-    Q --&gt;|"하나라도 double"| B["결과: double&lt;br/&gt;소수점 유지!&lt;br/&gt;10.0 / 3 → 3.333..."]
-
-    style A fill:#ffcccc,stroke:#cc0000
-    style B fill:#ccffcc,stroke:#00cc00</div>
+    A["📁 이미지 파일&lt;br/&gt;road.jpg"] --&gt;|"cv2.imread()"| B["🔢 NumPy 배열&lt;br/&gt;(480, 640, 3)"]
+    B --&gt;|"cv2.cvtColor()"| C["🔢 그레이스케일&lt;br/&gt;(480, 640)"]
+    B --&gt;|"cv2.resize()"| D["🔢 크기 조정&lt;br/&gt;(240, 320, 3)"]
+    C --&gt;|"cv2.imwrite()"| E["📁 저장&lt;br/&gt;road_gray.jpg"]</div>
 <blockquote>
-<p>🔑 <strong>꿀팁</strong>: 나눗셈에서 소수점 결과가 필요하다면, 숫자 하나에 <code>.0</code>만 붙여주세요! <code>10</code>을 <code>10.0</code>으로 바꾸면 됩니다.</p>
+<p><strong>정리하기</strong> 📋</p>
+<p>OpenCV에서 이미지는 곧 NumPy 배열입니다. 이미지를 읽는 순간 NumPy 배열이 되고, NumPy의 모든 연산(슬라이싱, 사칙연산, 조건 필터링)을 그대로 적용할 수 있습니다.</p>
 </blockquote>
 <hr />
-<h3 id="3_2">개념 3: 나머지 연산자(%) — 숨은 영웅 🦸<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
-<h4 id="1_3">1. 비유로 시작<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h4>
-<p>초등학교 때 나눗셈을 처음 배울 때 기억나시나요?</p>
-<blockquote>
-<p>"13 나누기 4는 <strong>3</strong> 나머지 <strong>1</strong>"</p>
-</blockquote>
-<p>이때 <strong>/는 "몫"</strong>을 구하고, <strong>%는 "나머지"</strong>를 구하는 거예요. 즉, <code>/</code>와 <code>%</code>는 나눗셈의 <strong>짝꿍</strong>이에요!</p>
-<h4 id="2_3">2. 정확한 정의<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h4>
-<p><strong>나머지 연산자(%)</strong>는 왼쪽 수를 오른쪽 수로 나눈 후 <strong>나머지</strong>만 돌려주는 연산자입니다. 영어로는 <strong>modulo</strong> 또는 <strong>mod</strong>라고 불러요.</p>
-<h4 id="3_3">3. 예시로 확인<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h4>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">13</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">   </span><span class="c1">// 3  (몫)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">13</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1  (나머지)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w">   </span><span class="c1">// 0  (딱 나눠떨어지면 나머지가 0)</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 1</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// 0</span>
-</span></code></pre></div>
-<blockquote>
-<p>🤔 <strong>"나머지 연산이 어디에 쓰일까요?"</strong> 정말 많이 쓰여요!</p>
-</blockquote>
-<ul>
-<li><strong>짝수/홀수 판별</strong>: <code>number % 2</code>가 <code>0</code>이면 짝수, <code>1</code>이면 홀수</li>
-<li><strong>배수 확인</strong>: <code>number % 3</code>이 <code>0</code>이면 3의 배수</li>
-<li><strong>시간 계산</strong>: 150분은 몇 시간 몇 분? → <code>150 / 60 = 2시간</code>, <code>150 % 60 = 30분</code></li>
-<li><strong>자릿수 추출</strong>: <code>1234 % 10 = 4</code> (일의 자리)</li>
-</ul>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// 짝수/홀수 판별</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1 → 홀수!</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">// 150분을 시간과 분으로 변환</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">150</span><span class="p">;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">hours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">    </span><span class="c1">// 2시간</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="kt">int</span><span class="w"> </span><span class="n">minutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">  </span><span class="c1">// 30분</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hours</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;시간 &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;분&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// 2시간 30분</span>
-</span></code></pre></div>
-<blockquote>
-<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요?
-<code>/</code>는 몫, <code>%</code>는 나머지 — 이 둘은 항상 짝꿍이라고 기억하세요! 어렵게 느껴져도 괜찮아요. 실습하면서 자연스럽게 익숙해질 거예요!</p>
-</blockquote>
-<hr />
-<h3 id="4">개념 4: 연산 우선순위와 괄호 — 계산 순서의 비밀 📐<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
-<h4 id="1_4">1. 비유로 시작<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h4>
-<p>수학 시간에 배운 걸 떠올려 봐요:</p>
-<blockquote>
-<p>2 + 3 × 4 = ?</p>
-</blockquote>
-<p>답이 <code>20</code>인가요, <code>14</code>인가요? 정답은 <strong>14</strong>예요! 곱셈이 덧셈보다 먼저 계산되니까요. Java도 <strong>수학과 똑같은 규칙</strong>을 따릅니다.</p>
-<h4 id="2_4">2. 정확한 정의<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h4>
-<p><strong>연산 우선순위(Operator Precedence)</strong>란, 여러 연산자가 한 줄에 있을 때 <strong>어떤 연산을 먼저 할지</strong> 정해놓은 규칙이에요.</p>
-<p>Java의 산술 연산 우선순위:</p>
-<ul>
-<li><strong>1순위</strong>: <code>()</code> 괄호 안의 연산이 가장 먼저!</li>
-<li><strong>2순위</strong>: <code>*</code>, <code>/</code>, <code>%</code> (곱셈, 나눗셈, 나머지)</li>
-<li><strong>3순위</strong>: <code>+</code>, <code>-</code> (덧셈, 뺄셈)</li>
-<li><strong>같은 순위끼리</strong>는 <strong>왼쪽에서 오른쪽</strong> 순서로 계산</li>
-</ul>
-<h4 id="3_4">3. 예시로 확인<a class="headerlink" href="#3_4" title="Permanent link">&para;</a></h4>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// 우선순위 확인</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">       </span><span class="c1">// 14  (곱셈 먼저: 2 + 12 = 14)</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 20  (괄호 먼저: 5 * 4 = 20)</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">      </span><span class="c1">// 4   (곱셈 먼저: 10 - 6 = 4)</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="mi">10</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">    </span><span class="c1">// 24  (괄호 먼저: 8 * 3 = 24)</span>
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이제 직접 코드를 작성하며 배운 개념을 확인해 봅시다. Jupyter Notebook 또는 Google Colab에서 따라해 보세요.</p>
+<h3 id="step-1-numpy">Step 1: NumPy 배열 만들고 탐색하기<a class="headerlink" href="#step-1-numpy" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 다양한 방법으로 배열 만들기</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">zeros</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>        <span class="c1"># 0으로 채운 3×4 배열</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>          <span class="c1"># 1로 채운 2×3 배열</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">range_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># 0부터 20 미만까지 2씩 증가</span>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">// 같은 우선순위는 왼쪽 → 오른쪽</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">      </span><span class="c1">// 15  (왼쪽부터: 5 * 3 = 15)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w">      </span><span class="c1">// 5   (왼쪽부터: 20 / 4 = 5)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;zeros:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">zeros</span><span class="p">)</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ones:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ones</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range_arr:&quot;</span><span class="p">,</span> <span class="n">range_arr</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1"># 배열 모양 바꾸기</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>             <span class="c1"># [0, 1, 2, ..., 11]</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>        <span class="c1"># 3행 4열로 재배치</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;grid:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행 결과를 확인하세요.</strong> <code>reshape</code>은 원소 개수가 맞아야 합니다. 12개 원소를 3×4=12 칸에 재배치한 것입니다.</p>
+<hr />
+<h3 id="step-2">Step 2: 슬라이싱으로 배열의 일부 추출하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 5×5 배열 생성</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;전체 배열:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 다양한 슬라이싱</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">2행 전체:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:])</span>          <span class="c1"># [10 11 12 13 14]</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3열 전체:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">])</span>            <span class="c1"># [ 3  8 13 18 23]</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;중앙 3×3:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>     <span class="c1"># 1~3행, 1~3열</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># 값 변경: 특정 영역을 한꺼번에 수정</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">좌상단 수정 후:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>생각해보기</strong> 🤔</p>
+<p><code>grid[1:4, 1:4]</code>를 이미지에 적용한다면? 이미지의 특정 사각형 영역만 잘라내는 것과 같습니다. 이것이 바로 <strong>ROI(Region of Interest, 관심 영역) 추출</strong>입니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-3">Step 3: 간단한 이미지를 직접 만들어보기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>실제 이미지 파일이 없어도 NumPy로 이미지를 직접 만들 수 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># 검은 바탕의 200×300 컬러 이미지 만들기</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">canvas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;캔버스 shape:&quot;</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (200, 300, 3)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1"># 빨간 사각형 그리기 (BGR 순서이므로 B=0, G=0, R=255)</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">canvas</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span><span class="mi">200</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1"># 저장</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;red_rectangle.png&#39;</span><span class="p">,</span> <span class="n">canvas</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;이미지 저장 완료: red_rectangle.png&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>저장된 <code>red_rectangle.png</code>를 열어보면 검은 바탕 위에 빨간 사각형이 보입니다. 슬라이싱 <code>[50:150, 100:200]</code>이 곧 사각형의 위치와 크기를 결정한 것입니다.</p>
+<hr />
+<h3 id="step-4">Step 4: 실제 이미지 읽고 변환하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>여기서는 테스트용 이미지를 직접 생성하여 진행합니다. 실제 도로 사진이 있다면 파일명을 바꿔 사용하세요.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 테스트용 도로 이미지 생성 (실제로는 cv2.imread(&#39;road.jpg&#39;) 사용)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">road</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">road</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>    <span class="c1"># 하단: 회색 도로</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">road</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>      <span class="c1"># 상단: 하늘색 배경</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">road</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">150</span><span class="p">:</span><span class="mi">250</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>  <span class="c1"># 흰색 차선</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># 1) 그레이스케일 변환</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">road</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;원본 shape:&quot;</span><span class="p">,</span> <span class="n">road</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (300, 400, 3)</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;그레이 shape:&quot;</span><span class="p">,</span> <span class="n">gray</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (300, 400)</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1"># 2) 크기 조정 (절반 크기)</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="n">half</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">road</span><span class="p">,</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">))</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;절반 shape:&quot;</span><span class="p">,</span> <span class="n">half</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (150, 200, 3)</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="c1"># 3) 관심 영역(ROI) 추출 - 도로 부분만 잘라내기</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="n">roi</span> <span class="o">=</span> <span class="n">road</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROI shape:&quot;</span><span class="p">,</span> <span class="n">roi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>      <span class="c1"># (100, 400, 3)</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="c1"># 저장</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_original.png&#39;</span><span class="p">,</span> <span class="n">road</span><span class="p">)</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_gray.png&#39;</span><span class="p">,</span> <span class="n">gray</span><span class="p">)</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_half.png&#39;</span><span class="p">,</span> <span class="n">half</span><span class="p">)</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_roi.png&#39;</span><span class="p">,</span> <span class="n">roi</span><span class="p">)</span>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;모든 이미지 저장 완료!&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <div class="mermaid">flowchart TD
-    EXPR["2 + 3 * 4"]
-    STEP1["① 먼저: 3 * 4 = 12"]
-    STEP2["② 다음: 2 + 12 = 14"]
-    RESULT["결과: 14"]
+    A["원본 이미지&lt;br/&gt;(300, 400, 3)"] --&gt; B["그레이스케일&lt;br/&gt;(300, 400)"]
+    A --&gt; C["크기 조정&lt;br/&gt;(150, 200, 3)"]
+    A --&gt; D["ROI 추출&lt;br/&gt;(100, 400, 3)"]
 
-    EXPR --&gt; STEP1 --&gt; STEP2 --&gt; RESULT
-
-    EXPR2["(2 + 3) * 4"]
-    STEP3["① 괄호 먼저: 2 + 3 = 5"]
-    STEP4["② 다음: 5 * 4 = 20"]
-    RESULT2["결과: 20"]
-
-    EXPR2 --&gt; STEP3 --&gt; STEP4 --&gt; RESULT2</div>
-<blockquote>
-<p>🔑 <strong>꿀팁</strong>: 우선순위가 헷갈릴 때는 그냥 <strong>괄호를 쓰세요!</strong> 괄호는 항상 가장 먼저 계산되니까, 의도를 명확하게 표현할 수 있어요. 코드를 읽는 다른 사람(미래의 나 포함!)에게도 친절한 방법이에요.</p>
-</blockquote>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// 괄호를 사용하면 의도가 분명해져요</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">price</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">quantity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">discount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">500</span><span class="p">;</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">// 의도: (가격 × 수량) - 할인</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">price</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">quantity</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">discount</span><span class="p">;</span><span class="w">   </span><span class="c1">// 2500 ✅ 명확!</span>
-</span></code></pre></div>
+    B --&gt; E["road_gray.png"]
+    C --&gt; F["road_half.png"]
+    D --&gt; G["road_roi.png"]</div>
 <hr />
-<h2 id="_5">🔨 따라하기: 나만의 계산기 프로그램 만들기 🖩<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>이제 배운 내용을 활용해서 <strong>두 숫자를 입력받고, 다섯 가지 연산 결과를 한 번에 보여주는 계산기</strong>를 만들어 볼게요!</p>
-<h3 id="step-1">Step 1: 프로젝트 준비<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<p>에디터(VS Code, IntelliJ 등)를 열고, <code>Calculator.java</code>라는 새 파일을 만들어 주세요.</p>
-<p>아래처럼 기본 틀을 작성합니다:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Calculator</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="c1">// 여기에 코드를 작성할 거예요!</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+<h3 id="step-5">Step 5: 이미지 밝기 조절하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>NumPy 배열 연산을 이미지에 바로 적용할 수 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 이미지 읽기 (Step 4에서 만든 이미지 사용)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;road_original.png&#39;</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># 밝기 올리기: 모든 픽셀에 50을 더함</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">bright</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># 밝기 내리기: 모든 픽셀에서 50을 뺌</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">dark</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span> <span class="o">-</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_bright.png&#39;</span><span class="p">,</span> <span class="n">bright</span><span class="p">)</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_dark.png&#39;</span><span class="p">,</span> <span class="n">dark</span><span class="p">)</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;밝기 조절 이미지 저장 완료!&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <blockquote>
-<p>✅ <strong>체크포인트</strong>: 파일 이름이 <code>Calculator.java</code>인지, <code>public class Calculator</code>와 이름이 같은지 확인하세요!</p>
+<p><strong>알아보기</strong> 📌</p>
+<p><code>np.clip()</code>은 값의 범위를 제한합니다. 픽셀값에 50을 더하면 255를 넘을 수 있고, 50을 빼면 0 미만이 될 수 있습니다. <code>clip(값, 0, 255)</code>로 안전하게 범위를 지켜줍니다. <code>astype(np.int16)</code>으로 잠시 자료형을 바꾸는 이유도 <code>uint8</code>에서는 255를 넘으면 다시 0부터 돌아가는 <strong>오버플로우</strong> 문제가 생기기 때문입니다.</p>
 </blockquote>
 <hr />
-<h3 id="step-2-scanner">Step 2: Scanner로 두 숫자 입력받기<a class="headerlink" href="#step-2-scanner" title="Permanent link">&para;</a></h3>
-<p><code>main</code> 메서드 안에 다음 코드를 추가하세요:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;===== 나만의 계산기 =====&quot;</span><span class="p">);</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;첫 번째 정수를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;두 번째 정수를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="kt">int</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<h3 id="step-6-hsv">Step 6: 특정 색상 추출하기 (HSV 필터링)<a class="headerlink" href="#step-6-hsv" title="Permanent link">&para;</a></h3>
+<p>자율주행에서 차선을 검출하려면 특정 색상만 걸러내야 합니다. 이를 <strong>색상 필터링</strong>이라고 합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># 테스트 이미지: 다양한 색이 포함된 이미지 생성</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">img</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>         <span class="c1"># 회색 도로</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>           <span class="c1"># 하늘</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">img</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">150</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>      <span class="c1"># 노란 차선 (BGR)</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">img</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">250</span><span class="p">:</span><span class="mi">350</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>   <span class="c1"># 흰색 차선</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c1"># BGR → HSV 변환</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="n">hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c1"># 노란색 범위 지정 (HSV 기준)</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">lower_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">upper_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">35</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">])</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c1"># 마스크 생성: 노란색인 픽셀만 흰색(255), 나머지는 검정(0)</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span> <span class="n">lower_yellow</span><span class="p">,</span> <span class="n">upper_yellow</span><span class="p">)</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c1"># 원본에서 노란색 부분만 추출</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="n">result</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;yellow_mask.png&#39;</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;yellow_only.png&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;노란색 필터링 완료!&quot;</span><span class="p">)</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;마스크 shape:&quot;</span><span class="p">,</span> <span class="n">mask</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;마스크에서 흰색 픽셀 수:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">255</span><span class="p">))</span>
 </span></code></pre></div>
-<p>여기서 <code>System.out.print()</code>는 <code>println()</code>과 달리 <strong>줄바꿈 없이</strong> 출력해요. 그래서 사용자가 같은 줄에 숫자를 입력할 수 있어요.</p>
+<div class="mermaid">flowchart LR
+    A["원본 이미지&lt;br/&gt;(BGR)"] --&gt;|"cvtColor&lt;br/&gt;BGR→HSV"| B["HSV 이미지"]
+    B --&gt;|"inRange&lt;br/&gt;노란색 범위"| C["마스크&lt;br/&gt;(흰/검)"]
+    A --&gt; D["bitwise_and"]
+    C --&gt; D
+    D --&gt; E["노란색만&lt;br/&gt;추출된 이미지"]</div>
 <blockquote>
-<p>✅ <strong>체크포인트</strong>: 실행해서 숫자 두 개를 입력할 수 있는지 확인하세요!</p>
+<p><strong>알아보기</strong> 📌</p>
+<p><strong>HSV 색상 공간</strong>은 색을 세 가지로 분리합니다.
+- <strong>H(Hue)</strong>: 색상 (0~179, OpenCV 기준). 빨강≈0, 노랑≈25, 초록≈60, 파랑≈120
+- <strong>S(Saturation)</strong>: 채도, 색의 선명도 (0~255)
+- <strong>V(Value)</strong>: 명도, 밝기 (0~255)</p>
+<p>BGR보다 HSV에서 특정 색상을 분리하기가 훨씬 쉽습니다. 밝기가 변해도 H 값은 비교적 일정하기 때문입니다.</p>
 </blockquote>
 <hr />
-<h3 id="step-3">Step 3: 다섯 가지 연산 수행하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
-<p>입력받은 코드 아래에 연산 결과를 변수에 저장하는 코드를 추가합니다:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// 다섯 가지 연산 수행</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">          </span><span class="c1">// 덧셈</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">   </span><span class="c1">// 뺄셈</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">      </span><span class="c1">// 곱셈</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">     </span><span class="c1">// 몫 (정수 나눗셈)</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">    </span><span class="c1">// 나머지</span>
-</span></code></pre></div>
-<blockquote>
-<p>💡 <strong>포인트</strong>: 연산 결과를 바로 출력해도 되지만, <strong>변수에 저장해두면</strong> 나중에 여러 번 사용할 수 있어서 편리해요!</p>
-</blockquote>
-<hr />
-<h3 id="step-4">Step 4: 결과 출력하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
-<p>이제 계산 결과를 예쁘게 출력해 봐요:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// 결과 출력</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">  </span><span class="c1">// 빈 줄 하나</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;===== 계산 결과 =====&quot;</span><span class="p">);</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; + &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; - &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">difference</span><span class="p">);</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; * &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">product</span><span class="p">);</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; / &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (몫)&quot;</span><span class="p">);</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; % &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (나머지)&quot;</span><span class="p">);</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: <code>10</code>과 <code>3</code>을 입력해 보세요. 결과가 아래와 같이 나와야 해요:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>===== 계산 결과 =====
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>10 + 3 = 13
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>10 - 3 = 7
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>10 * 3 = 30
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>10 / 3 = 3 (몫)
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>10 % 3 = 1 (나머지)
-</span></code></pre></div></p>
-</blockquote>
-<hr />
-<h3 id="step-5">Step 5: 소수점 나눗셈 결과도 추가하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
-<p>정수 나눗셈만으로는 아쉬우니, <strong>실수 나눗셈 결과</strong>도 함께 보여주면 어떨까요?</p>
-<p>Step 3의 연산 코드 아래에 한 줄을 추가하세요:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">realDivision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span><span class="w">  </span><span class="c1">// 실수 나눗셈</span>
-</span></code></pre></div>
-<p>여기서 <code>(double)</code>은 <strong>형변환(casting)</strong>이라고 해요. <code>num1</code>을 계산할 때 잠깐 <code>double</code>로 바꿔서, 소수점 결과를 얻을 수 있게 하는 거예요. 마치 "이 정수를 실수처럼 취급해줘!"라고 말하는 것과 같아요.</p>
-<p>그리고 출력 부분에 한 줄을 추가합니다:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ÷ &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">realDivision</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (실수 나눗셈)&quot;</span><span class="p">);</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 다시 <code>10</code>과 <code>3</code>을 입력하면, <code>10 ÷ 3 = 3.3333333333333335 (실수 나눗셈)</code> 이 추가로 나타나야 해요!</p>
-</blockquote>
-<hr />
-<h3 id="step-6">Step 6: 보너스 — 시간 변환 기능 추가 ⏰<a class="headerlink" href="#step-6" title="Permanent link">&para;</a></h3>
-<p>나머지 연산의 실전 활용을 경험해 봐요! 계산기 코드 맨 아래에 다음을 추가하세요:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">// 보너스: 시간 변환</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;변환할 분(minute)을 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">hours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">     </span><span class="c1">// 몫 = 시간</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">mins</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w">      </span><span class="c1">// 나머지 = 분</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;분 = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">hours</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;시간 &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">mins</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;분&quot;</span><span class="p">);</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: <code>135</code>를 입력하면 <code>135분 = 2시간 15분</code>이 나와야 해요!</p>
-<p>💡 <strong>여기까지 정말 잘 따라오셨어요!</strong> 🎉
-혹시 에러가 나더라도 당황하지 마세요. 오타를 꼼꼼히 확인해 보면 대부분 해결됩니다!</p>
-</blockquote>
-<hr />
-<h2 id="_6">📝 전체 코드<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>아래는 완성된 전체 코드예요. 복사해서 바로 실행할 수 있습니다!</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Calculator</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">scanner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="c1">// === 계산기 ===</span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;===== 나만의 계산기 =====&quot;</span><span class="p">);</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;첫 번째 정수를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
-</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;두 번째 정수를 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
-</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">        </span><span class="c1">// 다섯 가지 연산 수행</span>
-</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">difference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">product</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">realDivision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num2</span><span class="p">;</span>
-</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>
-</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="w">        </span><span class="c1">// 결과 출력</span>
-</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;===== 계산 결과 =====&quot;</span><span class="p">);</span>
-</span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; + &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span>
-</span><span id="__span-14-28"><a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; - &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">difference</span><span class="p">);</span>
-</span><span id="__span-14-29"><a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; * &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">product</span><span class="p">);</span>
-</span><span id="__span-14-30"><a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; / &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">quotient</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (몫)&quot;</span><span class="p">);</span>
-</span><span id="__span-14-31"><a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; % &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (나머지)&quot;</span><span class="p">);</span>
-</span><span id="__span-14-32"><a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ÷ &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">realDivision</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; (실수 나눗셈)&quot;</span><span class="p">);</span>
-</span><span id="__span-14-33"><a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a>
-</span><span id="__span-14-34"><a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="w">        </span><span class="c1">// === 보너스: 시간 변환 ===</span>
-</span><span id="__span-14-35"><a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-</span><span id="__span-14-36"><a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;변환할 분(minute)을 입력하세요: &quot;</span><span class="p">);</span>
-</span><span id="__span-14-37"><a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-</span><span id="__span-14-38"><a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a>
-</span><span id="__span-14-39"><a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">hours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
-</span><span id="__span-14-40"><a id="__codelineno-14-40" name="__codelineno-14-40" href="#__codelineno-14-40"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mins</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
-</span><span id="__span-14-41"><a id="__codelineno-14-41" name="__codelineno-14-41" href="#__codelineno-14-41"></a>
-</span><span id="__span-14-42"><a id="__codelineno-14-42" name="__codelineno-14-42" href="#__codelineno-14-42"></a><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">totalMinutes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;분 = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">hours</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;시간 &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">mins</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;분&quot;</span><span class="p">);</span>
-</span><span id="__span-14-43"><a id="__codelineno-14-43" name="__codelineno-14-43" href="#__codelineno-14-43"></a>
-</span><span id="__span-14-44"><a id="__codelineno-14-44" name="__codelineno-14-44" href="#__codelineno-14-44"></a><span class="w">        </span><span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-</span><span id="__span-14-45"><a id="__codelineno-14-45" name="__codelineno-14-45" href="#__codelineno-14-45"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-14-46"><a id="__codelineno-14-46" name="__codelineno-14-46" href="#__codelineno-14-46"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>실행 예시:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>===== 나만의 계산기 =====
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>첫 번째 정수를 입력하세요: 17
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>두 번째 정수를 입력하세요: 5
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>===== 계산 결과 =====
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>17 + 5 = 22
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>17 - 5 = 12
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>17 * 5 = 85
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>17 / 5 = 3 (몫)
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>17 % 5 = 2 (나머지)
-</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>17 ÷ 5 = 3.4 (실수 나눗셈)
-</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
-</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>변환할 분(minute)을 입력하세요: 200
-</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>200분 = 3시간 20분
-</span></code></pre></div>
-<hr />
-<h2 id="_7">⚠️ 자주 하는 실수<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="1_5">실수 1: 정수 나눗셈 결과가 이상해요! 😱<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h3>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">);</span><span class="w">  </span><span class="c1">// 2 (2.5가 아님!)</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong>: <code>int / int</code>는 결과도 <code>int</code>예요. 소수점은 반올림이 아니라 <strong>버림</strong> 처리됩니다.</li>
-<li><strong>이렇게 해결해요</strong>: 소수점 결과가 필요하면, 하나라도 <code>double</code>로 만들어 주세요!</li>
-</ul>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">    </span><span class="c1">// 2.5 ✅</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1">// 또는</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// 2.5 ✅</span>
-</span></code></pre></div>
-<hr />
-<h3 id="2-0">실수 2: 0으로 나누기 — 프로그램이 죽어요! 💀<a class="headerlink" href="#2-0" title="Permanent link">&para;</a></h3>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="c1">// ❌ ArithmeticException 에러 발생!</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong>: 수학에서도 0으로 나누는 건 불가능하죠. Java도 마찬가지예요. <code>ArithmeticException</code>이라는 에러가 발생하면서 프로그램이 <strong>강제 종료</strong>됩니다.</li>
-<li><strong>이렇게 해결해요</strong>: 나누기 전에 <strong>0이 아닌지 확인</strong>하세요! (조건문은 다음 장에서 배우지만, 일단 0이 아닌 수를 입력하는 걸로 해결해요.)</li>
-</ul>
-<p>```java
-// 지금은 이렇게 주의하세요
-System.out.print("0이 아닌 정수를 입력하세요: ");
-int num2 =</p>
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>아래는 이번 장의 핵심 내용을 하나의 파일로 정리한 전체 코드입니다.</p>
+<p>```python
+"""
+Chapter 5: NumPy와 이미지 데이터 다루기 - 전체 실습 코드
+실행 환경: Python 3.8+, numpy, opencv-python 설치 필요
+설치: pip install numpy opencv-python
+"""</p>
+<p>import numpy as np
+import cv2</p>
+<h1 id="_6">=============================================<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
+<h1 id="part-1-numpy">Part 1: NumPy 배열 기초<a class="headerlink" href="#part-1-numpy" title="Permanent link">&para;</a></h1>
+<h1 id="_7">=============================================<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<p>print("=" * 50)
+print("Part 1: NumPy 배열 기초")
+print("=" * 50)</p>
+<h1 id="_8">배열 생성<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
+<p>arr = np.arange(20).reshape(4, 5)
+print("4×5 배열:\n", arr)
+print("shape:", arr.shape, "/ dtype:", arr.dtype)</p>
+<h1 id="_9">슬라이싱<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
+<p>print("\n2행:", arr[2, :])
+print("중앙 2×3:\n", arr[1:3, 1:4])</p>
+<h1 id="_10">배열 연산<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
+<p>print("\n전체 +10:\n", arr + 10)
+print("짝수인 위치:\n", arr % 2 == 0)</p>
+<h1 id="_11">=============================================<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h1>
+<h1 id="part-2">Part 2: 이미지 생성 및 기본 변환<a class="headerlink" href="#part-2" title="Permanent link">&para;</a></h1>
+<h1 id="_12">=============================================<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h1>
+<p>print("\n" + "=" * 50)
+print("Part 2: 이미지 생성 및 변환")
+print("=" * 50)</p>
+<h1 id="_13">도로 이미지 생성<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h1>
+<p>road = np.zeros((300, 400, 3), dtype=np.uint8)
+road[0:200, :] = [200, 150, 100]           # 하늘
+road[200:300, :] = [100, 100, 100]         # 도로
+road[250:260, 50:150] = [0, 255, 255]      # 노란 차선
+road[250:260, 250:350] = [255, 255, 255]   # 흰 차선</p>
+<h1 id="_14">기본 변환<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h1>
+<p>gray = cv2.cvtColor(road, cv2.COLOR_BGR2GRAY)
+resized = cv2.resize(road, (200, 150))
+roi = road[200:300, :]</p>
+<h1 id="_15">밝기 조절<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h1>
+<p>bright = np.clip(road.astype(np.int16) + 50, 0, 255).astype(np.uint8)</p>
+<p>print(f"원본: {road.shape}")
+print(f"그레이: {gray.shape}")
+print(f"리사이즈: {resized.shape}")
+print(f"ROI: {roi.shape}")</p>
+<h1 id="_16">=============================================<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h1>
+<h1 id="part-3">Part 3: 색상 필터링 (차선 검출 기초)<a class="headerlink" href="#part-3" title="Permanent link">&para;</a></h1>
+<h1 id="_17">=============================================<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h1>
+<p>print("\n" + "=" * 50)
+print("Part 3: 색상 필터링")
+print("=" * 50)</p>
+<h1 id="hsv">HSV 변환 후 노란색 필터링<a class="headerlink" href="#hsv" title="Permanent link">&para;</a></h1>
+<p>hsv = cv2.cvtColor(road, cv2.COLOR_BGR2HSV)
+lower_yellow = np.array([20, 100, 100])
+upper_yellow = np.array([35, 255, 255])
+mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
+yellow_only = cv2.bitwise_and(road, road, mask=mask_yellow)</p>
+<h1 id="_18">흰색 필터링<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h1>
+<p>lower_</p>
 
 
 

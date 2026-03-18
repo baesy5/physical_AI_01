@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="컴퓨터를 몰라도 괜찮아, 2주 뒤엔 내 손으로 게임을 만든다! 프로그래밍 경험이 전혀 없는 고등학생도 혼자서 완주할 수 있는 C언어 입문 자기주도 학습서입니다.">
+        <meta name="description" content="시뮬레이션에서 실제 도로까지, CARLA 시뮬레이터와 RC카를 활용하여 직접 만들며 이해하는 8주 완성 Physical AI 자율주행 프로젝트 교과서입니다.">
       
       
         <meta name="author" content="Created with EduFlow">
       
       
-        <link rel="canonical" href="https://baesy5.github.io/c_language_01/chapter07/">
+        <link rel="canonical" href="https://baesy5.github.io/physical_AI_01/chapter07/">
       
       
         <link rel="prev" href="../chapter06/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>같은 일을 반복하기 — for와 while 반복문 - 처음 만드는 나의 첫 C언어 게임</title>
+        <title>CARLA 센서 시스템 이해하기 - Physical AI: 자율주행으로 배우는 인공지능</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#for-while" class="md-skip">
+        <a href="#chapter-7-carla" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-header__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-header__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            처음 만드는 나의 첫 C언어 게임
+            Physical AI: 자율주행으로 배우는 인공지능
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              같은 일을 반복하기 — for와 while 반복문
+              CARLA 센서 시스템 이해하기
             
           </span>
         </div>
@@ -244,7 +244,29 @@
   
     
   
-  Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+  Part 1 - [1권] Part 1: Physical AI의 세계로
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter04/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 2 - [1권] Part 2: Python과 개발 환경 준비
 
         </a>
       </li>
@@ -262,13 +284,13 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../chapter06/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
     
   
-  Part 2 - [1권] 프로그램에 판단력 불어넣기
+  Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
 
         </a>
       </li>
@@ -284,13 +306,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter09/" class="md-tabs__link">
+        <a href="../chapter10/" class="md-tabs__link">
           
   
   
     
   
-  Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
+  Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
 
         </a>
       </li>
@@ -306,13 +328,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter13/" class="md-tabs__link">
+        <a href="../chapter15/" class="md-tabs__link">
           
   
   
     
   
-  Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+  Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
 
         </a>
       </li>
@@ -328,13 +350,35 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter16/" class="md-tabs__link">
+        <a href="../chapter18/" class="md-tabs__link">
           
   
   
     
   
-  Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+  Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter22/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Part 7 - [2권] Part 7: 프로젝트 완성과 발표
 
         </a>
       </li>
@@ -364,13 +408,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="처음 만드는 나의 첫 C언어 게임" class="md-nav__button md-logo" aria-label="처음 만드는 나의 첫 C언어 게임" data-md-component="logo">
+    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-nav__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    처음 만드는 나의 첫 C언어 게임
+    Physical AI: 자율주행으로 배우는 인공지능
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -417,10 +461,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -444,7 +484,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
     
@@ -460,7 +500,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 1 - [1권] 프로그래밍 세계에 첫 발 내딛기
+    Part 1 - [1권] Part 1: Physical AI의 세계로
   
 
           </label>
@@ -480,7 +520,7 @@
   <span class="md-ellipsis">
     
   
-    왜 C언어를 배워야 할까? — 이 책의 사용법
+    Physical AI란 무엇인가?
   
 
     
@@ -508,7 +548,7 @@
   <span class="md-ellipsis">
     
   
-    내 컴퓨터에 작업실 꾸미기 — 개발 환경 설치
+    자율주행의 원리: 인지-판단-제어
   
 
     
@@ -536,7 +576,7 @@
   <span class="md-ellipsis">
     
   
-    처음 만나는 C언어 — Hello, World!
+    시뮬레이션이 중요한 이유
   
 
     
@@ -549,6 +589,73 @@
   
 
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -564,7 +671,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 담는 상자 — 변수와 자료형
+    Python 핵심 복습: 자율주행에 쓰이는 문법
   
 
     
@@ -592,7 +699,35 @@
   <span class="md-ellipsis">
     
   
-    컴퓨터에게 계산 시키기 — 연산자 활용
+    NumPy와 이미지 데이터 다루기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CARLA 시뮬레이터 설치와 첫 주행
   
 
     
@@ -646,17 +781,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
     
@@ -667,44 +802,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 2 - [1권] 프로그램에 판단력 불어넣기
+    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter06/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    갈림길에서 선택하기 — if 조건문
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -729,7 +836,7 @@
   <span class="md-ellipsis">
     
   
-    같은 일을 반복하기 — for와 while 반복문
+    CARLA 센서 시스템 이해하기
   
 
     
@@ -747,7 +854,7 @@
   <span class="md-ellipsis">
     
   
-    같은 일을 반복하기 — for와 while 반복문
+    CARLA 센서 시스템 이해하기
   
 
     
@@ -776,7 +883,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장의 학습 목표
+        🎯 이 장에서 배우는 것
       
     </span>
   </a>
@@ -787,17 +894,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         💡 왜 이걸 배우나요?
       
     </span>
@@ -806,7 +902,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -818,10 +914,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-for-10" class="md-nav__link">
+  <a href="#1-carla" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: for 반복문 — "운동장 10바퀴 돌기"
+        개념 1: CARLA 센서의 분류 체계
       
     </span>
   </a>
@@ -829,10 +925,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-while" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: while 반복문 — "배부를 때까지 먹기"
+        개념 2: 카메라 센서와 이미지 데이터
       
     </span>
   </a>
@@ -840,10 +936,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-break" class="md-nav__link">
+  <a href="#3-lidar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 무한 루프와 break — "비상 탈출구"
+        개념 3: LiDAR와 포인트 클라우드
       
     </span>
   </a>
@@ -851,10 +947,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-for-while" class="md-nav__link">
+  <a href="#4-gpsimu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 4: for와 while 비교 정리
+        개념 4: 상태 센서 (충돌·GPS·IMU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 기본 설정 — 세계와 차량 생성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-rgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: RGB 카메라 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 시맨틱 세그멘테이션 카메라 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-lidar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: LiDAR 센서 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 상태 센서 (충돌·GPS) 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: 차량 주행 및 데이터 확인
       
     </span>
   </a>
@@ -870,78 +1049,6 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-1-10-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 1부터 10까지 출력하기 (for문 기본)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-1-100" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 1부터 100까지 합 구하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 구구단 한 단 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: while문으로 숫자 맞히기 게임 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: "다시 하시겠습니까?" 기능 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
@@ -950,7 +1057,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 자주 하는 실수
@@ -958,60 +1065,10 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: 무한 루프에 빠지기 😵
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: for문 세미콜론 위치 오류
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 3: 조건식에서 = 과 == 혼동
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-off-by-one" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 4: 반복 횟수가 하나 많거나 적음 (Off-by-one)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 스스로 점검하기
@@ -1023,21 +1080,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 이 장의 핵심 정리
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🤔 스스로 점검해 봐요
+        기본 문제
       
     </span>
   </a>
@@ -1046,28 +1092,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 더 해보기
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 다음 장으로
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1094,7 +1118,7 @@
   <span class="md-ellipsis">
     
   
-    여기까지 잘 왔어! — 중간 점검 미니 게임 만들기
+    자율주행 학습 데이터 수집하기
   
 
     
@@ -1107,75 +1131,6 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 3 - [1권] 코드를 깔끔하게 정리하는 힘 — 함수
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1191,91 +1146,7 @@
   <span class="md-ellipsis">
     
   
-    왜 코드를 나눠야 할까? — 함수가 필요한 이유
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter10/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    나만의 함수 만들기 — 함수 정의와 호출
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter11/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수에 값을 주고받기 — 매개변수와 반환값 깊이 이해하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter12/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    함수로 코드를 리모델링하자 — 업다운 게임 리팩토링
+    데이터 전처리와 증강
   
 
     
@@ -1304,6 +1175,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1334,7 +1209,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
     
@@ -1350,11 +1225,95 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 4 - [2권] 게임을 더 풍성하게 — 배열과 실전 도구
+    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    딥러닝 기초: 신경망의 원리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    합성곱 신경망(CNN) 이해하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End 자율주행 모델 설계
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1370,7 +1329,7 @@
   <span class="md-ellipsis">
     
   
-    데이터를 줄 세우기 — 배열 기초
+    모델 학습과 하이퍼파라미터 튜닝
   
 
     
@@ -1398,7 +1357,102 @@
   <span class="md-ellipsis">
     
   
-    여러 선택지 깔끔하게 처리하기 — switch문과 게임 메뉴
+    CARLA에서 자율주행 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    차선 인식과 차선 유지
   
 
     
@@ -1419,14 +1473,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter15/" class="md-nav__link">
+      <a href="../chapter16/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    게임에 우연을 더하자 — 난수와 유용한 함수들
+    장애물 감지와 비상 정지
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    통합 자율주행 시스템 완성 (시뮬레이션)
   
 
     
@@ -1464,8 +1546,6 @@
       
         
       
-        
-      
     
     
     
@@ -1479,17 +1559,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
     
@@ -1500,72 +1580,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 5 - [2권] 최종 프로젝트 — 내 손으로 게임 완성하기
+    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    게임을 설계하자 — 기획부터 함수 구조 짜기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter17/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    직접 만드는 가위바위보 게임 — 코딩 실전
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1581,7 +1605,7 @@
   <span class="md-ellipsis">
     
   
-    보너스 도전! OX 퀴즈 게임 만들기
+    라즈베리파이와 RC카 하드웨어 구성
   
 
     
@@ -1609,7 +1633,7 @@
   <span class="md-ellipsis">
     
   
-    내 코드 다듬기 — 자주 틀리는 오류 모음과 디버깅 팁
+    센서 연결과 실시간 데이터 수집
   
 
     
@@ -1637,7 +1661,186 @@
   <span class="md-ellipsis">
     
   
-    축하해, 게임 개발자! — 다음 단계로 나아가기
+    Sim-to-Real: 모델 이식과 최적화
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RC카 자율주행 실전 테스트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    자율주행 시스템 최종 통합
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로젝트 문서화와 발표 준비
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    최종 발표와 자율주행 시연
   
 
     
@@ -1688,7 +1891,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장의 학습 목표
+        🎯 이 장에서 배우는 것
       
     </span>
   </a>
@@ -1699,17 +1902,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 미리 알아야 할 것
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         💡 왜 이걸 배우나요?
       
     </span>
@@ -1718,7 +1910,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1730,10 +1922,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-for-10" class="md-nav__link">
+  <a href="#1-carla" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: for 반복문 — "운동장 10바퀴 돌기"
+        개념 1: CARLA 센서의 분류 체계
       
     </span>
   </a>
@@ -1741,10 +1933,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-while" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: while 반복문 — "배부를 때까지 먹기"
+        개념 2: 카메라 센서와 이미지 데이터
       
     </span>
   </a>
@@ -1752,10 +1944,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-break" class="md-nav__link">
+  <a href="#3-lidar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 무한 루프와 break — "비상 탈출구"
+        개념 3: LiDAR와 포인트 클라우드
       
     </span>
   </a>
@@ -1763,10 +1955,93 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-for-while" class="md-nav__link">
+  <a href="#4-gpsimu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 4: for와 while 비교 정리
+        개념 4: 상태 센서 (충돌·GPS·IMU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 기본 설정 — 세계와 차량 생성하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-rgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: RGB 카메라 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 시맨틱 세그멘테이션 카메라 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-lidar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: LiDAR 센서 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 상태 센서 (충돌·GPS) 부착하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: 차량 주행 및 데이터 확인
       
     </span>
   </a>
@@ -1782,78 +2057,6 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-1-10-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 1부터 10까지 출력하기 (for문 기본)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-1-100" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 1부터 100까지 합 구하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: 구구단 한 단 출력하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 4: while문으로 숫자 맞히기 게임 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 5: "다시 하시겠습니까?" 기능 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
@@ -1862,7 +2065,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 자주 하는 실수
@@ -1870,60 +2073,10 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚠️ 자주 하는 실수">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 1: 무한 루프에 빠지기 😵
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 2: for문 세미콜론 위치 오류
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 3: 조건식에서 = 과 == 혼동
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-off-by-one" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        실수 4: 반복 횟수가 하나 많거나 적음 (Off-by-one)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 스스로 점검하기
@@ -1935,21 +2088,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 이 장의 핵심 정리
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🤔 스스로 점검해 봐요
+        기본 문제
       
     </span>
   </a>
@@ -1958,28 +2100,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 더 해보기
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 다음 장으로
-      
-    </span>
-  </a>
   
 </li>
       
@@ -2000,449 +2120,405 @@
 
 
 
-<h1 id="for-while">같은 일을 반복하기 — for와 while 반복문<a class="headerlink" href="#for-while" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>이 장을 마치면 다음을 할 수 있습니다:</p>
+<h1 id="chapter-7-carla">Chapter 7: CARLA 센서 시스템 이해하기<a class="headerlink" href="#chapter-7-carla" title="Permanent link">&para;</a></h1>
+<p><strong>Part 3: CARLA에서 데이터 수집과 전처리</strong></p>
+<hr />
+<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> for 반복문의 구조(초기식, 조건식, 증감식)를 이해하고 활용할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> while 반복문을 사용하여 조건이 만족하는 동안 코드를 반복 실행할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 무한 루프의 개념과 break를 이용한 탈출 방법을 이해할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> for와 while 중 상황에 맞는 반복문을 선택할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CARLA의 주요 센서(카메라, 라이다, 충돌 센서, GPS) 종류와 역할을 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 센서를 차량에 부착하고 데이터를 수집하는 Python 코드를 작성할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 각 센서가 출력하는 데이터 형식(이미지, 포인트 클라우드, 좌표 등)의 차이를 비교·분석할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 여러 센서를 동시에 부착하여 복합 데이터를 수집하는 시스템을 구성할 수 있다</li>
 </ul>
-<p>⏱️ 예상 학습 시간: <strong>약 2시간</strong></p>
 <hr />
-<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>지난 장에서 우리는 <strong>조건문(if/else)</strong>을 배웠어요. 프로그램이 "이럴 땐 이렇게, 저럴 땐 저렇게" 판단하는 방법을 익혔죠. 이번 장에서는 여기에 <strong>반복</strong>이라는 강력한 능력을 더합니다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// 지난 시간에 배운 것 — 조건 판단</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;합격!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;불합격</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>조건문의 <code>{ }</code> 블록 구조, 그리고 비교 연산자(<code>&gt;=</code>, <code>&lt;</code>, <code>==</code> 등)를 기억하고 계시다면 준비 완료입니다! 😊</p>
-<hr />
-<h2 id="_3">💡 왜 이걸 배우나요?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>"Hello!" 를 10번 출력하고 싶다면 어떻게 할까요?</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// ... 이걸 10번?!</span>
-</span></code></pre></div>
-<p>10번이야 참을 수 있다지만, <strong>1000번</strong>이라면요? 😱</p>
-<p>게임에서 "다시 하시겠습니까?"라고 매번 물어보는 기능, 학생 30명의 성적을 하나씩 처리하는 기능, 1부터 100까지의 합을 구하는 계산 — 이 모든 것의 핵심은 <strong>반복</strong>입니다.</p>
-<p><strong>반복문</strong>을 배우면, 단 3줄의 코드로 컴퓨터에게 "이 작업을 1000번 해!"라고 명령할 수 있어요. 이것이 프로그래밍의 진짜 힘입니다. 💪</p>
-<hr />
-<h2 id="_4">📚 핵심 개념<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="1-for-10">개념 1: for 반복문 — "운동장 10바퀴 돌기"<a class="headerlink" href="#1-for-10" title="Permanent link">&para;</a></h3>
-<p><strong>🏃 비유로 시작해요</strong></p>
-<p>체육 시간에 선생님이 이렇게 말합니다:</p>
+<h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>"1바퀴부터 시작해서, 10바퀴가 될 때까지, 한 바퀴씩 뛰어라!"</p>
+<p><strong>생각해보기:</strong> 여러분이 자전거를 탈 때를 떠올려보세요. <strong>눈</strong>으로 앞을 보고, <strong>귀</strong>로 뒤에서 오는 차 소리를 듣고, <strong>피부</strong>로 바람의 세기를 느끼며 방향과 속도를 결정합니다. 만약 눈을 감고 자전거를 탄다면? 상상만 해도 아찔하죠.</p>
 </blockquote>
-<p>이 문장에는 세 가지 정보가 들어있어요:</p>
+<p>자율주행 AI도 마찬가지입니다. AI가 안전하게 운전하려면 <strong>디지털 감각기관</strong>, 즉 <strong>센서</strong>가 필요합니다. CARLA 시뮬레이터는 실제 자율주행 차량에 장착되는 것과 동일한 종류의 센서를 가상으로 제공합니다.</p>
+<p>이번 장에서는 CARLA의 센서를 하나씩 차량에 부착하고, 각 센서가 어떤 형태의 데이터를 만들어내는지 직접 확인합니다. 이 과정을 통해 <strong>"어떤 센서 조합이 자율주행에 적합한가?"</strong> 라는 질문에 스스로 답할 수 있게 됩니다.</p>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-carla">개념 1: CARLA 센서의 분류 체계<a class="headerlink" href="#1-carla" title="Permanent link">&para;</a></h3>
+<p><strong>🎭 비유부터 시작합시다</strong></p>
+<p>센서를 인간의 감각에 대응시키면 이해가 쉽습니다.</p>
 <ul>
-<li><strong>시작</strong>: 1바퀴부터</li>
-<li><strong>조건</strong>: 10바퀴가 될 때까지 (10바퀴 이하인 동안)</li>
-<li><strong>변화</strong>: 한 바퀴씩 증가</li>
+<li><strong>카메라 계열</strong> → 👁️ 눈 (빛을 감지하여 시각 정보 획득)</li>
+<li><strong>라이다(LiDAR)</strong> → 🦇 박쥐의 초음파 (레이저를 쏘고 반사된 시간으로 거리 측정)</li>
+<li><strong>충돌 센서</strong> → 🖐️ 촉각 (부딪힘을 감지)</li>
+<li><strong>GPS/IMU</strong> → 🧭 위치 감각 (지금 어디에 있는지, 어느 방향인지)</li>
 </ul>
-<p>for문은 정확히 이 세 가지를 코드로 옮긴 것입니다.</p>
 <p><strong>📖 정확한 정의</strong></p>
-<p><strong>for문</strong>은 <strong>"몇 번 반복할지 미리 알 때"</strong> 사용하는 반복문입니다. 세 가지 요소로 구성됩니다:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>for (초기식; 조건식; 증감식) {
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    반복할 코드
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>}
-</span></code></pre></div>
+<p>CARLA의 센서는 크게 세 가지 범주로 나뉩니다.</p>
 <ul>
-<li><strong>초기식</strong> — 반복을 시작하기 전 딱 한 번 실행 (카운터 변수 설정)</li>
-<li><strong>조건식</strong> — 매 반복 전에 검사, <code>참</code>이면 계속, <code>거짓</code>이면 중단</li>
-<li><strong>증감식</strong> — 매 반복이 끝날 때마다 실행 (카운터 변경)</li>
+<li><strong>영상 센서(Image-based)</strong>: RGB 카메라, 시맨틱 세그멘테이션 카메라, 깊이(Depth) 카메라 — 2D 이미지 데이터를 생성</li>
+<li><strong>거리 센서(Range-based)</strong>: 라이다(LiDAR), 레이더(Radar) — 3D 포인트 클라우드 또는 거리 데이터를 생성</li>
+<li><strong>상태 센서(State-based)</strong>: 충돌 감지, 차선 침범 감지, GPS, IMU — 이벤트 또는 수치 데이터를 생성</li>
 </ul>
-<p><strong>💻 예시로 확인</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d번째 반복입니다!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>실행 결과:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>1번째 반복입니다!
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>2번째 반복입니다!
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>3번째 반복입니다!
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>4번째 반복입니다!
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>5번째 반복입니다!
-</span></code></pre></div></p>
-<p>이 코드가 어떤 순서로 실행되는지 흐름을 살펴볼까요?</p>
-<div class="mermaid">flowchart TD
-    A["시작: int i = 1 (초기식)"] --&gt; B{"i &lt;= 5 인가?\n(조건식)"}
-    B -- "참 ✅" --&gt; C["printf 실행\n(반복할 코드)"]
-    C --&gt; D["i++ 실행\n(증감식)"]
-    D --&gt; B
-    B -- "거짓 ❌" --&gt; E["반복 종료"]</div>
-<blockquote>
-<p>💡 <strong>잠깐!</strong> <code>i++</code>는 <code>i = i + 1</code>과 같은 뜻이에요. i 값을 1 증가시킵니다. 지난 시간에 잠깐 본 <strong>증감 연산자</strong>가 여기서 활약합니다!</p>
-</blockquote>
+<div class="mermaid">graph TB
+    A["🚗 CARLA 센서 시스템"] --&gt; B["📷 영상 센서"]
+    A --&gt; C["📡 거리 센서"]
+    A --&gt; D["📊 상태 센서"]
+
+    B --&gt; B1["RGB 카메라&lt;br/&gt;컬러 이미지"]
+    B --&gt; B2["시맨틱 세그멘테이션&lt;br/&gt;객체별 색상 분류"]
+    B --&gt; B3["깊이 카메라&lt;br/&gt;거리 정보 이미지"]
+
+    C --&gt; C1["LiDAR&lt;br/&gt;3D 포인트 클라우드"]
+    C --&gt; C2["Radar&lt;br/&gt;속도+거리 데이터"]
+
+    D --&gt; D1["충돌 감지"]
+    D --&gt; D2["차선 침범 감지"]
+    D --&gt; D3["GPS + IMU"]</div>
+<p><strong>🔍 예시로 확인</strong></p>
+<p>실제 자율주행 차량인 Waymo의 차량을 보면, 지붕 위에 LiDAR가, 전후좌우에 카메라가, 범퍼에 레이더가 장착되어 있습니다. CARLA에서는 이 모든 것을 코드 몇 줄로 가상 차량에 부착할 수 있습니다.</p>
 <hr />
-<h3 id="2-while">개념 2: while 반복문 — "배부를 때까지 먹기"<a class="headerlink" href="#2-while" title="Permanent link">&para;</a></h3>
-<p><strong>🍽️ 비유로 시작해요</strong></p>
-<p>식사할 때 우리는 "밥 5숟갈만 먹어야지"라고 정하지 않죠. 대신 이렇게 합니다:</p>
-<blockquote>
-<p>"배고픈 동안 계속 먹는다."</p>
-</blockquote>
-<p>언제 배가 부를지는 미리 모릅니다. <strong>조건만 확인하면서</strong> 반복하는 거죠. 이것이 바로 <strong>while문</strong>입니다.</p>
+<h3 id="2">개념 2: 카메라 센서와 이미지 데이터<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>🎭 비유부터 시작합시다</strong></p>
+<p>RGB 카메라는 여러분의 스마트폰 카메라와 같습니다. 하지만 시맨틱 세그멘테이션 카메라는 좀 특별합니다. 마치 <strong>"이 사진 속에서 사람은 빨간색, 도로는 보라색, 차량은 파란색으로 자동 색칠해주는 마법 카메라"</strong> 와 같습니다.</p>
 <p><strong>📖 정확한 정의</strong></p>
-<p><strong>while문</strong>은 <strong>"몇 번 반복할지 모르지만, 조건이 참인 동안 계속"</strong> 반복하는 구문입니다.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>while (조건식) {
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    반복할 코드
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>}
-</span></code></pre></div>
-<p>for문보다 구조가 단순하죠? 조건식 하나만 있으면 됩니다.</p>
-<p><strong>💻 예시로 확인</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d번째 반복입니다!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>실행 결과:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>1번째 반복입니다!
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>2번째 반복입니다!
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>3번째 반복입니다!
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>4번째 반복입니다!
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>5번째 반복입니다!
-</span></code></pre></div></p>
-<p>for문과 결과가 똑같죠? 하지만 while문은 <strong>"반복 횟수를 미리 모를 때"</strong> 더 자연스럽습니다.</p>
-<div class="mermaid">flowchart TD
-    A["count = 1 설정"] --&gt; B{"count &lt;= 5 인가?"}
-    B -- "참 ✅" --&gt; C["printf 실행"]
-    C --&gt; D["count++ 실행"]
-    D --&gt; B
-    B -- "거짓 ❌" --&gt; E["반복 종료"]</div>
+<ul>
+<li><strong>RGB 카메라</strong>: 사람이 보는 것과 유사한 컬러 이미지를 생성합니다. 각 픽셀은 R(빨강), G(초록), B(파랑) 3개 채널의 0~255 값으로 구성됩니다.</li>
+<li><strong>시맨틱 세그멘테이션 카메라</strong>: 각 픽셀이 어떤 객체에 속하는지 라벨(태그)로 분류된 이미지를 생성합니다. 도로, 보행자, 차량, 건물 등을 색상으로 구분합니다.</li>
+<li><strong>깊이 카메라</strong>: 카메라로부터 각 픽셀까지의 거리 정보를 인코딩한 이미지를 생성합니다.</li>
+</ul>
+<p><strong>🔍 예시로 확인</strong></p>
+<p>같은 장면을 세 카메라로 동시에 촬영하면 이런 차이가 납니다.</p>
+<ul>
+<li><strong>RGB</strong>: 우리가 눈으로 보는 것과 같은 자연스러운 사진</li>
+<li><strong>시맨틱</strong>: 도로는 보라색, 차량은 파란색, 보행자는 빨간색으로 칠해진 그림</li>
+<li><strong>깊이</strong>: 가까운 물체는 밝고, 먼 물체는 어두운 회색조 이미지</li>
+</ul>
 <blockquote>
-<p>💡 <strong>for vs while, 언제 뭘 쓸까?</strong>
-- <strong>반복 횟수를 아는 경우</strong> → <code>for</code> ("10번 반복해!")
-- <strong>조건만 아는 경우</strong> → <code>while</code> ("맞출 때까지 계속!")</p>
+<p><strong>알아보기:</strong> 시맨틱 세그멘테이션 데이터는 실제로는 구하기 매우 어렵습니다. 사람이 사진의 모든 픽셀에 일일이 라벨을 붙여야 하기 때문입니다. CARLA에서는 시뮬레이터가 이 정보를 <strong>자동으로</strong> 제공하므로, AI 학습 데이터를 만들기에 매우 유리합니다.</p>
 </blockquote>
 <hr />
-<h3 id="3-break">개념 3: 무한 루프와 break — "비상 탈출구"<a class="headerlink" href="#3-break" title="Permanent link">&para;</a></h3>
-<p><strong>🔄 비유로 시작해요</strong></p>
-<p>놀이공원의 회전목마를 생각해보세요. 기계가 멈출 때까지 <strong>영원히</strong> 돌아갑니다. 그런데 내리고 싶으면? <strong>비상 정지 버튼</strong>을 누르면 됩니다!</p>
-<p>프로그래밍에서도 <strong>일부러 무한히 반복</strong>시킨 후, 특정 조건에서 <strong>break</strong>로 빠져나오는 패턴을 자주 사용합니다.</p>
+<h3 id="3-lidar">개념 3: LiDAR와 포인트 클라우드<a class="headerlink" href="#3-lidar" title="Permanent link">&para;</a></h3>
+<p><strong>🎭 비유부터 시작합시다</strong></p>
+<p>어두운 방에서 레이저 포인터를 사방으로 빠르게 돌린다고 상상해보세요. 레이저가 벽이나 가구에 닿으면 빨간 점이 찍힙니다. 이 점들을 모두 모으면 방의 3D 구조를 알 수 있겠죠? LiDAR가 바로 이 원리입니다.</p>
 <p><strong>📖 정확한 정의</strong></p>
-<p><strong>무한 루프(infinite loop)</strong>: 조건이 항상 참이어서 끝나지 않는 반복문</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// 1은 항상 &#39;참&#39; → 무한 반복!</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="c1">// 반복할 코드</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>break</strong>: 반복문을 <strong>즉시 탈출</strong>하는 명령어</p>
-<p><strong>💻 예시로 확인</strong></p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">;</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// 무한 반복</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;숫자를 입력하세요 (0을 입력하면 종료): &quot;</span><span class="p">);</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">number</span><span class="p">);</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;프로그램을 종료합니다.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w">  </span><span class="c1">// 반복문 탈출!</span>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;입력한 숫자: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">);</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>실행 결과:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>숫자를 입력하세요 (0을 입력하면 종료): 5
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>입력한 숫자: 5
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>숫자를 입력하세요 (0을 입력하면 종료): 3
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>입력한 숫자: 3
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>숫자를 입력하세요 (0을 입력하면 종료): 0
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>프로그램을 종료합니다.
-</span></code></pre></div></p>
-<blockquote>
-<p>🚨 <strong>만약 break 없이 무한 루프에 빠졌다면?</strong>
-당황하지 마세요! 키보드에서 <strong>Ctrl + C</strong>를 누르면 프로그램이 강제 종료됩니다. 개발할 때 자주 쓰게 될 거예요!</p>
-</blockquote>
-<hr />
-<h3 id="4-for-while">개념 4: for와 while 비교 정리<a class="headerlink" href="#4-for-while" title="Permanent link">&para;</a></h3>
-<p>두 반복문의 차이를 한눈에 비교해봅시다:</p>
-<div class="mermaid">flowchart LR
-    subgraph FOR["🔢 for 반복문"]
-        F1["반복 횟수를 알 때"]
-        F2["예: 10번 출력하기"]
-        F3["예: 1~100까지 합"]
-    end
-    subgraph WHILE["🔄 while 반복문"]
-        W1["조건만 알 때"]
-        W2["예: 맞출 때까지 퀴즈"]
-        W3["예: 0 입력할 때까지"]
-    end</div>
+<p><strong>LiDAR</strong>(Light Detection and Ranging)는 레이저 빔을 360도로 쏘아 반사되어 돌아오는 시간을 측정하여 주변 환경의 3D 거리 정보를 수집하는 센서입니다. 수집된 데이터는 <strong>포인트 클라우드(Point Cloud)</strong> 라고 불리며, 수천~수만 개의 3D 좌표점 (x, y, z) 집합입니다.</p>
+<p><strong>🔍 예시로 확인</strong></p>
+<p>CARLA의 LiDAR 데이터 한 프레임에는 약 수만 개의 점이 포함됩니다. 각 점은 4개의 값을 가집니다.</p>
 <ul>
-<li><strong>for문의 장점</strong>: 초기식, 조건식, 증감식이 한 줄에 모여 있어 <strong>한눈에 보기 쉬움</strong></li>
-<li><strong>while문의 장점</strong>: 구조가 단순하고, <strong>종료 조건이 복잡할 때</strong> 유연함</li>
-<li><strong>둘 다 가능</strong>: 사실 for로 할 수 있는 건 while로도 되고, 그 반대도 됩니다. <strong>상황에 더 자연스러운 것</strong>을 고르면 돼요!</li>
+<li><strong>x</strong>: 좌우 위치 (미터)</li>
+<li><strong>y</strong>: 앞뒤 위치 (미터)</li>
+<li><strong>z</strong>: 높낮이 (미터)</li>
+<li><strong>intensity</strong>: 반사 강도 (재질에 따라 다름)</li>
 </ul>
-<blockquote>
-<p>💡 여기까지 이해가 잘 되셨나요? 개념이 좀 많았죠? 걱정 마세요. 지금부터 직접 코드를 쳐보면 "아하!" 하는 순간이 올 거예요! 🎉</p>
-</blockquote>
+<p>이 점들을 시각화하면 주변 건물, 차량, 보행자의 3D 윤곽이 뚜렷이 드러납니다.</p>
 <hr />
-<h2 id="_5">🔨 따라하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-1-10-for">Step 1: 1부터 10까지 출력하기 (for문 기본)<a class="headerlink" href="#step-1-1-10-for" title="Permanent link">&para;</a></h3>
-<p>가장 기본적인 for문부터 시작해봅시다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// 마지막에 줄바꿈</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: <code>1 2 3 4 5 6 7 8 9 10</code> 이 출력되어야 해요!</p>
-</blockquote>
-<h3 id="step-2-1-100">Step 2: 1부터 100까지 합 구하기<a class="headerlink" href="#step-2-1-100" title="Permanent link">&para;</a></h3>
-<p>수학자 가우스가 어린 시절 순식간에 풀었다는 바로 그 문제! 우리는 for문으로 풀어봅시다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="c1">// 합을 저장할 변수 (0부터 시작!)</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">        </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w">  </span><span class="c1">// sum에 i를 계속 더함</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1부터 100까지의 합: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 결과는 <code>5050</code>이 나와야 합니다!</p>
-</blockquote>
-<p><code>sum = sum + i;</code>가 핵심이에요. 반복할 때마다 sum에 i를 누적해서 더하는 겁니다. 이런 패턴을 <strong>누적합(accumulator)</strong>이라고 부릅니다.</p>
-<h3 id="step-3">Step 3: 구구단 한 단 출력하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
-<p>이번엔 사용자가 원하는 단의 구구단을 출력해봅시다.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">dan</span><span class="p">;</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;몇 단을 출력할까요? &quot;</span><span class="p">);</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">dan</span><span class="p">);</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d x %d = %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dan</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">dan</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="p">}</span>
-</span></code></pre></div>
-<p><strong>실행 결과 (7 입력 시):</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>몇 단을 출력할까요? 7
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>7 x 1 = 7
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>7 x 2 = 14
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>7 x 3 = 21
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>...
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>7 x 9 = 63
-</span></code></pre></div></p>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 원하는 단의 구구단이 1부터 9까지 출력되면 성공!</p>
-</blockquote>
-<h3 id="step-4-while">Step 4: while문으로 숫자 맞히기 게임 만들기<a class="headerlink" href="#step-4-while" title="Permanent link">&para;</a></h3>
-<p>이번에는 while문의 진가를 보여줄 프로그램입니다. 사용자가 <strong>몇 번 만에 맞힐지 모르기 때문에</strong> while문이 딱이에요!</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">   </span><span class="c1">// 정답 (나중에 랜덤으로 바꿀 수 있어요)</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">guess</span><span class="p">;</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">    </span><span class="c1">// 시도 횟수</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;=== 숫자 맞히기 게임 ===</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1부터 10 사이의 숫자를 맞혀보세요!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
-</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;추측: &quot;</span><span class="p">);</span>
-</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">guess</span><span class="p">);</span>
-</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">        </span><span class="n">tries</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>
-</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">guess</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">answer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;🎉 정답! %d번 만에 맞혔습니다!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tries</span><span class="p">);</span>
-</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">guess</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">answer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;더 큰 수예요! ⬆️</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;더 작은 수예요! ⬇️</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 7을 입력하면 "정답!"이 뜨고 프로그램이 종료되어야 합니다!</p>
-</blockquote>
-<p>이 프로그램에서 <strong>while(1) + break</strong> 패턴이 어떻게 쓰이는지 느껴지시나요? 사용자가 정답을 맞히는 순간 break로 탈출하는 구조입니다. 👍</p>
-<h3 id="step-5">Step 5: "다시 하시겠습니까?" 기능 만들기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
-<p>게임이나 프로그램에서 자주 보는 "다시 하시겠습니까?" 기능을 while문으로 만들어봅시다!</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">choice</span><span class="p">;</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">=== 간단한 계산기 ===</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;첫 번째 숫자: &quot;</span><span class="p">);</span>
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;두 번째 숫자: &quot;</span><span class="p">);</span>
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
-</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>
-</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;합: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>
-</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;다시 하시겠습니까? (y/n): &quot;</span><span class="p">);</span>
-</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot; %c&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">choice</span><span class="p">);</span><span class="w">   </span><span class="c1">// %c 앞의 공백이 중요!</span>
-</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>
-</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">choice</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;y&#39;</span><span class="p">);</span>
-</span><span id="__span-16-21"><a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>
-</span><span id="__span-16-22"><a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;프로그램을 종료합니다.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-16-23"><a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-16-24"><a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="p">}</span>
-</span></code></pre></div>
-<blockquote>
-<p>💡 <strong>do-while문이란?</strong> <code>while</code>은 조건을 <strong>먼저</strong> 확인하지만, <code>do-while</code>은 코드를 <strong>먼저 한 번 실행한 후</strong> 조건을 확인합니다. "최소 한 번은 실행"해야 할 때 딱이에요!</p>
-<p>✅ <strong>체크포인트</strong>: <code>y</code>를 입력하면 다시 시작되고, <code>n</code>(또는 y가 아닌 다른 키)을 입력하면 종료!</p>
-</blockquote>
-<hr />
-<h2 id="_6">📝 전체 코드<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>이 장에서 만든 프로그램 중 가장 종합적인 <strong>숫자 맞히기 게임</strong>의 전체 코드입니다:</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">guess</span><span class="p">;</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;=== 숫자 맞히기 게임 ===</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;1부터 10 사이의 숫자를 맞혀보세요!</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;추측: &quot;</span><span class="p">);</span>
-</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">guess</span><span class="p">);</span>
-</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">        </span><span class="n">tries</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>
-</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">guess</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">answer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">🎉 정답입니다! %d번 만에 맞혔어요!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tries</span><span class="p">);</span>
-</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">guess</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">answer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;힌트: 더 큰 수예요! ⬆️</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-22"><a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">            </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;힌트: 더 작은 수예요! ⬇️</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-17-23"><a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-17-24"><a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-17-25"><a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a>
-</span><span id="__span-17-26"><a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;게임을 종료합니다. 수고하셨어요!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span id="__span-17-27"><a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-17-28"><a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a><span class="p">}</span>
-</span></code></pre></div>
-<hr />
-<h2 id="_7">⚠️ 자주 하는 실수<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="1">실수 1: 무한 루프에 빠지기 😵<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">// ❌ 잘못된 코드 — i가 변하지 않아서 영원히 반복!</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="c1">// i++; 를 깜빡했다!</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="p">}</span>
-</span></code></pre></div>
+<h3 id="4-gpsimu">개념 4: 상태 센서 (충돌·GPS·IMU)<a class="headerlink" href="#4-gpsimu" title="Permanent link">&para;</a></h3>
+<p><strong>🎭 비유부터 시작합시다</strong></p>
+<p>상태 센서는 차량의 <strong>건강 상태 모니터</strong>와 같습니다. 충돌 센서는 "방금 뭔가에 부딪혔어!"라고 알려주는 경보기이고, GPS는 "지금 여기야!"라고 위치를 알려주는 내비게이션이며, IMU는 "지금 기울어지고 있어!"라고 자세를 알려주는 수평계입니다.</p>
+<p><strong>📖 정확한 정의</strong></p>
 <ul>
-<li><strong>왜 이런 일이 생기나요?</strong> i가 항상 1이므로 <code>i &lt;= 5</code>는 영원히 참입니다.</li>
-<li><strong>이렇게 해결해요</strong>: while문 안에서 <strong>조건을 변화시키는 코드(i++)</strong>를 반드시 넣으세요!</li>
-<li><strong>이미 빠졌다면</strong>: <strong>Ctrl + C</strong>로 강제 종료!</li>
+<li><strong>충돌 센서(Collision Sensor)</strong>: 차량이 다른 물체와 충돌할 때 이벤트를 발생시킵니다. 충돌 대상 액터(actor)와 충격 강도를 반환합니다.</li>
+<li><strong>차선 침범 센서(Lane Invasion Sensor)</strong>: 차량이 차선 경계를 넘을 때 이벤트를 발생시킵니다.</li>
+<li><strong>GNSS(GPS) 센서</strong>: 차량의 위도(latitude), 경도(longitude), 고도(altitude) 좌표를 반환합니다.</li>
+<li><strong>IMU 센서</strong>: 가속도계(accelerometer)와 자이로스코프(gyroscope) 데이터, 그리고 나침반(compass) 방향을 반환합니다.</li>
 </ul>
-<h3 id="2-for">실수 2: for문 세미콜론 위치 오류<a class="headerlink" href="#2-for" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">// ❌ 잘못된 코드 — for문 뒤에 세미콜론!</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">);</span><span class="w">  </span><span class="c1">// ← 이 세미콜론이 문제!</span>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="p">{</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> 세미콜론(<code>;</code>)이 for문의 <strong>빈 본문</strong>이 되어버립니다. 반복은 하지만 아무것도 안 하고, printf는 반복문 밖에서 <strong>한 번만</strong> 실행됩니다.</li>
-<li><strong>이렇게 해결해요</strong>: <code>for (...) {</code> 사이에 세미콜론을 넣지 마세요!</li>
-</ul>
-<h3 id="3">실수 3: 조건식에서 = 과 == 혼동<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1">// ❌ 잘못된 코드</span>
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// 대입(=)이 되어버림! 항상 참!</span>
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="p">}</span>
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="c1">// ✅ 올바른 코드</span>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// 비교(==)</span>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<ul>
-<li><strong>왜 이런 일이 생기나요?</strong> <code>=</code>는 값을 넣는 <strong>대입</strong>, <code>==</code>는 같은지 확인하는 <strong>비교</strong>입니다. <code>count = 5</code>는 count에 5를 넣고, 그 값(5)이 0이 아니므로 항상 참이 됩니다.</li>
-<li><strong>이렇게 해결해요</strong>: 조건식에서는 반드시 <code>==</code>(등호 두 개)를 사용!</li>
-</ul>
-<h3 id="4-off-by-one">실수 4: 반복 횟수가 하나 많거나 적음 (Off-by-one)<a class="headerlink" href="#4-off-by-one" title="Permanent link">&para;</a></h3>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">// 1부터 10까지 출력하고 싶은데...</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">   </span><span class="c1">// 0~10 → 11번 출력 😬</span>
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">    </span><span class="c1">// 1~9  → 9번 출력 😬</span>
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">   </span><span class="c1">// 1~10 → 10번 출력 ✅</span>
-</span></code></pre></div>
-<ul>
-<li><strong>이렇게 해결해요</strong>: 시작값과 조건을 같이 확인하세요. 헷갈리면 <strong>처음 몇 번을 손으로 써보는 게</strong> 가장 확실합니다!</li>
-</ul>
+<p><strong>🔍 예시로 확인</strong></p>
+<p>자율주행 AI를 학습시킬 때, 충돌 센서 데이터는 <strong>"이런 상황에서 이렇게 하면 사고가 난다"</strong> 는 부정적 피드백(negative feedback)으로 활용됩니다. GPS 데이터는 목적지까지의 경로를 계산하는 데 사용됩니다.</p>
 <hr />
-<h2 id="_8">✅ 스스로 점검하기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="_9">📌 이 장의 핵심 정리<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<ul>
-<li>✅ <strong>for문</strong>은 <code>for (초기식; 조건식; 증감식)</code>으로 구성되며, <strong>반복 횟수를 알 때</strong> 사용</li>
-<li>✅ <strong>while문</strong>은 <code>while (조건식)</code>으로 구성되며, <strong>조건이 참인 동안</strong> 계속 반복</li>
-<li>✅ <strong>무한 루프</strong>는 <code>while(1)</code>로 만들고, <strong>break</strong>로 탈출</li>
-<li>✅ <strong>do-while문</strong>은 코드를 <strong>최소 한 번 실행한 후</strong> 조건을 확인</li>
-</ul>
-<h3 id="_10">🤔 스스로 점검해 봐요<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> for문의 세 가지 요소(초기식, 조건식, 증감식)가 각각 어떤 역할인지 설명할 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> while문과 for문의 차이를 설명하고, 어떤 상황에서 어떤 것을 쓸지 판단할 수 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 무한 루프가 발생했을 때 대처 방법(Ctrl+C, break)을 알고 있나요?</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 1부터 N까지의 합을 구하는 프로그램을 혼자서 작성할 수 있나요?</li>
-</ul>
-<hr />
-<h2 id="_11">🚀 더 해보기<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<p>스스로 도전해볼 과제입니다! 정답을 바로 보지 말고 먼저 시도해보세요. 😊</p>
-<p><strong>도전 1</strong>: 1부터 100까지의 <strong>짝수만</strong> 출력하기
-- 💡 힌트: <code>i = i + 2</code>로 2씩 증가시키거나, <code>i % 2 == 0</code>으로 짝수 판별</p>
-<p><strong>도전 2</strong>: 사용자가 입력한 숫자의 <strong>팩토리얼</strong> 구하기
-- 예: 5를 입력하면 <code>5! = 5 × 4 × 3 × 2 × 1 = 120</code>
-- 💡 힌트: 누적합 대신 <strong>누적곱</strong>을 사용 (<code>result = result * i</code>)</p>
-<p><strong>도전 3</strong>: 별(*) 찍기 — 삼각형 만들기
-<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>*
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>**
-</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>***
-</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>****
-</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>*****
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>준비물:</strong> CARLA 서버가 실행 중이어야 합니다. 이전 장에서 배운 대로 CARLA 서버를 먼저 시작하세요.</p>
+</blockquote>
+<h3 id="step-1">Step 1: 기본 설정 — 세계와 차량 생성하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>가장 먼저 CARLA에 연결하고 차량을 생성합니다. 이전 장에서 배운 내용의 복습입니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">carla</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># 1) CARLA 서버에 연결</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">client</span> <span class="o">=</span> <span class="n">carla</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">client</span><span class="o">.</span><span class="n">set_timeout</span><span class="p">(</span><span class="mf">10.0</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">world</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_world</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 2) 차량 스폰 (생성)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">blueprint_library</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">get_blueprint_library</span><span class="p">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">vehicle_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s1">&#39;model3&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Tesla Model 3</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">spawn_points</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">get_map</span><span class="p">()</span><span class="o">.</span><span class="n">get_spawn_points</span><span class="p">()</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">spawn_point</span> <span class="o">=</span> <span class="n">spawn_points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">vehicle</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">vehicle_bp</span><span class="p">,</span> <span class="n">spawn_point</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;차량 생성 완료: </span><span class="si">{</span><span class="n">vehicle</span><span class="o">.</span><span class="n">type_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-- 💡 힌트: for문 안에 for문을 넣을 수 있어요! (이것을 <strong>중첩 반복문</strong>이라고 합니다)</p>
+<blockquote>
+<p><strong>정리하기:</strong> <code>world.get_blueprint_library()</code>에서 센서의 설계도(blueprint)도 가져올 수 있습니다. 차량뿐 아니라 센서도 하나의 "액터(actor)"로 취급됩니다.</p>
+</blockquote>
 <hr />
-<h2 id="_12">🔗 다음 장으로<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<p>축하합니다! 🎊 이제 여러분은 프로그래밍의 3대 구조 중 <strong>순차, 선택(조건문), 반복</strong> 을 모두 배웠습니다!</p>
-<p>다음 장에서는 <strong>배열(Array)</strong>을 배워볼 거예요. 학생 30명의 점수를 저장하려면 변수를 30개 만들어야 할까요? 배열을 사용하면 하나의 이름으로 여러 개의 데이터를 깔끔하게 관리할 수 있습니다. 반복문과 배열이 만나면 정말 강력한 일을 할 수 있어요. 기대되시죠? 🚀</p>
+<h3 id="step-2-rgb">Step 2: RGB 카메라 부착하기<a class="headerlink" href="#step-2-rgb" title="Permanent link">&para;</a></h3>
+<p>센서를 부착하는 과정은 항상 동일한 3단계입니다.</p>
+<div class="mermaid">graph LR
+    A["1️⃣ 센서 Blueprint 찾기"] --&gt; B["2️⃣ 속성 설정하기&lt;br/&gt;(해상도, 위치 등)"]
+    B --&gt; C["3️⃣ 차량에 부착하고&lt;br/&gt;콜백 함수 등록"]</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># RGB 카메라 센서 부착</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">camera_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.camera.rgb&#39;</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_x&#39;</span><span class="p">,</span> <span class="s1">&#39;800&#39;</span><span class="p">)</span>   <span class="c1"># 가로 해상도</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_y&#39;</span><span class="p">,</span> <span class="s1">&#39;600&#39;</span><span class="p">)</span>   <span class="c1"># 세로 해상도</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;fov&#39;</span><span class="p">,</span> <span class="s1">&#39;90&#39;</span><span class="p">)</span>              <span class="c1"># 시야각(Field of View)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 카메라 위치: 차량 지붕 위 (x=앞뒤, z=높이)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">camera_transform</span> <span class="o">=</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.4</span><span class="p">))</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 차량에 부착</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">camera_bp</span><span class="p">,</span> <span class="n">camera_transform</span><span class="p">,</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># 데이터 수신 콜백 함수</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="k">def</span><span class="w"> </span><span class="nf">rgb_callback</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="c1"># 이미지를 numpy 배열로 변환</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="n">array</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">image</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>  <span class="c1"># BGRA 형식</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    <span class="n">array</span> <span class="o">=</span> <span class="n">array</span><span class="p">[:,</span> <span class="p">:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># BGR만 추출 (알파 채널 제거)</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[RGB] 프레임 </span><span class="si">{</span><span class="n">image</span><span class="o">.</span><span class="n">frame</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> 크기 이미지 수신&quot;</span><span class="p">)</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="n">camera</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">rgb_callback</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기:</strong> <code>attach_to=vehicle</code> 파라미터가 핵심입니다! 이것이 센서를 차량에 "부착"하는 부분입니다. 차량이 움직이면 센서도 함께 움직입니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-3">Step 3: 시맨틱 세그멘테이션 카메라 부착하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>RGB 카메라와 거의 동일한 코드이지만, blueprint 이름만 다릅니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 시맨틱 세그멘테이션 카메라</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">sem_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.camera.semantic_segmentation&#39;</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">sem_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_x&#39;</span><span class="p">,</span> <span class="s1">&#39;800&#39;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">sem_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_y&#39;</span><span class="p">,</span> <span class="s1">&#39;600&#39;</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">sem_transform</span> <span class="o">=</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.4</span><span class="p">))</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">sem_camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">sem_bp</span><span class="p">,</span> <span class="n">sem_transform</span><span class="p">,</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">semantic_callback</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="c1"># CityScapesPalette 형식으로 저장하면 컬러 분류 이미지가 됨</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">image</span><span class="o">.</span><span class="n">save_to_disk</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;output/sem_</span><span class="si">{</span><span class="n">image</span><span class="o">.</span><span class="n">frame</span><span class="si">:</span><span class="s1">06d</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>                       <span class="n">carla</span><span class="o">.</span><span class="n">ColorConverter</span><span class="o">.</span><span class="n">CityScapesPalette</span><span class="p">)</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Semantic] 프레임 </span><span class="si">{</span><span class="n">image</span><span class="o">.</span><span class="n">frame</span><span class="si">}</span><span class="s2">: 세그멘테이션 이미지 저장&quot;</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">sem_camera</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">semantic_callback</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>생각해보기:</strong> RGB 카메라와 시맨틱 카메라를 같은 위치에 부착했습니다. 왜 같은 위치에 둘까요? 나중에 두 이미지를 <strong>픽셀 단위로 정확히 대응</strong>시켜 AI 학습 데이터 쌍(pair)으로 사용하기 위해서입니다!</p>
+</blockquote>
+<hr />
+<h3 id="step-4-lidar">Step 4: LiDAR 센서 부착하기<a class="headerlink" href="#step-4-lidar" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># LiDAR 센서</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">lidar_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.lidar.ray_cast&#39;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;channels&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">)</span>            <span class="c1"># 레이저 채널 수</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;points_per_second&#39;</span><span class="p">,</span> <span class="s1">&#39;100000&#39;</span><span class="p">)</span> <span class="c1"># 초당 포인트 수</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;range&#39;</span><span class="p">,</span> <span class="s1">&#39;50&#39;</span><span class="p">)</span>                <span class="c1"># 감지 범위 (미터)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;rotation_frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">)</span>   <span class="c1"># 초당 회전 수</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">lidar_transform</span> <span class="o">=</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.5</span><span class="p">))</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">lidar</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">lidar_bp</span><span class="p">,</span> <span class="n">lidar_transform</span><span class="p">,</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">lidar_callback</span><span class="p">(</span><span class="n">point_cloud</span><span class="p">):</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="c1"># 포인트 클라우드를 numpy 배열로 변환</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">point_cloud</span><span class="o">.</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>  <span class="c1"># 각 포인트: [x, y, z, intensity]</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[LiDAR] 프레임 </span><span class="si">{</span><span class="n">point_cloud</span><span class="o">.</span><span class="n">frame</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">개 포인트 수신&quot;</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">lidar</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">lidar_callback</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>알아보기:</strong> <code>channels=32</code>는 레이저 빔이 32줄이라는 뜻입니다. 실제 자율주행 차량의 Velodyne LiDAR는 16, 32, 64, 128채널 등 다양한 모델이 있습니다. 채널이 많을수록 더 정밀하지만 비용도 높아집니다.</p>
+</blockquote>
+<hr />
+<h3 id="step-5-gps">Step 5: 상태 센서 (충돌·GPS) 부착하기<a class="headerlink" href="#step-5-gps" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 충돌 센서</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">collision_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.other.collision&#39;</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">collision_sensor</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">collision_bp</span><span class="p">,</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(),</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">collision_callback</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">other_actor</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">other_actor</span>  <span class="c1"># 충돌한 상대 객체</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">impulse</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">normal_impulse</span>   <span class="c1"># 충격 벡터</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">intensity</span> <span class="o">=</span> <span class="p">(</span><span class="n">impulse</span><span class="o">.</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">impulse</span><span class="o">.</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">impulse</span><span class="o">.</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[충돌!] 대상: </span><span class="si">{</span><span class="n">other_actor</span><span class="o">.</span><span class="n">type_id</span><span class="si">}</span><span class="s2">, 강도: </span><span class="si">{</span><span class="n">intensity</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">collision_sensor</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">collision_callback</span><span class="p">)</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1"># GNSS (GPS) 센서</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">gnss_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.other.gnss&#39;</span><span class="p">)</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="n">gnss_sensor</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">gnss_bp</span><span class="p">,</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(),</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">gnss_callback</span><span class="p">(</span><span class="n">gnss_data</span><span class="p">):</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[GPS] 위도: </span><span class="si">{</span><span class="n">gnss_data</span><span class="o">.</span><span class="n">latitude</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">, &quot;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>          <span class="sa">f</span><span class="s2">&quot;경도: </span><span class="si">{</span><span class="n">gnss_data</span><span class="o">.</span><span class="n">longitude</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">, &quot;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>          <span class="sa">f</span><span class="s2">&quot;고도: </span><span class="si">{</span><span class="n">gnss_data</span><span class="o">.</span><span class="n">altitude</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">gnss_sensor</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">gnss_callback</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="step-6">Step 6: 차량 주행 및 데이터 확인<a class="headerlink" href="#step-6" title="Permanent link">&para;</a></h3>
+<p>모든 센서를 부착했으니, 차량을 움직여서 데이터가 실제로 수집되는지 확인합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 차량에 자동 조종(autopilot) 켜기</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">vehicle</span><span class="o">.</span><span class="n">set_autopilot</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># 30초간 데이터 수집</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== 30초간 데이터 수집 시작 ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># 정리: 모든 센서와 차량 제거</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== 수집 종료, 정리 중 ===&quot;</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">camera</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">sem_camera</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">lidar</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">collision_sensor</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">gnss_sensor</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">camera</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="n">sem_camera</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="n">lidar</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">collision_sensor</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="n">gnss_sensor</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">vehicle</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;모든 액터 제거 완료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>⚠️ 중요:</strong> <code>destroy()</code>를 호출하지 않으면 센서와 차량이 시뮬레이터에 계속 남아 메모리를 차지합니다. 프로그램 종료 전 반드시 정리하세요!</p>
+</blockquote>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>아래는 위의 모든 단계를 하나로 합친 실행 가능한 전체 코드입니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="sd">CARLA 센서 시스템 실습 - 멀티 센서 데이터 수집</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="sd">Chapter 7: CARLA 센서 시스템 이해하기</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">carla</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># 출력 폴더 생성</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;output&#39;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1"># ── 1. CARLA 연결 및 차량 생성 ──</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">client</span> <span class="o">=</span> <span class="n">carla</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="n">client</span><span class="o">.</span><span class="n">set_timeout</span><span class="p">(</span><span class="mf">10.0</span><span class="p">)</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="n">world</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_world</span><span class="p">()</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="n">blueprint_library</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">get_blueprint_library</span><span class="p">()</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="n">vehicle_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s1">&#39;model3&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="n">spawn_point</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">get_map</span><span class="p">()</span><span class="o">.</span><span class="n">get_spawn_points</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="n">vehicle</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">vehicle_bp</span><span class="p">,</span> <span class="n">spawn_point</span><span class="p">)</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="c1"># 센서 리스트 (나중에 일괄 정리용)</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="n">sensor_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="c1"># ── 2. RGB 카메라 ──</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="n">camera_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.camera.rgb&#39;</span><span class="p">)</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_x&#39;</span><span class="p">,</span> <span class="s1">&#39;800&#39;</span><span class="p">)</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_y&#39;</span><span class="p">,</span> <span class="s1">&#39;600&#39;</span><span class="p">)</span>
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="n">camera_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;fov&#39;</span><span class="p">,</span> <span class="s1">&#39;90&#39;</span><span class="p">)</span>
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="n">camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span>
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>    <span class="n">camera_bp</span><span class="p">,</span>
+</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>    <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.4</span><span class="p">)),</span>
+</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>    <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span>
+</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="p">)</span>
+</span><span id="__span-6-36"><a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a><span class="n">camera</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="k">lambda</span> <span class="n">img</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">save_to_disk</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;output/rgb_</span><span class="si">{</span><span class="n">img</span><span class="o">.</span><span class="n">frame</span><span class="si">:</span><span class="s1">06d</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">))</span>
+</span><span id="__span-6-37"><a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="n">sensor_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">camera</span><span class="p">)</span>
+</span><span id="__span-6-38"><a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>
+</span><span id="__span-6-39"><a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a><span class="c1"># ── 3. 시맨틱 세그멘테이션 카메라 ──</span>
+</span><span id="__span-6-40"><a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a><span class="n">sem_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.camera.semantic_segmentation&#39;</span><span class="p">)</span>
+</span><span id="__span-6-41"><a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a><span class="n">sem_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_x&#39;</span><span class="p">,</span> <span class="s1">&#39;800&#39;</span><span class="p">)</span>
+</span><span id="__span-6-42"><a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a><span class="n">sem_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;image_size_y&#39;</span><span class="p">,</span> <span class="s1">&#39;600&#39;</span><span class="p">)</span>
+</span><span id="__span-6-43"><a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a><span class="n">sem_camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span>
+</span><span id="__span-6-44"><a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a>    <span class="n">sem_bp</span><span class="p">,</span>
+</span><span id="__span-6-45"><a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a>    <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.4</span><span class="p">)),</span>
+</span><span id="__span-6-46"><a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a>    <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span>
+</span><span id="__span-6-47"><a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a><span class="p">)</span>
+</span><span id="__span-6-48"><a id="__codelineno-6-48" name="__codelineno-6-48" href="#__codelineno-6-48"></a><span class="n">sem_camera</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="k">lambda</span> <span class="n">img</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">save_to_disk</span><span class="p">(</span>
+</span><span id="__span-6-49"><a id="__codelineno-6-49" name="__codelineno-6-49" href="#__codelineno-6-49"></a>    <span class="sa">f</span><span class="s1">&#39;output/sem_</span><span class="si">{</span><span class="n">img</span><span class="o">.</span><span class="n">frame</span><span class="si">:</span><span class="s1">06d</span><span class="si">}</span><span class="s1">.png&#39;</span><span class="p">,</span>
+</span><span id="__span-6-50"><a id="__codelineno-6-50" name="__codelineno-6-50" href="#__codelineno-6-50"></a>    <span class="n">carla</span><span class="o">.</span><span class="n">ColorConverter</span><span class="o">.</span><span class="n">CityScapesPalette</span>
+</span><span id="__span-6-51"><a id="__codelineno-6-51" name="__codelineno-6-51" href="#__codelineno-6-51"></a><span class="p">))</span>
+</span><span id="__span-6-52"><a id="__codelineno-6-52" name="__codelineno-6-52" href="#__codelineno-6-52"></a><span class="n">sensor_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sem_camera</span><span class="p">)</span>
+</span><span id="__span-6-53"><a id="__codelineno-6-53" name="__codelineno-6-53" href="#__codelineno-6-53"></a>
+</span><span id="__span-6-54"><a id="__codelineno-6-54" name="__codelineno-6-54" href="#__codelineno-6-54"></a><span class="c1"># ── 4. LiDAR ──</span>
+</span><span id="__span-6-55"><a id="__codelineno-6-55" name="__codelineno-6-55" href="#__codelineno-6-55"></a><span class="n">lidar_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.lidar.ray_cast&#39;</span><span class="p">)</span>
+</span><span id="__span-6-56"><a id="__codelineno-6-56" name="__codelineno-6-56" href="#__codelineno-6-56"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;channels&#39;</span><span class="p">,</span> <span class="s1">&#39;32&#39;</span><span class="p">)</span>
+</span><span id="__span-6-57"><a id="__codelineno-6-57" name="__codelineno-6-57" href="#__codelineno-6-57"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;points_per_second&#39;</span><span class="p">,</span> <span class="s1">&#39;100000&#39;</span><span class="p">)</span>
+</span><span id="__span-6-58"><a id="__codelineno-6-58" name="__codelineno-6-58" href="#__codelineno-6-58"></a><span class="n">lidar_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">&#39;range&#39;</span><span class="p">,</span> <span class="s1">&#39;50&#39;</span><span class="p">)</span>
+</span><span id="__span-6-59"><a id="__codelineno-6-59" name="__codelineno-6-59" href="#__codelineno-6-59"></a><span class="n">lidar</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span>
+</span><span id="__span-6-60"><a id="__codelineno-6-60" name="__codelineno-6-60" href="#__codelineno-6-60"></a>    <span class="n">lidar_bp</span><span class="p">,</span>
+</span><span id="__span-6-61"><a id="__codelineno-6-61" name="__codelineno-6-61" href="#__codelineno-6-61"></a>    <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">carla</span><span class="o">.</span><span class="n">Location</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)),</span>
+</span><span id="__span-6-62"><a id="__codelineno-6-62" name="__codelineno-6-62" href="#__codelineno-6-62"></a>    <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span>
+</span><span id="__span-6-63"><a id="__codelineno-6-63" name="__codelineno-6-63" href="#__codelineno-6-63"></a><span class="p">)</span>
+</span><span id="__span-6-64"><a id="__codelineno-6-64" name="__codelineno-6-64" href="#__codelineno-6-64"></a>
+</span><span id="__span-6-65"><a id="__codelineno-6-65" name="__codelineno-6-65" href="#__codelineno-6-65"></a><span class="k">def</span><span class="w"> </span><span class="nf">save_lidar</span><span class="p">(</span><span class="n">point_cloud</span><span class="p">):</span>
+</span><span id="__span-6-66"><a id="__codelineno-6-66" name="__codelineno-6-66" href="#__codelineno-6-66"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">point_cloud</span><span class="o">.</span><span class="n">raw_data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+</span><span id="__span-6-67"><a id="__codelineno-6-67" name="__codelineno-6-67" href="#__codelineno-6-67"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-6-68"><a id="__codelineno-6-68" name="__codelineno-6-68" href="#__codelineno-6-68"></a>    <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;output/lidar_</span><span class="si">{</span><span class="n">point_cloud</span><span class="o">.</span><span class="n">frame</span><span class="si">:</span><span class="s1">06d</span><span class="si">}</span><span class="s1">.npy&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</span><span id="__span-6-69"><a id="__codelineno-6-69" name="__codelineno-6-69" href="#__codelineno-6-69"></a>
+</span><span id="__span-6-70"><a id="__codelineno-6-70" name="__codelineno-6-70" href="#__codelineno-6-70"></a><span class="n">lidar</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">save_lidar</span><span class="p">)</span>
+</span><span id="__span-6-71"><a id="__codelineno-6-71" name="__codelineno-6-71" href="#__codelineno-6-71"></a><span class="n">sensor_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lidar</span><span class="p">)</span>
+</span><span id="__span-6-72"><a id="__codelineno-6-72" name="__codelineno-6-72" href="#__codelineno-6-72"></a>
+</span><span id="__span-6-73"><a id="__codelineno-6-73" name="__codelineno-6-73" href="#__codelineno-6-73"></a><span class="c1"># ── 5. 충돌 센서 ──</span>
+</span><span id="__span-6-74"><a id="__codelineno-6-74" name="__codelineno-6-74" href="#__codelineno-6-74"></a><span class="n">col_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.other.collision&#39;</span><span class="p">)</span>
+</span><span id="__span-6-75"><a id="__codelineno-6-75" name="__codelineno-6-75" href="#__codelineno-6-75"></a><span class="n">col_sensor</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">col_bp</span><span class="p">,</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(),</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-6-76"><a id="__codelineno-6-76" name="__codelineno-6-76" href="#__codelineno-6-76"></a><span class="n">col_sensor</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[충돌!] </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">other_actor</span><span class="o">.</span><span class="n">type_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+</span><span id="__span-6-77"><a id="__codelineno-6-77" name="__codelineno-6-77" href="#__codelineno-6-77"></a><span class="n">sensor_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col_sensor</span><span class="p">)</span>
+</span><span id="__span-6-78"><a id="__codelineno-6-78" name="__codelineno-6-78" href="#__codelineno-6-78"></a>
+</span><span id="__span-6-79"><a id="__codelineno-6-79" name="__codelineno-6-79" href="#__codelineno-6-79"></a><span class="c1"># ── 6. GPS 센서 ──</span>
+</span><span id="__span-6-80"><a id="__codelineno-6-80" name="__codelineno-6-80" href="#__codelineno-6-80"></a><span class="n">gnss_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;sensor.other.gnss&#39;</span><span class="p">)</span>
+</span><span id="__span-6-81"><a id="__codelineno-6-81" name="__codelineno-6-81" href="#__codelineno-6-81"></a><span class="n">gnss_sensor</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">gnss_bp</span><span class="p">,</span> <span class="n">carla</span><span class="o">.</span><span class="n">Transform</span><span class="p">(),</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-6-82"><a id="__codelineno-6-82" name="__codelineno-6-82" href="#__codelineno-6-82"></a><span class="n">gnss_sensor</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="k">lambda</span> <span class="n">g</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span>
+</span><span id="__span-6-83"><a id="__codelineno-6-83" name="__codelineno-6-83" href="#__codelineno-6-83"></a>    <span class="sa">f</span><span class="s2">&quot;[GPS] (</span><span class="si">{</span><span class="n">g</span><span class="o">.</span><span class="n">latitude</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">g</span><span class="o">.</span><span class="n">longitude</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">g</span><span class="o">.</span><span class="n">altitude</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">)&quot;</span>
+</span><span id="__span-6-84"><a id="__codelineno-6-84" name="__codelineno-6-84" href="#__codelineno-6-84"></a><span class="p">))</span>
+</span><span id="__span-6-85"><a id="__codelineno-6-85" name="__codelineno-6-85" href="#__codelineno-6-85"></a><span class="n">sensor_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gnss_sensor</span><span class="p">)</span>
+</span><span id="__span-6-86"><a id="__codelineno-6-86" name="__codelineno-6-86" href="#__codelineno-6-86"></a>
+</span><span id="__span-6-87"><a id="__codelineno-6-87" name="__codelineno-6-87" href="#__codelineno-6-87"></a><span class="c1"># ── 7. 주행 및 수집 ──</span>
+</span><span id="__span-6-88"><a id="__codelineno-6-88" name="__codelineno-6-88" href="#__codelineno-6-88"></a><span class="n">vehicle</span><span class="o">.</span><span class="n">set_autopilot</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-89"><a id="__codelineno-6-89" name="__codelineno-6-89" href="#__codelineno-6-89"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;데이터 수집 중... (30초)&quot;</span><span class="p">)</span>
+</span><span id="__span-6-90"><a id="__codelineno-6-90" name="__codelineno-6-90" href="#__codelineno-6-90"></a>
+</span><span id="__span-6-91"><a id="__codelineno-6-91" name="__codelineno-6-91" href="#__codelineno-6-91"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-6-92"><a id="__codelineno-6-92" name="__codelineno-6-92" href="#__codelineno-6-92"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-6-93"><a id="__codelineno-6-93" name="__codelineno-6-93" href="#__codelineno-6-93"></a><span class="k">finally</span><span class="p">:</span>
+</span><span id="__span-6-94"><a id="__codelineno-6-94" name="__codelineno-6-94" href="#__codelineno-6-94"></a>    <span class="c1"># ── 8. 정리 ──</span>
+</span><span id="__span-6-95"><a id="__codelineno-6-95" name="__codelineno-6-95" href="#__codelineno-6-95"></a>    <span class="k">for</span> <span class="n">sensor</span> <span class="ow">in</span> <span class="n">sensor_list</span><span class="p">:</span>
+</span><span id="__span-6-96"><a id="__codelineno-6-96" name="__codelineno-6-96" href="#__codelineno-6-96"></a>        <span class="n">sensor</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</span><span id="__span-6-97"><a id="__codelineno-6-97" name="__codelineno-6-97" href="#__codelineno-6-97"></a>        <span class="n">sensor</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-6-98"><a id="__codelineno-6-98" name="__codelineno-6-98" href="#__codelineno-6-98"></a>    <span class="n">vehicle</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-6-99"><a id="__codelineno-6-99" name="__codelineno-6-99" href="#__codelineno-6-99"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;정리 완료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_6">⚠️ 자주 하는 실수<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>1. 센서를 부착했는데 데이터가 안 나와요 😱</strong></p>
+<p><code>listen()</code> 호출을 빠뜨리는 경우입니다. 센서를 <code>spawn_actor()</code>로 생성하는 것만으로는 데이터가 수집되지 않습니다. 반드시 <code>.listen(콜백함수)</code>를 호출하여 데이터 수신을 시작해야 합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># ❌ 이러면 데이터가 수집되지 않음</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">camera_bp</span><span class="p">,</span> <span class="n">transform</span><span class="p">,</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># ✅ listen()까지 호출해야 수집 시작</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">camera</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">camera_bp</span><span class="p">,</span> <span class="n">transform</span><span class="p">,</span> <span class="n">attach_to</span><span class="o">=</span><span class="n">vehicle</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">camera</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">my_callback</span><span class="p">)</span>  <span class="c1"># 이 줄이 필수!</span>
+</span></code></pre></div>
+<p><strong>2. 프로그램을 강제 종료하면 차량·센서가 유령처럼 남아요 👻</strong></p>
+<p><code>destroy()</code>를 호출하지 않고 프로그램을 종료하면, CARLA 서버에 액터들이 계속 남아있습니다. 이런 경우 아래 코드로 모두 정리할 수 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 유령 액터 일괄 정리</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span> <span class="n">actor</span> <span class="ow">in</span> <span class="n">world</span><span class="o">.</span><span class="n">get_actors</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s1">&#39;*vehicle*&#39;</span><span class="p">):</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">actor</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">for</span> <span class="n">actor</span> <span class="ow">in</span> <span class="n">world</span><span class="o">.</span><span class="n">get_actors</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s1">&#39;*sensor*&#39;</span><span class="p">):</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">actor</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>3. 이미지 데이터가 BGRA 순서라는 걸 모르고 색상이 이상하게 나와요 🎨</strong></p>
+<p>CARLA의 카메라는 이미지를 <strong>BGRA</strong> 형식(파랑-초록-빨강-알파)으로 반환합니다. OpenCV는 BGR을 사용하므로 그대로 쓸 수 있지만, matplotlib이나 PIL은 <strong>RGB</strong> 순서를 기대합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># matplotlib에서 표시할 때</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">array</span> <span class="o">=</span> <span class="n">array</span><span class="p">[:,</span> <span class="p">:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>    <span class="c1"># BGRA → BGR (알파 제거)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">array</span> <span class="o">=</span> <span class="n">array</span><span class="p">[:,</span> <span class="p">:,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># BGR → RGB (채널 순서 반전)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_7">✅ 스스로 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">기본 문제<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> 다음 센서와 출력 데이터 형식을 올바르게 연결하세요.</p>
+<ul>
+<li>(a) RGB 카메라 → ( )</li>
+<li>(b) LiDAR → ( )</li>
+<li>(c) 충돌 센서 → ( )</li>
+<li>(d) GNSS 센서 → ( )</li>
+</ul>
+<p>보기: ① 위도/경도/</p>
 
 
 
