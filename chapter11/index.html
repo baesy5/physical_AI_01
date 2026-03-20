@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="시뮬레이션에서 실제 도로까지, CARLA 시뮬레이터와 RC카를 활용하여 직접 만들며 이해하는 8주 완성 Physical AI 자율주행 프로젝트 교과서입니다.">
+        <meta name="description" content="햄스터 로봇을 직접 제어하며 파이썬 프로그래밍 활용 능력을 키우고, 라인트레이싱 과제를 통해 강화학습의 핵심 원리를 몸으로 이해하는 실습 중심 교육 교재입니다.">
       
       
         <meta name="author" content="Created with EduFlow">
       
       
-        <link rel="canonical" href="https://baesy5.github.io/physical_AI_01/chapter11/">
+        <link rel="canonical" href="https://baesy5.github.io/ham01/chapter11/">
       
       
         <link rel="prev" href="../chapter10/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>합성곱 신경망(CNN) 이해하기 - Physical AI: 자율주행으로 배우는 인공지능</title>
+        <title>보상 함수 설계 – 로봇에게 점수를 매기는 법 - 햄스터 로봇으로 배우는 파이썬 & 강화학습</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-11-cnn" class="md-skip">
+        <a href="#_1" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-header__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
+    <a href=".." title="햄스터 로봇으로 배우는 파이썬 &amp; 강화학습" class="md-header__button md-logo" aria-label="햄스터 로봇으로 배우는 파이썬 & 강화학습" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Physical AI: 자율주행으로 배우는 인공지능
+            햄스터 로봇으로 배우는 파이썬 & 강화학습
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              합성곱 신경망(CNN) 이해하기
+              보상 함수 설계 – 로봇에게 점수를 매기는 법
             
           </span>
         </div>
@@ -244,7 +244,7 @@
   
     
   
-  Part 1 - [1권] Part 1: Physical AI의 세계로
+  Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
 
         </a>
       </li>
@@ -260,35 +260,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter04/" class="md-tabs__link">
+        <a href="../chapter06/" class="md-tabs__link">
           
   
   
     
   
-  Part 2 - [1권] Part 2: Python과 개발 환경 준비
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../chapter07/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
+  Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
 
         </a>
       </li>
@@ -306,13 +284,13 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../chapter10/" class="md-tabs__link">
+        <a href="../chapter09/" class="md-tabs__link">
           
   
   
     
   
-  Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+  Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
 
         </a>
       </li>
@@ -328,13 +306,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter15/" class="md-tabs__link">
+        <a href="../chapter14/" class="md-tabs__link">
           
   
   
     
   
-  Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
 
         </a>
       </li>
@@ -356,29 +334,7 @@
   
     
   
-  Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../chapter22/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
 
         </a>
       </li>
@@ -408,13 +364,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-nav__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
+    <a href=".." title="햄스터 로봇으로 배우는 파이썬 &amp; 강화학습" class="md-nav__button md-logo" aria-label="햄스터 로봇으로 배우는 파이썬 & 강화학습" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Physical AI: 자율주행으로 배우는 인공지능
+    햄스터 로봇으로 배우는 파이썬 & 강화학습
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -461,6 +417,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -484,7 +444,7 @@
   <span class="md-ellipsis">
     
   
-    Part 1 - [1권] Part 1: Physical AI의 세계로
+    Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
   
 
     
@@ -500,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 1 - [1권] Part 1: Physical AI의 세계로
+    Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
   
 
           </label>
@@ -520,7 +480,7 @@
   <span class="md-ellipsis">
     
   
-    Physical AI란 무엇인가?
+    햄스터 로봇 소개와 개발 환경 설정
   
 
     
@@ -548,7 +508,7 @@
   <span class="md-ellipsis">
     
   
-    자율주행의 원리: 인지-판단-제어
+    앞으로, 뒤로, 회전! – 모터 제어의 기초
   
 
     
@@ -576,7 +536,63 @@
   <span class="md-ellipsis">
     
   
-    시뮬레이션이 중요한 이유
+    함수로 정리하는 로봇 동작
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    센서로 세상을 느끼다 – 바닥 센서와 근접 센서
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    while 루프와 실시간 로봇 제어
   
 
     
@@ -635,7 +651,7 @@
   <span class="md-ellipsis">
     
   
-    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+    Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
   
 
     
@@ -651,67 +667,11 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 2 - [1권] Part 2: Python과 개발 환경 준비
+    Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter04/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Python 핵심 복습: 자율주행에 쓰이는 문법
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter05/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    NumPy와 이미지 데이터 다루기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -727,7 +687,7 @@
   <span class="md-ellipsis">
     
   
-    CARLA 시뮬레이터 설치와 첫 주행
+    라인트레이싱의 원리와 센서 상태 분류
   
 
     
@@ -740,73 +700,6 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -822,7 +715,7 @@
   <span class="md-ellipsis">
     
   
-    CARLA 센서 시스템 이해하기
+    if-else로 만드는 규칙 기반 라인트레이싱
   
 
     
@@ -850,35 +743,7 @@
   <span class="md-ellipsis">
     
   
-    자율주행 학습 데이터 수집하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter09/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    데이터 전처리와 증강
+    규칙 기반의 한계 – 왜 로봇이 선을 놓칠까?
   
 
     
@@ -936,17 +801,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+    Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
   
 
     
@@ -957,16 +822,44 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+    Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    강화학습이란 무엇인가 – 에이전트, 환경, 보상
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -982,7 +875,7 @@
   <span class="md-ellipsis">
     
   
-    딥러닝 기초: 신경망의 원리
+    상태와 행동 설계 – 로봇의 눈과 손을 정의하다
   
 
     
@@ -1019,7 +912,7 @@
   <span class="md-ellipsis">
     
   
-    합성곱 신경망(CNN) 이해하기
+    보상 함수 설계 – 로봇에게 점수를 매기는 법
   
 
     
@@ -1037,7 +930,7 @@
   <span class="md-ellipsis">
     
   
-    합성곱 신경망(CNN) 이해하기
+    보상 함수 설계 – 로봇에게 점수를 매기는 법
   
 
     
@@ -1063,7 +956,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         🎯 이 장에서 배우는 것
@@ -1074,7 +967,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         💡 왜 이걸 배우나요?
@@ -1085,7 +978,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1097,22 +990,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-convolution" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 합성곱(Convolution) — 돋보기로 이미지 훑기 🔍
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 1: 합성곱(Convolution) — 돋보기로 이미지 훑기 🔍">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
+        개념 1: 보상 함수란 무엇인가 🎯
       
     </span>
   </a>
@@ -1120,10 +1001,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        정확한 정의
+        개념 2: 보상의 크기와 종류 📊
       
     </span>
   </a>
@@ -1131,38 +1012,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-pooling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 2: 풀링(Pooling) — 핵심만 남기고 압축하기 📦
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 2: 풀링(Pooling) — 핵심만 남기고 압축하기 📦">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
+        개념 3: 보상 설계의 함정 ⚠️
       
     </span>
   </a>
@@ -1170,140 +1023,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        정확한 정의
+        개념 4: 좋은 보상 함수의 설계 원칙 🏗️
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cnn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 3: CNN의 전체 구조 — 레고 블록 조립하기 🧱
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 3: CNN의 전체 구조 — 레고 블록 조립하기 🧱">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        정확한 정의
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        전체 흐름 시각화
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인 — 층이 깊어질수록 추출하는 특징
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-flatten-2d-1d" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: Flatten과 분류 — 2D 특징을 1D로 펼치기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 4: Flatten과 분류 — 2D 특징을 1D로 펼치기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        정확한 정의
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1313,22 +1039,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#keras-cnn" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기: Keras로 CNN 만들어 이미지 분류하기
+        🔨 따라하기: 라인트레이싱 보상 함수 직접 만들기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔨 따라하기: Keras로 CNN 만들어 이미지 분류하기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 라인트레이싱 보상 함수 직접 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: 데이터 준비하기
+        Step 1: 환경 설정하기
       
     </span>
   </a>
@@ -1339,7 +1065,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 데이터 전처리하기
+        Step 2: 첫 번째 보상 함수 – 단순 이진 보상
       
     </span>
   </a>
@@ -1347,10 +1073,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-cnn" class="md-nav__link">
+  <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: CNN 모델 구성하기
+        Step 3: 두 번째 보상 함수 – 거리 비례 보상
       
     </span>
   </a>
@@ -1361,7 +1087,7 @@
   <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: 모델 컴파일 및 학습하기
+        Step 4: 시뮬레이션으로 비교하기
       
     </span>
   </a>
@@ -1372,7 +1098,7 @@
   <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: 학습 과정 시각화하기
+        Step 5: 함정 체험 – 과도한 벌점
       
     </span>
   </a>
@@ -1383,7 +1109,7 @@
   <a href="#step-6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 6: 모델 평가 및 예측하기
+        Step 6: 나만의 보상 함수 설계하기
       
     </span>
   </a>
@@ -1396,10 +1122,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 스스로 점검하기
       
     </span>
   </a>
@@ -1429,7 +1177,7 @@
   <span class="md-ellipsis">
     
   
-    End-to-End 자율주행 모델 설계
+    Q-테이블과 Q-learning – 경험에서 배우는 로봇
   
 
     
@@ -1457,7 +1205,104 @@
   <span class="md-ellipsis">
     
   
-    모델 학습과 하이퍼파라미터 튜닝
+    탐험과 활용 – 모험할까, 안전하게 갈까?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시뮬레이션 환경 만들기 – 가상 트랙과 가상 로봇
   
 
     
@@ -1478,14 +1323,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../chapter14/" class="md-nav__link">
+      <a href="../chapter15/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    CARLA에서 자율주행 테스트
+    Q-learning 에이전트 구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    학습 실행과 결과 분석 – 로봇이 정말 배울까?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    하이퍼파라미터 실험 – 학습률, 할인율, 탐험률 조정하기
   
 
     
@@ -1544,7 +1445,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+    Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
   
 
     
@@ -1560,160 +1461,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter15/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    차선 인식과 차선 유지
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    장애물 감지와 비상 정지
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter17/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    통합 자율주행 시스템 완성 (시뮬레이션)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
+    Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
   
 
           </label>
@@ -1733,7 +1481,7 @@
   <span class="md-ellipsis">
     
   
-    라즈베리파이와 RC카 하드웨어 구성
+    시뮬레이션에서 실제 로봇으로 – 코드 연결하기
   
 
     
@@ -1761,7 +1509,7 @@
   <span class="md-ellipsis">
     
   
-    센서 연결과 실시간 데이터 수집
+    실제 로봇으로 Q-learning 학습 실행
   
 
     
@@ -1789,186 +1537,7 @@
   <span class="md-ellipsis">
     
   
-    Sim-to-Real: 모델 이식과 최적화
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter21/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RC카 자율주행 실전 테스트
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter22/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    자율주행 시스템 최종 통합
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter23/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    프로젝트 문서화와 발표 준비
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter24/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    최종 발표와 자율주행 시연
+    결과 비교와 분석 – 규칙 기반 vs 강화학습
   
 
     
@@ -2016,7 +1585,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         🎯 이 장에서 배우는 것
@@ -2027,7 +1596,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         💡 왜 이걸 배우나요?
@@ -2038,7 +1607,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2050,22 +1619,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-convolution" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: 합성곱(Convolution) — 돋보기로 이미지 훑기 🔍
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 1: 합성곱(Convolution) — 돋보기로 이미지 훑기 🔍">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
+        개념 1: 보상 함수란 무엇인가 🎯
       
     </span>
   </a>
@@ -2073,10 +1630,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        정확한 정의
+        개념 2: 보상의 크기와 종류 📊
       
     </span>
   </a>
@@ -2084,38 +1641,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-pooling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 2: 풀링(Pooling) — 핵심만 남기고 압축하기 📦
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 2: 풀링(Pooling) — 핵심만 남기고 압축하기 📦">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
+        개념 3: 보상 설계의 함정 ⚠️
       
     </span>
   </a>
@@ -2123,140 +1652,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        정확한 정의
+        개념 4: 좋은 보상 함수의 설계 원칙 🏗️
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cnn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 3: CNN의 전체 구조 — 레고 블록 조립하기 🧱
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 3: CNN의 전체 구조 — 레고 블록 조립하기 🧱">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        정확한 정의
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        전체 흐름 시각화
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인 — 층이 깊어질수록 추출하는 특징
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-flatten-2d-1d" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        개념 4: Flatten과 분류 — 2D 특징을 1D로 펼치기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="개념 4: Flatten과 분류 — 2D 특징을 1D로 펼치기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        비유로 시작
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        정확한 정의
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        예시로 확인
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2266,22 +1668,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#keras-cnn" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기: Keras로 CNN 만들어 이미지 분류하기
+        🔨 따라하기: 라인트레이싱 보상 함수 직접 만들기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔨 따라하기: Keras로 CNN 만들어 이미지 분류하기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 라인트레이싱 보상 함수 직접 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: 데이터 준비하기
+        Step 1: 환경 설정하기
       
     </span>
   </a>
@@ -2292,7 +1694,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 데이터 전처리하기
+        Step 2: 첫 번째 보상 함수 – 단순 이진 보상
       
     </span>
   </a>
@@ -2300,10 +1702,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-3-cnn" class="md-nav__link">
+  <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: CNN 모델 구성하기
+        Step 3: 두 번째 보상 함수 – 거리 비례 보상
       
     </span>
   </a>
@@ -2314,7 +1716,7 @@
   <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: 모델 컴파일 및 학습하기
+        Step 4: 시뮬레이션으로 비교하기
       
     </span>
   </a>
@@ -2325,7 +1727,7 @@
   <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: 학습 과정 시각화하기
+        Step 5: 함정 체험 – 과도한 벌점
       
     </span>
   </a>
@@ -2336,7 +1738,7 @@
   <a href="#step-6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 6: 모델 평가 및 예측하기
+        Step 6: 나만의 보상 함수 설계하기
       
     </span>
   </a>
@@ -2349,10 +1751,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 스스로 점검하기
       
     </span>
   </a>
@@ -2376,361 +1800,392 @@
 
 
 
-<h1 id="chapter-11-cnn">Chapter 11. 합성곱 신경망(CNN) 이해하기<a class="headerlink" href="#chapter-11-cnn" title="Permanent link">&para;</a></h1>
-<p><strong>Part 4: 딥러닝으로 자율주행 모델 만들기</strong></p>
+<h1 id="_1">보상 함수 설계 – 로봇에게 점수를 매기는 법<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>Part 3 | [2권] 강화학습의 세계로 – 핵심 개념 이해하기 | 11차시</strong></p>
 <hr />
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">🎯 이 장에서 배우는 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 합성곱(Convolution) 연산이 이미지에서 특징을 추출하는 원리를 설명할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 풀링(Pooling)이 데이터를 압축하면서 핵심 정보를 유지하는 방법을 이해할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 합성곱층 → 풀링층 → 완전연결층으로 이어지는 CNN의 전체 구조를 설명할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Keras로 CNN 모델을 직접 구성하고, 이미지 분류 문제에 적용할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 보상 함수가 무엇이고, 강화학습에서 왜 유일한 학습 신호인지 설명할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 라인트레이싱 과제에 맞는 보상 체계를 직접 설계할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 보상 설정을 바꿨을 때 로봇 행동이 어떻게 달라지는지 예측할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 잘못된 보상 설계가 만드는 "함정"을 알고 피할 수 있다</li>
 </ul>
 <hr />
-<h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_3">💡 왜 이걸 배우나요?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>강아지 훈련을 떠올려 보세요. 강아지가 "앉아"를 했을 때 간식을 주면 그 행동을 반복합니다. 간식 대신 혼을 내면? 다시는 앉지 않겠죠. 🐕</p>
+<p>강화학습에서 <strong>보상 함수</strong>는 바로 이 "간식과 혼내기" 역할을 합니다. 로봇은 코드를 읽지 못하고, 설명서도 이해하지 못합니다. 오직 <strong>"이 행동을 했더니 점수가 올랐다/내렸다"</strong> 라는 신호만으로 학습합니다.</p>
+<p>문제는, 이 점수 체계를 <strong>우리가 직접 만들어야</strong> 한다는 것입니다. 점수를 잘못 매기면 로봇은 우리가 원하지 않는 이상한 행동을 "최고의 전략"이라고 믿게 됩니다. 실제로 보상 설계 실수 때문에 로봇이 제자리에서 멈춰 서거나, 빙글빙글 도는 일이 자주 일어납니다.</p>
+<p>이번 장에서는 <strong>좋은 보상 함수를 설계하는 원리</strong>를 배우고, 우리의 라인트레이싱 로봇에 직접 적용해 봅니다. 이 능력은 앞으로 어떤 강화학습 문제를 만나도 가장 먼저 필요한 핵심 스킬입니다! 💪</p>
+<hr />
+<h2 id="_4">📚 핵심 개념<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1">개념 1: 보상 함수란 무엇인가 🎯<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작하기</strong></p>
+<p>학교 시험을 생각해 보세요. 선생님은 정답에 ✅를 주고, 오답에 ✗를 줍니다. 학생은 이 채점 결과를 보고 "아, 이렇게 풀면 맞는구나" "이건 틀린 방법이구나"를 깨닫습니다. 보상 함수는 강화학습에서 <strong>채점표</strong> 역할을 합니다.</p>
+<p><strong>정확한 정의</strong></p>
+<p>보상 함수(Reward Function)는 <strong>에이전트가 특정 상태에서 특정 행동을 했을 때 환경이 돌려주는 숫자 값</strong>입니다. 수학적으로 쓰면:</p>
 <blockquote>
-<p><strong>생각해보기</strong> 🤔</p>
-<p>여러분이 도로 위 표지판을 볼 때, 표지판의 모든 픽셀을 하나하나 분석하나요? 아닙니다. "빨간 원 안에 숫자 50이 있네 → 속도 제한 50km!" 이렇게 <strong>색상, 모양, 패턴</strong>이라는 특징을 순간적으로 파악합니다.</p>
+<p>R(s, a) → 숫자 한 개</p>
 </blockquote>
-<p>자율주행 자동차도 마찬가지입니다. 카메라로 촬영한 도로 이미지에서 <strong>차선</strong>, <strong>표지판</strong>, <strong>신호등</strong>, <strong>보행자</strong> 같은 특징을 빠르고 정확하게 뽑아내야 합니다. 바로 이 작업을 수행하는 것이 <strong>합성곱 신경망(CNN, Convolutional Neural Network)</strong> 입니다.</p>
-<p>이전 Chapter 10에서 우리는 딥러닝의 기본인 다층 퍼셉트론(MLP)을 배웠습니다. MLP는 이미지의 모든 픽셀을 일렬로 펼쳐서 학습했습니다. 그런데 이 방식에는 심각한 문제가 있습니다.</p>
 <ul>
-<li><strong>공간 정보 손실</strong>: 이미지를 1차원으로 펼치면, "이 픽셀 옆에 저 픽셀이 있다"는 위치 관계가 사라집니다</li>
-<li><strong>파라미터 폭발</strong>: 100×100 이미지만 해도 입력이 10,000개 → 가중치가 수백만 개로 늘어납니다</li>
-<li><strong>비효율적 학습</strong>: 표지판이 이미지 왼쪽에 있든 오른쪽에 있든 같은 표지판인데, MLP는 이를 다른 것으로 인식합니다</li>
+<li><strong>s</strong>: 현재 상태 (예: 로봇의 센서 값)</li>
+<li><strong>a</strong>: 선택한 행동 (예: 직진, 좌회전, 우회전)</li>
+<li><strong>돌려주는 숫자</strong>: 양수면 "잘했어!", 음수면 "그러지 마!", 0이면 "별로 상관없어"</li>
 </ul>
-<p>CNN은 이 모든 문제를 해결합니다. <strong>이미지의 공간 구조를 유지</strong>하면서, <strong>작은 필터로 핵심 특징만 추출</strong>하는 똑똑한 구조입니다.</p>
-<hr />
-<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1-convolution">개념 1: 합성곱(Convolution) — 돋보기로 이미지 훑기 🔍<a class="headerlink" href="#1-convolution" title="Permanent link">&para;</a></h3>
-<h4 id="_4">비유로 시작<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
-<p>여러분이 큰 풍경 사진에서 "고양이가 있는지" 찾는다고 상상해보세요. 사진 전체를 한 번에 보는 것이 아니라, <strong>작은 돋보기</strong>를 들고 왼쪽 위부터 오른쪽 아래까지 <strong>한 칸씩 움직이며</strong> 살펴봅니다. 이 돋보기가 바로 <strong>필터(Filter)</strong> 이고, 돋보기로 훑는 과정이 <strong>합성곱 연산</strong>입니다.</p>
-<h4 id="_5">정확한 정의<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
-<p><strong>합성곱(Convolution)</strong> 은 작은 크기의 필터(커널)를 이미지 위에서 슬라이딩하며, 필터와 겹치는 영역의 값을 <strong>원소별로 곱한 뒤 모두 더하는</strong> 연산입니다.</p>
-<p>핵심 용어를 정리하겠습니다.</p>
-<ul>
-<li><strong>필터(Filter/Kernel)</strong>: 특징을 감지하는 작은 가중치 행렬. 보통 3×3 또는 5×5 크기</li>
-<li><strong>스트라이드(Stride)</strong>: 필터가 한 번에 이동하는 칸 수. 기본값은 1</li>
-<li><strong>특성 맵(Feature Map)</strong>: 필터를 적용한 결과로 나오는 새로운 이미지</li>
-<li><strong>패딩(Padding)</strong>: 입력 이미지 테두리에 0을 채워 출력 크기를 조절하는 기법</li>
-</ul>
-<h4 id="_6">예시로 확인<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
-<p>5×5 입력 이미지에 3×3 필터를 적용하는 과정을 따라가 봅시다.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>입력 이미지 (5×5):          필터 (3×3):
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>1  0  1  0  1              1  0  1
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>0  1  0  1  0              0  1  0
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>1  0  1  0  1              1  0  1
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>0  1  0  1  0
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>1  0  1  0  1
+<p>핵심은 이것입니다: <strong>보상 함수는 에이전트가 학습할 수 있는 유일한 신호입니다.</strong> 우리가 아무리 "선을 따라가렴"이라고 말해도 로봇은 알아듣지 못합니다. 오직 보상 점수만 읽을 수 있습니다.</p>
+<p><strong>예시로 확인</strong></p>
+<p>라인트레이싱 로봇의 가장 기본적인 보상 함수:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">simple_reward</span><span class="p">(</span><span class="n">sensor_position</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;센서가 선 위에 있으면 +1, 아니면 -1&quot;&quot;&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">if</span> <span class="n">sensor_position</span> <span class="o">==</span> <span class="s2">&quot;on_line&quot;</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </span></code></pre></div>
-<p><strong>첫 번째 위치</strong> (왼쪽 위 3×3 영역):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>(1×1) + (0×0) + (1×1) +
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>(0×0) + (1×1) + (0×0) +
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>(1×1) + (0×0) + (1×1) = 5
-</span></code></pre></div>
-<p>필터가 한 칸씩 오른쪽으로, 그 다음 줄로 이동하며 같은 연산을 반복합니다. 5×5 입력에 3×3 필터(스트라이드 1, 패딩 없음)를 적용하면 <strong>3×3 특성 맵</strong>이 만들어집니다.</p>
-<blockquote>
-<p><strong>알아보기</strong> 📖</p>
-<p>출력 크기 공식: <strong>(입력 크기 - 필터 크기) ÷ 스트라이드 + 1</strong></p>
-<p>(5 - 3) ÷ 1 + 1 = <strong>3</strong></p>
-</blockquote>
-<div class="mermaid">flowchart LR
-    A["입력 이미지\n5×5"] --&gt;|"3×3 필터\n슬라이딩"| B["특성 맵\n3×3"]
-    B --&gt;|"활성화 함수\nReLU"| C["활성화된\n특성 맵"]</div>
-<p>중요한 점은, <strong>필터의 가중치 값은 학습을 통해 자동으로 결정</strong>된다는 것입니다. 수직 엣지를 잘 감지하는 필터, 수평 엣지를 감지하는 필터, 특정 색상 패턴을 감지하는 필터 등이 학습 과정에서 저절로 만들어집니다.</p>
-<blockquote>
-<p><strong>생각해보기</strong> 🤔</p>
-<p>하나의 필터는 하나의 특징만 감지합니다. 그래서 실제 CNN에서는 <strong>여러 개의 필터</strong>를 동시에 사용합니다. 필터 32개를 사용하면, 특성 맵도 32장이 만들어지죠. 이것이 "채널"이 늘어나는 이유입니다.</p>
-</blockquote>
+<p>로봇은 수천 번의 시도를 통해 "+1을 많이 받는 행동 → 선 위에 머무는 행동"을 스스로 발견합니다.</p>
 <hr />
-<h3 id="2-pooling">개념 2: 풀링(Pooling) — 핵심만 남기고 압축하기 📦<a class="headerlink" href="#2-pooling" title="Permanent link">&para;</a></h3>
-<h4 id="_7">비유로 시작<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
-<p>시험공부를 할 때 교과서 전체를 외우지 않고, <strong>핵심 내용만 요약 노트로 정리</strong>하죠? 풀링은 특성 맵의 "요약 노트"를 만드는 과정입니다. 세부사항은 버리고, <strong>가장 중요한 정보만 남깁니다.</strong></p>
-<h4 id="_8">정확한 정의<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
-<p><strong>풀링(Pooling)</strong> 은 특성 맵의 크기를 줄이는 다운샘플링(downsampling) 연산입니다. 일정 영역에서 대표값 하나를 선택하여 데이터를 압축합니다.</p>
-<p>가장 많이 사용하는 두 가지 방식이 있습니다.</p>
+<h3 id="2">개념 2: 보상의 크기와 종류 📊<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작하기</strong></p>
+<p>카페에서 아르바이트한다고 상상해 보세요. 설거지하면 100원, 커피 만들면 5,000원을 받는다면 어떤 일에 집중할까요? 당연히 커피 만들기겠죠! 보상의 <strong>크기</strong>가 행동의 <strong>우선순위</strong>를 결정합니다.</p>
+<p><strong>정확한 정의</strong></p>
+<p>보상은 크게 세 가지로 나눌 수 있습니다:</p>
 <ul>
-<li><strong>최대 풀링(Max Pooling)</strong>: 영역에서 가장 큰 값을 선택. 가장 강한 특징을 보존</li>
-<li><strong>평균 풀링(Average Pooling)</strong>: 영역의 평균값을 계산. 전체적인 특징을 보존</li>
+<li><strong>양의 보상(Positive Reward)</strong>: "이 행동 좋아!" → 에이전트가 이 행동을 더 자주 하게 만듦</li>
+<li><strong>음의 보상(Negative Reward, 벌점)</strong>: "이 행동 나빠!" → 에이전트가 이 행동을 피하게 만듦</li>
+<li><strong>영 보상(Zero Reward)</strong>: "상관없어" → 에이전트에게 아무 정보도 주지 않음</li>
 </ul>
-<h4 id="_9">예시로 확인<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
-<p>4×4 특성 맵에 2×2 최대 풀링(스트라이드 2)을 적용해 봅시다.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>특성 맵 (4×4):              최대 풀링 결과 (2×2):
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>[1  3 | 2  1]
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[4  2 | 5  0]   →          [4  5]
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>[─────┼─────]              [7  8]
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>[6  7 | 3  8]
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>[1  0 | 2  4]
+<p>그리고 보상의 <strong>크기(magnitude)</strong> 가 중요합니다. +1과 +100은 둘 다 양의 보상이지만, 에이전트에게 주는 영향력은 완전히 다릅니다.</p>
+<p><strong>예시로 확인 – 라인트레이싱에 적용</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">detailed_reward</span><span class="p">(</span><span class="n">distance_from_center</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="sd">    선 중심으로부터의 거리에 따라 보상을 다르게 준다.</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="sd">    distance_from_center: 0이면 정중앙, 값이 클수록 멀리 벗어남</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="k">if</span> <span class="n">distance_from_center</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="k">return</span> <span class="mi">10</span>     <span class="c1"># 정중앙! 최고 점수</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="k">elif</span> <span class="n">distance_from_center</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="k">return</span> <span class="mi">5</span>      <span class="c1"># 선 위에는 있음. 좋아!</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">elif</span> <span class="n">distance_from_center</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>     <span class="c1"># 살짝 벗어남. 주의!</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">10</span>    <span class="c1"># 완전히 벗어남. 큰 벌점!</span>
 </span></code></pre></div>
-<p>왼쪽 위 2×2 영역 <code>{1, 3, 4, 2}</code> 에서 최대값은 <strong>4</strong>, 오른쪽 위 <code>{2, 1, 5, 0}</code> 에서 최대값은 <strong>5</strong>, 이런 식입니다.</p>
-<p>풀링의 효과를 정리합니다.</p>
-<ul>
-<li><strong>크기 축소</strong>: 4×4 → 2×2로 데이터가 1/4로 줄어듦</li>
-<li><strong>연산량 감소</strong>: 다음 층에서 처리할 데이터가 줄어들어 학습이 빨라짐</li>
-<li><strong>위치 불변성</strong>: 특징이 약간 이동해도 같은 값이 선택되어, 위치 변화에 강해짐</li>
-</ul>
-<div class="mermaid">flowchart LR
-    A["특성 맵\n4×4\n16개 값"] --&gt;|"2×2 Max Pooling\n스트라이드 2"| B["축소된 특성 맵\n2×2\n4개 값"]
-    style A fill:#4ecdc4,color:#000
-    style B fill:#ff6b6b,color:#000</div>
+<p>이렇게 하면 로봇은 "그냥 선 위에 있는 것"보다 "선 정중앙에 있는 것"을 선호하게 됩니다. 보상의 크기가 행동의 정밀도를 조절하는 것이죠.</p>
 <hr />
-<h3 id="3-cnn">개념 3: CNN의 전체 구조 — 레고 블록 조립하기 🧱<a class="headerlink" href="#3-cnn" title="Permanent link">&para;</a></h3>
-<h4 id="_10">비유로 시작<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
-<p>CNN은 <strong>레고 블록을 순서대로 조립하는 것</strong>과 같습니다. 각 블록(층)에는 고유한 역할이 있고, 정해진 순서로 쌓아야 멋진 결과물이 나옵니다.</p>
-<h4 id="_11">정확한 정의<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
-<p>CNN은 크게 <strong>세 종류의 층</strong>이 순서대로 쌓여 있습니다.</p>
-<p><strong>① 합성곱층 (Convolutional Layer)</strong>
-- 역할: 이미지에서 특징(엣지, 패턴, 텍스처 등)을 추출
-- 여러 개의 필터가 동시에 작동하여 다양한 특성 맵 생성
-- 보통 활성화 함수 ReLU와 함께 사용</p>
-<p><strong>② 풀링층 (Pooling Layer)</strong>
-- 역할: 특성 맵의 크기를 줄여 연산량 감소, 과적합 방지
-- 주로 2×2 Max Pooling 사용</p>
-<p><strong>③ 완전연결층 (Fully Connected Layer / Dense Layer)</strong>
-- 역할: 추출된 특징들을 종합하여 최종 분류 판단
-- 기존 MLP와 동일한 구조
-- 마지막 층에서 Softmax로 각 클래스의 확률 출력</p>
-<h4 id="_12">전체 흐름 시각화<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<h3 id="3">개념 3: 보상 설계의 함정 ⚠️<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작하기</strong></p>
+<p>어떤 회사가 직원에게 "버그를 고치면 보너스를 준다"는 규칙을 만들었습니다. 결과는? 직원들이 <strong>일부러 버그를 만든 다음 고쳐서</strong> 보너스를 받았습니다! 😱 의도와 결과가 완전히 달라진 것이죠. 이것이 바로 <strong>보상 해킹(Reward Hacking)</strong> 입니다.</p>
+<p><strong>정확한 정의</strong></p>
+<p>보상 설계의 대표적인 함정 3가지:</p>
+<p><strong>함정 1 – 과도한 벌점이 만드는 "겁쟁이 로봇"</strong></p>
+<p>선을 벗어나면 -100점을 주면 어떻게 될까요? 로봇은 벌점이 너무 무서워서 <strong>아예 움직이지 않는</strong> 전략을 선택합니다. 움직이지 않으면 벗어날 위험도 없으니까요. 점수는 0점이지만, -100점보다는 낫다고 판단하는 것입니다.</p>
+<p><strong>함정 2 – 보상 해킹</strong></p>
+<p>"한 걸음 전진할 때마다 +1점"이라고 설계하면, 로봇이 선을 완전히 무시하고 <strong>최대한 빨리 앞으로만 돌진</strong>할 수 있습니다. 우리는 "선을 따라 전진"을 원했지만, 로봇은 "그냥 전진"이 점수를 최대화하는 방법임을 발견한 것입니다.</p>
+<p><strong>함정 3 – 희소 보상 문제</strong></p>
+<p>"결승선에 도착하면 +1000점, 나머지는 0점"이라고 하면? 로봇이 우연히 결승선에 도착할 확률이 극히 낮아서 <strong>영원히 학습하지 못합니다</strong>. 가끔 한 번 받는 큰 보상보다, 자주 받는 작은 보상이 학습에 훨씬 효과적입니다.</p>
+<p><strong>예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># ❌ 나쁜 설계: 겁쟁이 로봇을 만드는 보상</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">scared_robot_reward</span><span class="p">(</span><span class="n">on_line</span><span class="p">,</span> <span class="n">moved</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">on_line</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">100</span>   <span class="c1"># 너무 큰 벌점!</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">if</span> <span class="n">moved</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># ✅ 개선된 설계: 균형 잡힌 보상</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">balanced_reward</span><span class="p">(</span><span class="n">on_line</span><span class="p">,</span> <span class="n">moved</span><span class="p">):</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">on_line</span><span class="p">:</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">2</span>     <span class="c1"># 적절한 벌점</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="k">if</span> <span class="n">moved</span><span class="p">:</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="k">return</span> <span class="mi">3</span>      <span class="c1"># 전진 보상이 벌점보다 큼</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>         <span class="c1"># 멈춰있으면 소소한 벌점</span>
+</span></code></pre></div>
+<p>핵심 원칙: <strong>"원하는 행동의 보상 &gt; 벌점의 크기"</strong> 가 되어야 로봇이 도전합니다.</p>
+<hr />
+<h3 id="4">개념 4: 좋은 보상 함수의 설계 원칙 🏗️<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작하기</strong></p>
+<p>네비게이션을 생각해 보세요. "서울에서 부산"이라고만 하면 막막하지만, 매 교차로에서 "잘 가고 있어요/경로를 이탈했어요"라고 알려주면 쉽게 도착할 수 있죠. 좋은 보상 함수도 <strong>매 순간 적절한 피드백</strong>을 제공합니다.</p>
+<p><strong>정확한 정의 – 4가지 설계 원칙</strong></p>
+<ul>
+<li><strong>원칙 1: 밀도 있는 보상</strong> – 매 행동마다 피드백을 준다 (결승선에서만 주지 않는다)</li>
+<li><strong>원칙 2: 크기의 균형</strong> – 보상과 벌점의 비율을 적절하게 맞춘다</li>
+<li><strong>원칙 3: 목표 정렬</strong> – "내가 진짜 원하는 행동"에 가장 높은 점수를 준다</li>
+<li><strong>원칙 4: 단순함</strong> – 너무 복잡한 보상은 예측 불가능한 행동을 만든다</li>
+</ul>
+<p><strong>예시로 확인 – 설계 원칙의 흐름</strong></p>
 <div class="mermaid">flowchart TD
-    A["🖼️ 입력 이미지\n64×64×3 (RGB)"] --&gt; B["합성곱층 1\n32개 필터, 3×3"]
-    B --&gt; C["ReLU 활성화"]
-    C --&gt; D["Max Pooling\n2×2"]
-    D --&gt; E["합성곱층 2\n64개 필터, 3×3"]
-    E --&gt; F["ReLU 활성화"]
-    F --&gt; G["Max Pooling\n2×2"]
-    G --&gt; H["Flatten\n2D → 1D 변환"]
-    H --&gt; I["완전연결층\n128 뉴런"]
-    I --&gt; J["출력층\nSoftmax"]
-    J --&gt; K["🏷️ 분류 결과\n직진 / 좌회전 / 우회전"]</div>
-<h4 id="_13">예시로 확인 — 층이 깊어질수록 추출하는 특징<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
-<div class="mermaid">flowchart LR
-    A["얕은 층\n(1~2번째)"] --&gt; B["중간 층\n(3~4번째)"] --&gt; C["깊은 층\n(5번째 이상)"]
-
-    A1["엣지, 색상\n단순한 선분"] -.-&gt; A
-    B1["모양, 텍스처\n원, 삼각형 패턴"] -.-&gt; B
-    C1["객체 전체\n표지판, 자동차"] -.-&gt; C</div>
-<ul>
-<li><strong>얕은 층</strong>: 수직선, 수평선, 대각선 같은 기본 엣지 감지</li>
-<li><strong>중간 층</strong>: 엣지들이 조합되어 원, 모서리, 텍스처 같은 패턴 인식</li>
-<li><strong>깊은 층</strong>: 패턴들이 조합되어 "정지 표지판", "속도 제한 표지판" 같은 고수준 개념 형성</li>
-</ul>
+    A["🎯 목표 정의하기&lt;br/&gt;선을 따라 안정적으로 주행"] --&gt; B["📏 측정 가능한 기준 만들기&lt;br/&gt;센서와 선 중심의 거리"]
+    B --&gt; C["⚖️ 보상/벌점 크기 결정하기&lt;br/&gt;정중앙 +10, 약간 벗어남 -1, 완전 이탈 -10"]
+    C --&gt; D["🧪 테스트하고 조정하기&lt;br/&gt;로봇이 의도대로 움직이는가?"]
+    D --&gt;|"이상한 행동 발견"| B
+    D --&gt;|"잘 작동!"| E["✅ 보상 함수 완성"]</div>
+<p>보상 함수 설계는 한 번에 완벽하게 만드는 것이 아니라, <strong>설계 → 테스트 → 수정</strong>을 반복하는 과정입니다.</p>
+<hr />
+<h2 id="_5">🔨 따라하기: 라인트레이싱 보상 함수 직접 만들기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>이제 파이썬으로 직접 보상 함수를 만들고, 다른 보상 설계가 로봇 행동에 어떤 영향을 주는지 시뮬레이션해 봅시다!</p>
+<h3 id="step-1">Step 1: 환경 설정하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>먼저 라인트레이싱 시뮬레이션의 기본 틀을 만듭니다. 로봇은 1차원 트랙 위에 있고, 선의 위치(중심)로부터 얼마나 떨어져 있는지를 기준으로 행동합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># 로봇의 상태: 선 중심(0)으로부터의 거리 (-5 ~ +5)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 음수: 왼쪽으로 벗어남, 양수: 오른쪽으로 벗어남</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">SimpleLineRobot</span><span class="p">:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># 선 중심에서 시작</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">total_reward</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">history</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;action: -1(왼쪽), 0(직진), 1(오른쪽)&quot;&quot;&quot;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="c1"># 로봇 이동 + 약간의 랜덤 흔들림</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="n">drift</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">+=</span> <span class="n">action</span> <span class="o">+</span> <span class="n">drift</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="c1"># 트랙 범위 제한</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">))</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_distance_from_center</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ 로봇 클래스 준비 완료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="step-2">Step 2: 첫 번째 보상 함수 – 단순 이진 보상<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>가장 단순한 형태부터 시작합니다. 선 위에 있으면 +1, 아니면 -1.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v1_binary</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;이진 보상: 선 위(거리 1 이내) = +1, 벗어남 = -1&quot;&quot;&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># 테스트</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 0.0 → 보상: </span><span class="si">{</span><span class="n">reward_v1_binary</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 0.5 → 보상: </span><span class="si">{</span><span class="n">reward_v1_binary</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 2.0 → 보상: </span><span class="si">{</span><span class="n">reward_v1_binary</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>실행 결과:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>거리 0.0 → 보상: 1
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>거리 0.5 → 보상: 1
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>거리 2.0 → 보상: -1
+</span></code></pre></div></p>
+<h3 id="step-3">Step 3: 두 번째 보상 함수 – 거리 비례 보상<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>이번엔 "얼마나 가까운가"에 비례해서 점수를 줍니다. 더 정교한 피드백이죠!</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v2_proportional</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;거리에 비례하는 보상: 가까울수록 높은 점수&quot;&quot;&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">reward</span> <span class="o">=</span> <span class="mf">5.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">distance</span> <span class="o">*</span> <span class="mf">2.0</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">reward</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># 테스트</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">]:</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리 </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2"> → 보상: </span><span class="si">{</span><span class="n">reward_v2_proportional</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>실행 결과:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>거리 0.0 → 보상: 5.0
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>거리 0.5 → 보상: 4.0
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>거리 1.0 → 보상: 3.0
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>거리 2.0 → 보상: 1.0
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>거리 3.0 → 보상: -1.0
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>거리 5.0 → 보상: -5.0
+</span></code></pre></div></p>
+<p>정중앙에서 +5, 멀어질수록 점수가 줄어들다가 음수가 됩니다. 로봇이 "중앙에 가까울수록 좋다"는 것을 더 세밀하게 학습할 수 있겠죠?</p>
+<h3 id="step-4">Step 4: 시뮬레이션으로 비교하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>이제 두 보상 함수로 로봇을 각각 100스텝 동안 운영하고, 결과를 비교합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">run_simulation</span><span class="p">(</span><span class="n">reward_function</span><span class="p">,</span> <span class="n">reward_name</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;간단한 시뮬레이션: 로봇이 보상을 최대화하는 행동을 선택&quot;&quot;&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">robot</span> <span class="o">=</span> <span class="n">SimpleLineRobot</span><span class="p">()</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">on_line_count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span><span class="p">):</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        <span class="c1"># 세 가지 행동을 각각 시도해보고, 보상이 가장 높은 것을 선택</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="n">best_action</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>        <span class="n">best_reward</span> <span class="o">=</span> <span class="o">-</span><span class="mi">999</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>        <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]:</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>            <span class="c1"># 행동 후 예상 위치 계산</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>            <span class="n">test_pos</span> <span class="o">=</span> <span class="n">robot</span><span class="o">.</span><span class="n">position</span> <span class="o">+</span> <span class="n">action</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>            <span class="n">test_dist</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">test_pos</span><span class="p">)</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>            <span class="n">r</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">test_dist</span><span class="p">)</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>            <span class="k">if</span> <span class="n">r</span> <span class="o">&gt;</span> <span class="n">best_reward</span><span class="p">:</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>                <span class="n">best_reward</span> <span class="o">=</span> <span class="n">r</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>                <span class="n">best_action</span> <span class="o">=</span> <span class="n">action</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>        <span class="c1"># 최선의 행동 실행</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>        <span class="n">robot</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">best_action</span><span class="p">)</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>        <span class="n">distance</span> <span class="o">=</span> <span class="n">robot</span><span class="o">.</span><span class="n">get_distance_from_center</span><span class="p">()</span>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>        <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>        <span class="n">total</span> <span class="o">+=</span> <span class="n">reward</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>        <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>            <span class="n">on_line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📊 [</span><span class="si">{</span><span class="n">reward_name</span><span class="si">}</span><span class="s2">] 결과:&quot;</span><span class="p">)</span>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   총 보상: </span><span class="si">{</span><span class="n">total</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   선 위에 머문 비율: </span><span class="si">{</span><span class="n">on_line_count</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   최종 위치: </span><span class="si">{</span><span class="n">robot</span><span class="o">.</span><span class="n">position</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="c1"># 두 보상 함수 비교</span>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>  <span class="c1"># 동일한 조건으로 비교</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v1_binary</span><span class="p">,</span> <span class="s2">&quot;이진 보상 v1&quot;</span><span class="p">)</span>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v2_proportional</span><span class="p">,</span> <span class="s2">&quot;거리 비례 보상 v2&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="step-5">Step 5: 함정 체험 – 과도한 벌점<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>일부러 "나쁜" 보상 함수를 만들어서 어떤 문제가 생기는지 확인해 봅시다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v3_scary</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;과도한 벌점: 벗어나면 -100!&quot;&quot;&quot;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">100</span>  <span class="c1"># 무시무시한 벌점</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v4_only_forward</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">moved_forward</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;전진만 보상: 선 위치는 무시&quot;&quot;&quot;</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="k">if</span> <span class="n">moved_forward</span><span class="p">:</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>        <span class="k">return</span> <span class="mi">5</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c1"># 과도한 벌점 테스트</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v3_scary</span><span class="p">,</span> <span class="s2">&quot;과도한 벌점 v3&quot;</span><span class="p">)</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v2_proportional</span><span class="p">,</span> <span class="s2">&quot;균형 잡힌 v2 (비교용)&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>v3의 결과를 보세요. 로봇이 선 위에 있는 비율이 높을 수 있지만, <strong>총 보상이 불안정</strong>하고 로봇이 소극적으로 변하는 경향을 확인할 수 있습니다.</p>
+<h3 id="step-6">Step 6: 나만의 보상 함수 설계하기<a class="headerlink" href="#step-6" title="Permanent link">&para;</a></h3>
+<p>이제 여러분 차례입니다! 아래 틀을 채워서 자신만의 보상 함수를 만들어 보세요.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">my_reward</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="sd">    나만의 보상 함수를 설계해 보세요!</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="sd">    설계 기준을 먼저 적어보세요:</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="sd">    - 정중앙(거리 0): ? 점</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="sd">    - 선 근처(거리 1 이내): ? 점  </span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="sd">    - 약간 벗어남(거리 1~2): ? 점</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="sd">    - 많이 벗어남(거리 2 이상): ? 점</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="c1"># 여기에 여러분의 코드를 작성하세요!</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">0.3</span><span class="p">:</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>        <span class="k">return</span> <span class="mi">10</span>      <span class="c1"># 예: 정중앙 보너스</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>        <span class="k">return</span> <span class="mi">3</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">2.0</span><span class="p">:</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">2</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">5</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="c1"># 테스트</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a><span class="n">run_simulation</span><span class="p">(</span><span class="n">my_reward</span><span class="p">,</span> <span class="s2">&quot;나만의 보상 함수&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>💡 <strong>설계 팁</strong>: 값을 바꿔가며 여러 번 실행해 보세요. "보상 +10은 너무 크지 않을까?", "벌점 -5는 적절할까?" 직접 실험하는 것이 최고의 학습법입니다!</p>
+<hr />
+<h2 id="_6">📝 전체 코드<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>한 번에 실행할 수 있는 전체 코드입니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># ========== 로봇 클래스 ==========</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">SimpleLineRobot</span><span class="p">:</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">total_reward</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>        <span class="n">drift</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">+=</span> <span class="n">action</span> <span class="o">+</span> <span class="n">drift</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">))</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_distance_from_center</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>        <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="c1"># ========== 보상 함수들 ==========</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v1_binary</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;이진 보상&quot;&quot;&quot;</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v2_proportional</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;거리 비례 보상&quot;&quot;&quot;</span>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="mf">5.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">distance</span> <span class="o">*</span> <span class="mf">2.0</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="k">def</span><span class="w"> </span><span class="nf">reward_v3_scary</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;과도한 벌점&quot;&quot;&quot;</span>
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span> <span class="k">else</span> <span class="o">-</span><span class="mi">100</span>
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="c1"># ========== 시뮬레이션 함수 ==========</span>
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="k">def</span><span class="w"> </span><span class="nf">run_simulation</span><span class="p">(</span><span class="n">reward_function</span><span class="p">,</span> <span class="n">reward_name</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>    <span class="n">robot</span> <span class="o">=</span> <span class="n">SimpleLineRobot</span><span class="p">()</span>
+</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a>    <span class="n">on_line_count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a>
+</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a>    <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span><span class="p">):</span>
+</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a>        <span class="n">best_action</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>        <span class="n">best_reward</span> <span class="o">=</span> <span class="o">-</span><span class="mi">999</span>
+</span><span id="__span-11-39"><a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a>
+</span><span id="__span-11-40"><a id="__codelineno-11-40" name="__codelineno-11-40" href="#__codelineno-11-40"></a>        <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]:</span>
+</span><span id="__span-11-41"><a id="__codelineno-11-41" name="__codelineno-11-41" href="#__codelineno-11-41"></a>            <span class="n">test_pos</span> <span class="o">=</span> <span class="n">robot</span><span class="o">.</span><span class="n">position</span> <span class="o">+</span> <span class="n">action</span>
+</span><span id="__span-11-42"><a id="__codelineno-11-42" name="__codelineno-11-42" href="#__codelineno-11-42"></a>            <span class="n">test_dist</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">test_pos</span><span class="p">)</span>
+</span><span id="__span-11-43"><a id="__codelineno-11-43" name="__codelineno-11-43" href="#__codelineno-11-43"></a>            <span class="n">r</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">test_dist</span><span class="p">)</span>
+</span><span id="__span-11-44"><a id="__codelineno-11-44" name="__codelineno-11-44" href="#__codelineno-11-44"></a>            <span class="k">if</span> <span class="n">r</span> <span class="o">&gt;</span> <span class="n">best_reward</span><span class="p">:</span>
+</span><span id="__span-11-45"><a id="__codelineno-11-45" name="__codelineno-11-45" href="#__codelineno-11-45"></a>                <span class="n">best_reward</span> <span class="o">=</span> <span class="n">r</span>
+</span><span id="__span-11-46"><a id="__codelineno-11-46" name="__codelineno-11-46" href="#__codelineno-11-46"></a>                <span class="n">best_action</span> <span class="o">=</span> <span class="n">action</span>
+</span><span id="__span-11-47"><a id="__codelineno-11-47" name="__codelineno-11-47" href="#__codelineno-11-47"></a>
+</span><span id="__span-11-48"><a id="__codelineno-11-48" name="__codelineno-11-48" href="#__codelineno-11-48"></a>        <span class="n">robot</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">best_action</span><span class="p">)</span>
+</span><span id="__span-11-49"><a id="__codelineno-11-49" name="__codelineno-11-49" href="#__codelineno-11-49"></a>        <span class="n">distance</span> <span class="o">=</span> <span class="n">robot</span><span class="o">.</span><span class="n">get_distance_from_center</span><span class="p">()</span>
+</span><span id="__span-11-50"><a id="__codelineno-11-50" name="__codelineno-11-50" href="#__codelineno-11-50"></a>        <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+</span><span id="__span-11-51"><a id="__codelineno-11-51" name="__codelineno-11-51" href="#__codelineno-11-51"></a>        <span class="n">total</span> <span class="o">+=</span> <span class="n">reward</span>
+</span><span id="__span-11-52"><a id="__codelineno-11-52" name="__codelineno-11-52" href="#__codelineno-11-52"></a>
+</span><span id="__span-11-53"><a id="__codelineno-11-53" name="__codelineno-11-53" href="#__codelineno-11-53"></a>        <span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
+</span><span id="__span-11-54"><a id="__codelineno-11-54" name="__codelineno-11-54" href="#__codelineno-11-54"></a>            <span class="n">on_line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-11-55"><a id="__codelineno-11-55" name="__codelineno-11-55" href="#__codelineno-11-55"></a>
+</span><span id="__span-11-56"><a id="__codelineno-11-56" name="__codelineno-11-56" href="#__codelineno-11-56"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📊 [</span><span class="si">{</span><span class="n">reward_name</span><span class="si">}</span><span class="s2">] 결과:&quot;</span><span class="p">)</span>
+</span><span id="__span-11-57"><a id="__codelineno-11-57" name="__codelineno-11-57" href="#__codelineno-11-57"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   총 보상: </span><span class="si">{</span><span class="n">total</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-11-58"><a id="__codelineno-11-58" name="__codelineno-11-58" href="#__codelineno-11-58"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   선 위에 머문 비율: </span><span class="si">{</span><span class="n">on_line_count</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</span><span id="__span-11-59"><a id="__codelineno-11-59" name="__codelineno-11-59" href="#__codelineno-11-59"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   최종 위치: </span><span class="si">{</span><span class="n">robot</span><span class="o">.</span><span class="n">position</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-11-60"><a id="__codelineno-11-60" name="__codelineno-11-60" href="#__codelineno-11-60"></a>
+</span><span id="__span-11-61"><a id="__codelineno-11-61" name="__codelineno-11-61" href="#__codelineno-11-61"></a><span class="c1"># ========== 실행 ==========</span>
+</span><span id="__span-11-62"><a id="__codelineno-11-62" name="__codelineno-11-62" href="#__codelineno-11-62"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-11-63"><a id="__codelineno-11-63" name="__codelineno-11-63" href="#__codelineno-11-63"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🏁 보상 함수 비교 시뮬레이션&quot;</span><span class="p">)</span>
+</span><span id="__span-11-64"><a id="__codelineno-11-64" name="__codelineno-11-64" href="#__codelineno-11-64"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-11-65"><a id="__codelineno-11-65" name="__codelineno-11-65" href="#__codelineno-11-65"></a>
+</span><span id="__span-11-66"><a id="__codelineno-11-66" name="__codelineno-11-66" href="#__codelineno-11-66"></a><span class="k">for</span> <span class="n">seed_val</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">42</span><span class="p">]:</span>
+</span><span id="__span-11-67"><a id="__codelineno-11-67" name="__codelineno-11-67" href="#__codelineno-11-67"></a>    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed_val</span><span class="p">)</span>
+</span><span id="__span-11-68"><a id="__codelineno-11-68" name="__codelineno-11-68" href="#__codelineno-11-68"></a>    <span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v1_binary</span><span class="p">,</span> <span class="s2">&quot;이진 보상 v1&quot;</span><span class="p">)</span>
+</span><span id="__span-11-69"><a id="__codelineno-11-69" name="__codelineno-11-69" href="#__codelineno-11-69"></a>
+</span><span id="__span-11-70"><a id="__codelineno-11-70" name="__codelineno-11-70" href="#__codelineno-11-70"></a>    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed_val</span><span class="p">)</span>
+</span><span id="__span-11-71"><a id="__codelineno-11-71" name="__codelineno-11-71" href="#__codelineno-11-71"></a>    <span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v2_proportional</span><span class="p">,</span> <span class="s2">&quot;거리 비례 보상 v2&quot;</span><span class="p">)</span>
+</span><span id="__span-11-72"><a id="__codelineno-11-72" name="__codelineno-11-72" href="#__codelineno-11-72"></a>
+</span><span id="__span-11-73"><a id="__codelineno-11-73" name="__codelineno-11-73" href="#__codelineno-11-73"></a>    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed_val</span><span class="p">)</span>
+</span><span id="__span-11-74"><a id="__codelineno-11-74" name="__codelineno-11-74" href="#__codelineno-11-74"></a>    <span class="n">run_simulation</span><span class="p">(</span><span class="n">reward_v3_scary</span><span class="p">,</span> <span class="s2">&quot;과도한 벌점 v3&quot;</span><span class="p">)</span>
+</span><span id="__span-11-75"><a id="__codelineno-11-75" name="__codelineno-11-75" href="#__codelineno-11-75"></a>
+</span><span id="__span-11-76"><a id="__codelineno-11-76" name="__codelineno-11-76" href="#__codelineno-11-76"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎉 시뮬레이션 완료! 결과를 비교해 보세요.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_7">⚠️ 자주 하는 실수<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>실수 1: "벌점을 크게 줘야 빨리 배우겠지"</strong> 🚫</p>
 <blockquote>
-<p><strong>정리하기</strong> 📋</p>
-<p>CNN의 핵심 아이디어를 세 가지로 요약합니다.</p>
-<ul>
-<li><strong>지역적 연결(Local Connectivity)</strong>: 필터가 이미지의 작은 영역만 보므로 공간 구조 보존</li>
-<li><strong>가중치 공유(Weight Sharing)</strong>: 같은 필터를 이미지 전체에 재사용하므로 파라미터 수 대폭 감소</li>
-<li><strong>계층적 특징 학습</strong>: 얕은 층 → 깊은 층으로 갈수록 점점 복잡한 특징 학습</li>
-</ul>
+<p>벌점 -100을 주면 로봇이 빨리 배울 것 같지만, 실제로는 <strong>아무것도 하지 않는 로봇</strong>이 됩니다. 움직이지 않으면 -100을 맞을 위험이 없으니까요. 벌점은 양의 보상보다 <strong>작게</strong> 설정하는 것이 원칙입니다.</p>
+</blockquote>
+<p><strong>실수 2: "보상을 결과에만 주기"</strong> 🚫</p>
+<blockquote>
+<p>"골인하면 +1000, 나머지는 0"처럼 최종 결과에만 보상을 주면, 로봇이 우연히 골인하기 전까지 <strong>아무 학습 신호가 없습니다</strong>. 매 걸음마다 "지금 잘 가고 있는지"를 알려주는 <strong>밀도 있는 보상</strong>이 훨씬 효과적입니다.</p>
+</blockquote>
+<p><strong>실수 3: "원하는 것과 측정하는 것이 다른 보상"</strong> 🚫</p>
+<blockquote>
+<p>"선을 따라가길" 원하면서 "전진 거리"에만 보상을 주면, 로봇은 선을 무시하고 앞으로만 돌진합니다. 보상 함수를 작성한 후 반드시 <strong>"이 보상을 최대화하면 진짜로 내가 원하는 행동이 나올까?"</strong> 라고 자문해 보세요.</p>
+</blockquote>
+<p><strong>실수 4: "보상 함수를 한 번에 완성하려고 하기"</strong> 🚫</p>
+<blockquote>
+<p>처음부터 완벽한 보상 함수를 만들 수 있는 사람은 없습니다. <strong>단순하게 시작 → 테스트 → 문제 발견 → 수정</strong> 의 반복이 정상적인 과정입니다. 프로 연구자들도 이렇게 합니다!</p>
 </blockquote>
 <hr />
-<h3 id="4-flatten-2d-1d">개념 4: Flatten과 분류 — 2D 특징을 1D로 펼치기<a class="headerlink" href="#4-flatten-2d-1d" title="Permanent link">&para;</a></h3>
-<h4 id="_14">비유로 시작<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
-<p>합성곱층과 풀링층을 거친 결과는 여전히 <strong>2차원 격자</strong> 형태입니다. 그런데 최종 분류를 수행하는 완전연결층은 <strong>1차원 벡터</strong>를 입력으로 받습니다. 마치 퍼즐 조각들을 <strong>한 줄로 나열</strong>해서 "이 퍼즐은 고양이 사진이다!"라고 판단하는 것과 같습니다.</p>
-<h4 id="_15">정확한 정의<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
-<p><strong>Flatten(평탄화)</strong> 은 다차원 텐서를 1차원 벡터로 변환하는 연산입니다. 예를 들어 8×8×64 크기의 특성 맵은 8 × 8 × 64 = <strong>4,096개</strong>의 숫자가 담긴 1차원 벡터가 됩니다.</p>
-<p>이 벡터는 완전연결층으로 전달되어, 최종적으로 <strong>각 클래스에 속할 확률</strong>을 출력합니다.</p>
-<h4 id="_16">예시로 확인<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
-<div class="mermaid">flowchart LR
-    A["특성 맵\n8×8×64\n= 4,096 값"] --&gt;|"Flatten"| B["1D 벡터\n[4096]"]
-    B --&gt;|"Dense 128"| C["[128]"]
-    C --&gt;|"Dense 3\n+ Softmax"| D["직진: 0.85\n좌회전: 0.10\n우회전: 0.05"]</div>
-<p>Softmax 함수는 출력값을 <strong>확률(0~1)로 변환</strong>하며, 모든 클래스의 확률을 합하면 1이 됩니다. 가장 높은 확률의 클래스가 최종 예측 결과가 됩니다.</p>
-<hr />
-<h2 id="keras-cnn">🔨 따라하기: Keras로 CNN 만들어 이미지 분류하기<a class="headerlink" href="#keras-cnn" title="Permanent link">&para;</a></h2>
-<p>이제 직접 CNN을 만들어봅시다! CIFAR-10 데이터셋(10종류 사물 이미지)을 사용하여 이미지 분류기를 구축합니다. 이 경험이 이후 CARLA 자율주행 이미지 분류의 기반이 됩니다.</p>
-<h3 id="step-1">Step 1: 데이터 준비하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">cifar10</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># CIFAR-10 데이터 로드 (인터넷 연결 필요)</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">cifar10</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># 데이터 확인</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;훈련 데이터: </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>   <span class="c1"># (50000, 32, 32, 3)</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;테스트 데이터: </span><span class="si">{</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>   <span class="c1"># (10000, 32, 32, 3)</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;레이블 예시: </span><span class="si">{</span><span class="n">y_train</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># 클래스 이름 정의</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">class_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;비행기&#39;</span><span class="p">,</span> <span class="s1">&#39;자동차&#39;</span><span class="p">,</span> <span class="s1">&#39;새&#39;</span><span class="p">,</span> <span class="s1">&#39;고양이&#39;</span><span class="p">,</span> <span class="s1">&#39;사슴&#39;</span><span class="p">,</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>               <span class="s1">&#39;개&#39;</span><span class="p">,</span> <span class="s1">&#39;개구리&#39;</span><span class="p">,</span> <span class="s1">&#39;말&#39;</span><span class="p">,</span> <span class="s1">&#39;배&#39;</span><span class="p">,</span> <span class="s1">&#39;트럭&#39;</span><span class="p">]</span>
-</span></code></pre></div>
+<h2 id="_8">✅ 스스로 점검하기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 질문에 답해 보세요. 자신 있게 답할 수 있다면 이번 장을 잘 이해한 것입니다!</p>
+<p><strong>1. 보상 함수의 역할은 무엇인가요?</strong></p>
 <blockquote>
-<p><strong>알아보기</strong> 📖</p>
-<p>CIFAR-10은 32×32 픽셀 컬러 이미지 60,000장으로 구성된 유명한 벤치마크 데이터셋입니다. 10개 클래스에 각각 6,000장씩 포함되어 있어 CNN 학습에 딱 좋은 크기입니다.</p>
+<p>💬 내 답: <strong><em>_</em></strong><strong><em>_</em></strong>_</p>
+<p>✅ 핵심: "에이전트에게 행동의 좋고 나쁨을 알려주는 유일한 신호"라는 점이 들어가면 정답!</p>
 </blockquote>
-<h3 id="step-2">Step 2: 데이터 전처리하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 픽셀값을 0~1 범위로 정규화</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># 레이블을 원-핫 인코딩</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">y_train</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">y_test</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;정규화 후 픽셀 범위: </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2"> ~ </span><span class="si">{</span><span class="n">X_train</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;원-핫 인코딩 예시: </span><span class="si">{</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># [0 0 0 0 0 0 1 0 0 0] (개구리=6)</span>
-</span></code></pre></div>
-<p>정규화(0~255 → 0~1)를 하는 이유는 신경망이 작은 범위의 숫자를 더 효율적으로 학습하기 때문입니다.</p>
-<h3 id="step-3-cnn">Step 3: CNN 모델 구성하기<a class="headerlink" href="#step-3-cnn" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sequential</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.layers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Conv2D</span><span class="p">,</span> <span class="n">MaxPooling2D</span><span class="p">,</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Dropout</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="c1"># === 특징 추출부 ===</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="c1"># 첫 번째 합성곱 블록</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">,</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>           <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="c1"># 두 번째 합성곱 블록</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">),</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="c1"># 세 번째 합성곱 블록</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">),</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="c1"># === 분류부 ===</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    <span class="n">Flatten</span><span class="p">(),</span>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>    <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="p">])</span>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</span></code></pre></div>
-<p>각 층의 역할을 하나씩 살펴봅시다.</p>
-<ul>
-<li><strong>Conv2D(32, (3,3))</strong>: 3×3 크기 필터 32개로 특징 추출. <code>padding='same'</code>은 출력 크기를 입력과 동일하게 유지</li>
-<li><strong>MaxPooling2D((2,2))</strong>: 2×2 최대 풀링으로 크기를 절반으로 축소 (32×32 → 16×16)</li>
-<li><strong>Conv2D(64, (3,3))</strong>: 필터 수를 64개로 늘려 더 다양한 특징 추출</li>
-<li><strong>Flatten()</strong>: 2D 특성 맵을 1D 벡터로 변환</li>
-<li><strong>Dense(64)</strong>: 완전연결층에서 특징 종합</li>
-<li><strong>Dropout(0.5)</strong>: 학습 시 뉴런의 50%를 무작위로 비활성화하여 과적합 방지</li>
-<li><strong>Dense(10, softmax)</strong>: 10개 클래스의 확률 출력</li>
-</ul>
-<div class="mermaid">flowchart TD
-    A["입력: 32×32×3"] --&gt; B["Conv2D 32필터\n32×32×32"]
-    B --&gt; C["MaxPool\n16×16×32"]
-    C --&gt; D["Conv2D 64필터\n16×16×64"]
-    D --&gt; E["MaxPool\n8×8×64"]
-    E --&gt; F["Conv2D 64필터\n8×8×64"]
-    F --&gt; G["Flatten\n4,096"]
-    G --&gt; H["Dense 64"]
-    H --&gt; I["Dropout 0.5"]
-    I --&gt; J["Dense 10\nSoftmax"]</div>
-<h3 id="step-4">Step 4: 모델 컴파일 및 학습하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">)</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># 학습 시작 (약 5~10분 소요)</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="n">epochs</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>   <span class="c1"># 훈련 데이터의 20%를 검증용으로 사용</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">)</span>
-</span></code></pre></div>
-<ul>
-<li><strong>optimizer='adam'</strong>: 학습률을 자동 조절하는 최적화 알고리즘</li>
-<li><strong>loss='categorical_crossentropy'</strong>: 다중 클래스 분류에 사용하는 손실 함수</li>
-<li><strong>epochs=15</strong>: 전체 데이터를 15번 반복 학습</li>
-<li><strong>batch_size=64</strong>: 한 번에 64장씩 묶어서 학습</li>
-</ul>
-<h3 id="step-5">Step 5: 학습 과정 시각화하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># 정확도 그래프</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;훈련 정확도&#39;</span><span class="p">)</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;val_accuracy&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;검증 정확도&#39;</span><span class="p">)</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;에포크별 정확도&#39;</span><span class="p">)</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;에포크&#39;</span><span class="p">)</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;정확도&#39;</span><span class="p">)</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="c1"># 손실 그래프</span>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;훈련 손실&#39;</span><span class="p">)</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;검증 손실&#39;</span><span class="p">)</span>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;에포크별 손실&#39;</span><span class="p">)</span>
-</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;에포크&#39;</span><span class="p">)</span>
-</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;손실&#39;</span><span class="p">)</span>
-</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
-</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></code></pre></div>
-<blockquote>
-<p><strong>알아보기</strong> 📖</p>
-<p>그래프를 해석하는 팁:
-- 훈련 정확도와 검증 정확도가 <strong>함께 올라가면</strong> → 학습이 잘 되고 있음 ✅
-- 훈련 정확도는 오르는데 검증 정확도가 <strong>제자리이거나 내려가면</strong> → 과적합 ⚠️
-- 손실이 <strong>줄어들다 다시 올라가면</strong> → 학습을 중단할 시점(Early Stopping)</p>
-</blockquote>
-<h3 id="step-6">Step 6: 모델 평가 및 예측하기<a class="headerlink" href="#step-6" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 테스트 데이터로 최종 평가</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">test_loss</span><span class="p">,</span> <span class="n">test_accuracy</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;테스트 정확도: </span><span class="si">{</span><span class="n">test_accuracy</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">test_accuracy</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%)&quot;</span><span class="p">)</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># 실제 예측 해보기</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="n">predicted</span> <span class="o">=</span> <span class="n">class_names</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    <span class="n">actual</span> <span class="o">=</span> <span class="n">class_names</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_test</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span> <span class="k">if</span> <span class="n">predicted</span> <span class="o">==</span> <span class="n">actual</span> <span class="k">else</span> <span class="s1">&#39;red&#39;</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>    <span class="n">confidence</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span>
-</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;예측: </span><span class="si">{</span><span class="n">predicted</span><span class="si">}</span><span class="se">\n</span><span class="s2">실제: </span><span class="si">{</span><span class="n">actual</span><span class="si">}</span><span class="se">\n</span><span class="s2">확신: </span><span class="si">{</span><span class="n">confidence</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">,</span>
-</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>              <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
-</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
-</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></code></pre></div>
-<p>15 에포크 학습으로 약 <strong>70~75%</strong> 정확도를 달성할 수 있습니다. 이전 장의 MLP보다 훨씬 높은 성능입니다!</p>
-<hr />
-<h2 id="_17">📝 전체 코드<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
-<p>아래 코드를 복사해서 바로 실행할 수 있습니다.</p>
-<p>```python
-"""
-Chapter 11: CNN으로 CIFAR-10 이미지 분류하기
-실행 환경: Python 3.8+, TensorFlow 2.x
-예상 실행 시간: 약 5~10분 (GPU 없는 경우)
-"""</p>
-<p>import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-from tensorflow.keras.datasets import cifar10
-import numpy as np
-import matplotlib.pyplot as plt</p>
-<h1 id="_18">한글 폰트 설정 (필요시)<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h1>
-<p>plt.rcParams['font.family'] = 'DejaVu Sans'</p>
-<h1 id="1">── 1단계: 데이터 준비 ──<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
-<p>(X_train, y_train), (X_test, y_test) = cifar10.load_data()</p>
-<p>class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer',
-               'dog', 'frog', 'horse', 'ship', 'truck']</p>
-<p>X_train = X_train.astype('float32') / 255.0
-X_test = X_test.astype('float32') / 255.0</p>
-<p>y_train = tf.keras.utils.to_categorical(y_train, 10)
-y_test = tf.keras.utils.to_categorical(y_test, 10)</p>
-<p>print(f"훈련 데이터: {X_train.shape}, 테스트 데이터: {X_test.shape}")</p>
-<h1 id="2-cnn">── 2단계: CNN 모델 구성 ──<a class="headerlink" href="#2-cnn" title="Permanent link">&para;</a></h1>
-<p>model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', padding='same', input_shape=(32, 32, 3)),
-    MaxPooling2D((2, 2)),</p>
-<div class="codehilite"><pre><span></span><code>Conv2D(64, (3, 3), activation=&#39;relu&#39;, padding=&#39;same&#39;),
-MaxPooling2D((2,
-</code></pre></div>
+<p>**2. 아래 보상 함수의 문제점은 무엇일</p>
 
 
 

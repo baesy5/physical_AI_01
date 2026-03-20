@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="시뮬레이션에서 실제 도로까지, CARLA 시뮬레이터와 RC카를 활용하여 직접 만들며 이해하는 8주 완성 Physical AI 자율주행 프로젝트 교과서입니다.">
+        <meta name="description" content="햄스터 로봇을 직접 제어하며 파이썬 프로그래밍 활용 능력을 키우고, 라인트레이싱 과제를 통해 강화학습의 핵심 원리를 몸으로 이해하는 실습 중심 교육 교재입니다.">
       
       
         <meta name="author" content="Created with EduFlow">
       
       
-        <link rel="canonical" href="https://baesy5.github.io/physical_AI_01/chapter05/">
+        <link rel="canonical" href="https://baesy5.github.io/ham01/chapter05/">
       
       
         <link rel="prev" href="../chapter04/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>NumPy와 이미지 데이터 다루기 - Physical AI: 자율주행으로 배우는 인공지능</title>
+        <title>while 루프와 실시간 로봇 제어 - 햄스터 로봇으로 배우는 파이썬 & 강화학습</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-5-numpy" class="md-skip">
+        <a href="#chapter-5-while" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-header__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
+    <a href=".." title="햄스터 로봇으로 배우는 파이썬 &amp; 강화학습" class="md-header__button md-logo" aria-label="햄스터 로봇으로 배우는 파이썬 & 강화학습" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Physical AI: 자율주행으로 배우는 인공지능
+            햄스터 로봇으로 배우는 파이썬 & 강화학습
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NumPy와 이미지 데이터 다루기
+              while 루프와 실시간 로봇 제어
             
           </span>
         </div>
@@ -234,41 +234,19 @@
   
   
   
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../chapter01/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Part 1 - [1권] Part 1: Physical AI의 세계로
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
     
   
   
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../chapter04/" class="md-tabs__link">
+        <a href="../chapter01/" class="md-tabs__link">
           
   
   
     
   
-  Part 2 - [1권] Part 2: Python과 개발 환경 준비
+  Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
 
         </a>
       </li>
@@ -284,13 +262,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter07/" class="md-tabs__link">
+        <a href="../chapter06/" class="md-tabs__link">
           
   
   
     
   
-  Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
+  Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
 
         </a>
       </li>
@@ -306,13 +284,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter10/" class="md-tabs__link">
+        <a href="../chapter09/" class="md-tabs__link">
           
   
   
     
   
-  Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+  Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
 
         </a>
       </li>
@@ -328,13 +306,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../chapter15/" class="md-tabs__link">
+        <a href="../chapter14/" class="md-tabs__link">
           
   
   
     
   
-  Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+  Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
 
         </a>
       </li>
@@ -356,29 +334,7 @@
   
     
   
-  Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../chapter22/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Part 7 - [2권] Part 7: 프로젝트 완성과 발표
+  Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
 
         </a>
       </li>
@@ -408,13 +364,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Physical AI: 자율주행으로 배우는 인공지능" class="md-nav__button md-logo" aria-label="Physical AI: 자율주행으로 배우는 인공지능" data-md-component="logo">
+    <a href=".." title="햄스터 로봇으로 배우는 파이썬 &amp; 강화학습" class="md-nav__button md-logo" aria-label="햄스터 로봇으로 배우는 파이썬 & 강화학습" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Physical AI: 자율주행으로 배우는 인공지능
+    햄스터 로봇으로 배우는 파이썬 & 강화학습
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -450,8 +406,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -461,30 +419,37 @@
       
         
       
+        
+      
+        
+      
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 1 - [1권] Part 1: Physical AI의 세계로
+    Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
   
 
     
@@ -495,12 +460,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 1 - [1권] Part 1: Physical AI의 세계로
+    Part 1 - [1권] 햄스터 로봇과 첫 만남 – 파이썬으로 로봇 제어하기
   
 
           </label>
@@ -520,7 +485,7 @@
   <span class="md-ellipsis">
     
   
-    Physical AI란 무엇인가?
+    햄스터 로봇 소개와 개발 환경 설정
   
 
     
@@ -548,7 +513,7 @@
   <span class="md-ellipsis">
     
   
-    자율주행의 원리: 인지-판단-제어
+    앞으로, 뒤로, 회전! – 모터 제어의 기초
   
 
     
@@ -576,7 +541,7 @@
   <span class="md-ellipsis">
     
   
-    시뮬레이션이 중요한 이유
+    함수로 정리하는 로봇 동작
   
 
     
@@ -589,78 +554,6 @@
   
 
               
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 2 - [1권] Part 2: Python과 개발 환경 준비
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 2 - [1권] Part 2: Python과 개발 환경 준비
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -676,7 +569,7 @@
   <span class="md-ellipsis">
     
   
-    Python 핵심 복습: 자율주행에 쓰이는 문법
+    센서로 세상을 느끼다 – 바닥 센서와 근접 센서
   
 
     
@@ -713,7 +606,7 @@
   <span class="md-ellipsis">
     
   
-    NumPy와 이미지 데이터 다루기
+    while 루프와 실시간 로봇 제어
   
 
     
@@ -731,7 +624,7 @@
   <span class="md-ellipsis">
     
   
-    NumPy와 이미지 데이터 다루기
+    while 루프와 실시간 로봇 제어
   
 
     
@@ -791,10 +684,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-numpy" class="md-nav__link">
+  <a href="#1-while" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: NumPy 배열 — 숫자를 담는 격자판
+        개념 1: while 반복문 — "조건이 맞는 한 계속!"
       
     </span>
   </a>
@@ -805,7 +698,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기
+        개념 2: 무한 루프 — "멈추라 할 때까지 영원히!"
       
     </span>
   </a>
@@ -816,7 +709,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀
+        개념 3: 센서 + 루프 = 실시간 제어
       
     </span>
   </a>
@@ -824,10 +717,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-opencv" class="md-nav__link">
+  <a href="#4-try-except" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장
+        개념 4: try-except — "비상구를 만들어두자!"
       
     </span>
   </a>
@@ -843,19 +736,19 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
+        🔨 따라하기: 장애물 회피 로봇 만들기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔨 따라하기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 장애물 회피 로봇 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-numpy" class="md-nav__link">
+  <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: NumPy 배열 만들고 탐색하기
+        Step 1: 센서를 반복해서 읽어보기
       
     </span>
   </a>
@@ -866,7 +759,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 슬라이싱으로 배열의 일부 추출하기
+        Step 2: 기준값 정하기
       
     </span>
   </a>
@@ -877,7 +770,7 @@
   <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: 간단한 이미지를 직접 만들어보기
+        Step 3: "감지 → 판단 → 행동" 완성하기
       
     </span>
   </a>
@@ -888,7 +781,7 @@
   <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: 실제 이미지 읽고 변환하기
+        Step 4: 실행하고 관찰하기
       
     </span>
   </a>
@@ -899,18 +792,7 @@
   <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: 이미지 밝기 조절하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-hsv" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 특정 색상 추출하기 (HSV 필터링)
+        Step 5: 동작을 부드럽게 개선하기
       
     </span>
   </a>
@@ -933,38 +815,54 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 스스로 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 더 해보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장으로
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter06/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CARLA 시뮬레이터 설치와 첫 주행
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1005,17 +903,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
+    Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
   
 
     
@@ -1026,16 +924,44 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 3 - [1권] Part 3: CARLA에서 데이터 수집과 전처리
+    Part 2 - [1권] 라인트레이싱 – 로봇이 선을 따라 달린다
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    라인트레이싱의 원리와 센서 상태 분류
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1051,7 +977,7 @@
   <span class="md-ellipsis">
     
   
-    CARLA 센서 시스템 이해하기
+    if-else로 만드는 규칙 기반 라인트레이싱
   
 
     
@@ -1079,35 +1005,7 @@
   <span class="md-ellipsis">
     
   
-    자율주행 학습 데이터 수집하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter09/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    데이터 전처리와 증강
+    규칙 기반의 한계 – 왜 로봇이 선을 놓칠까?
   
 
     
@@ -1138,6 +1036,215 @@
     
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 - [2권] 강화학습의 세계로 – 핵심 개념 이해하기
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    강화학습이란 무엇인가 – 에이전트, 환경, 보상
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    상태와 행동 설계 – 로봇의 눈과 손을 정의하다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    보상 함수 설계 – 로봇에게 점수를 매기는 법
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Q-테이블과 Q-learning – 경험에서 배우는 로봇
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    탐험과 활용 – 모험할까, 안전하게 갈까?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
       
         
       
@@ -1170,7 +1277,7 @@
   <span class="md-ellipsis">
     
   
-    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+    Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
   
 
     
@@ -1186,123 +1293,11 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 4 - [2권] Part 4: 딥러닝으로 자율주행 모델 만들기
+    Part 4 - [2권] 시뮬레이션으로 강화학습 실습하기
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter10/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    딥러닝 기초: 신경망의 원리
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter11/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    합성곱 신경망(CNN) 이해하기
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter12/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    End-to-End 자율주행 모델 설계
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter13/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    모델 학습과 하이퍼파라미터 튜닝
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1318,7 +1313,91 @@
   <span class="md-ellipsis">
     
   
-    CARLA에서 자율주행 테스트
+    시뮬레이션 환경 만들기 – 가상 트랙과 가상 로봇
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Q-learning 에이전트 구현
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    학습 실행과 결과 분석 – 로봇이 정말 배울까?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    하이퍼파라미터 실험 – 학습률, 할인율, 탐험률 조정하기
   
 
     
@@ -1377,7 +1456,7 @@
   <span class="md-ellipsis">
     
   
-    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
+    Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
   
 
     
@@ -1393,160 +1472,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part 5 - [2권] Part 5: 시뮬레이션 고급 기능과 안전 주행
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter15/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    차선 인식과 차선 유지
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter16/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    장애물 감지와 비상 정지
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter17/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    통합 자율주행 시스템 완성 (시뮬레이션)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 6 - [2권] Part 6: RC카로 현실 세계에 도전하기
+    Part 5 - [2권] 실제 햄스터 로봇에 강화학습 적용하기
   
 
           </label>
@@ -1566,7 +1492,7 @@
   <span class="md-ellipsis">
     
   
-    라즈베리파이와 RC카 하드웨어 구성
+    시뮬레이션에서 실제 로봇으로 – 코드 연결하기
   
 
     
@@ -1594,7 +1520,7 @@
   <span class="md-ellipsis">
     
   
-    센서 연결과 실시간 데이터 수집
+    실제 로봇으로 Q-learning 학습 실행
   
 
     
@@ -1622,186 +1548,7 @@
   <span class="md-ellipsis">
     
   
-    Sim-to-Real: 모델 이식과 최적화
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter21/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RC카 자율주행 실전 테스트
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part 7 - [2권] Part 7: 프로젝트 완성과 발표
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter22/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    자율주행 시스템 최종 통합
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter23/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    프로젝트 문서화와 발표 준비
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter24/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    최종 발표와 자율주행 시연
+    결과 비교와 분석 – 규칙 기반 vs 강화학습
   
 
     
@@ -1883,10 +1630,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-numpy" class="md-nav__link">
+  <a href="#1-while" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 1: NumPy 배열 — 숫자를 담는 격자판
+        개념 1: while 반복문 — "조건이 맞는 한 계속!"
       
     </span>
   </a>
@@ -1897,7 +1644,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기
+        개념 2: 무한 루프 — "멈추라 할 때까지 영원히!"
       
     </span>
   </a>
@@ -1908,7 +1655,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀
+        개념 3: 센서 + 루프 = 실시간 제어
       
     </span>
   </a>
@@ -1916,10 +1663,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-opencv" class="md-nav__link">
+  <a href="#4-try-except" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장
+        개념 4: try-except — "비상구를 만들어두자!"
       
     </span>
   </a>
@@ -1935,19 +1682,19 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
+        🔨 따라하기: 장애물 회피 로봇 만들기
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔨 따라하기">
+    <nav class="md-nav" aria-label="🔨 따라하기: 장애물 회피 로봇 만들기">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-numpy" class="md-nav__link">
+  <a href="#step-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: NumPy 배열 만들고 탐색하기
+        Step 1: 센서를 반복해서 읽어보기
       
     </span>
   </a>
@@ -1958,7 +1705,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 슬라이싱으로 배열의 일부 추출하기
+        Step 2: 기준값 정하기
       
     </span>
   </a>
@@ -1969,7 +1716,7 @@
   <a href="#step-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: 간단한 이미지를 직접 만들어보기
+        Step 3: "감지 → 판단 → 행동" 완성하기
       
     </span>
   </a>
@@ -1980,7 +1727,7 @@
   <a href="#step-4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4: 실제 이미지 읽고 변환하기
+        Step 4: 실행하고 관찰하기
       
     </span>
   </a>
@@ -1991,18 +1738,7 @@
   <a href="#step-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 5: 이미지 밝기 조절하기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-6-hsv" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 6: 특정 색상 추출하기 (HSV 필터링)
+        Step 5: 동작을 부드럽게 개선하기
       
     </span>
   </a>
@@ -2019,6 +1755,50 @@
     <span class="md-ellipsis">
       
         📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 자주 하는 실수
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 스스로 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 더 해보기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 다음 장으로
       
     </span>
   </a>
@@ -2042,417 +1822,349 @@
 
 
 
-<h1 id="chapter-5-numpy">Chapter 5: NumPy와 이미지 데이터 다루기<a class="headerlink" href="#chapter-5-numpy" title="Permanent link">&para;</a></h1>
+<h1 id="chapter-5-while">Chapter 5: while 루프와 실시간 로봇 제어<a class="headerlink" href="#chapter-5-while" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> NumPy 배열을 생성하고 기본 연산(덧셈, 슬라이싱 등)을 수행할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이미지가 숫자 배열(픽셀값)로 구성되어 있음을 설명할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> OpenCV로 이미지를 읽고, 그레이스케일 변환·크기 조정·영역 자르기를 수행할 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 특정 색상 범위를 필터링하여 원하는 색만 추출할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> while 반복문의 원리를 이해하고, 센서 값을 지속적으로 읽는 루프를 작성할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 근접 센서 기반 장애물 회피 로봇을 만들 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 무한 루프를 안전하게 종료하는 방법(try-except, 키보드 인터럽트)을 적용할 수 있다</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 실시간 제어 루프의 기본 구조를 이해하고 활용할 수 있다</li>
 </ul>
 <hr />
 <h2 id="_2">💡 왜 이걸 배우나요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><strong>생각해보기</strong> 🤔</p>
-<p>자율주행 자동차의 카메라가 도로를 찍었습니다. 이 사진 한 장은 컴퓨터 내부에서 어떤 모습일까요? 사람의 눈에는 "도로 위에 흰색 차선이 보이는 사진"이지만, 컴퓨터에게는 그저 <strong>수십만 개의 숫자 덩어리</strong>일 뿐입니다.</p>
-</blockquote>
-<p>자율주행 AI가 "저기 차선이 있다", "앞에 사람이 서 있다"를 판단하려면, 먼저 이 숫자 덩어리를 능숙하게 다룰 줄 알아야 합니다. 이때 사용하는 핵심 도구가 바로 <strong>NumPy</strong>와 <strong>OpenCV</strong>입니다.</p>
-<ul>
-<li><strong>NumPy</strong>: 대량의 숫자 데이터를 빠르게 처리하는 Python 라이브러리</li>
-<li><strong>OpenCV</strong>: 이미지와 영상을 처리하는 대표적인 컴퓨터 비전 라이브러리</li>
-</ul>
-<p>이번 장에서는 NumPy로 숫자 배열을 다루는 기초를 익힌 뒤, 실제 이미지를 열어서 변환하고 저장하는 과정까지 직접 실습합니다. 이 과정은 앞으로 배울 객체 인식, 차선 검출 등 <strong>모든 자율주행 비전 기술의 출발점</strong>입니다.</p>
+<p>지난 챕터에서 우리는 센서 값을 <strong>한 번</strong> 읽어서 로봇의 상태를 확인했습니다. 그런데 생각해보세요. 여러분이 길을 걸을 때 눈을 <strong>한 번만 뜨고</strong> 나머지는 감고 걷나요? 당연히 아닙니다! 계속 눈을 뜨고 주변을 살피면서 걷죠. 🚶‍♂️</p>
+<p>로봇도 마찬가지입니다. 진짜 쓸모 있는 로봇은 센서를 <strong>끊임없이</strong> 읽으면서 상황에 맞게 반응해야 합니다. 장애물이 나타나면 피하고, 길이 열리면 다시 전진하고요.</p>
+<p>이걸 가능하게 해주는 것이 바로 <strong>while 루프</strong>입니다. 이번 장을 마치면 여러분의 햄스터 로봇은 스스로 장애물을 피하며 돌아다니는 <strong>자율 로봇</strong>이 됩니다! 🤖✨</p>
+<p>그리고 이 "반복해서 감지하고 → 판단하고 → 행동하는" 구조는 앞으로 배울 라인트레이싱, 나아가 강화학습 에이전트의 <strong>기본 골격</strong>이 됩니다.</p>
 <hr />
 <h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1-numpy">개념 1: NumPy 배열 — 숫자를 담는 격자판<a class="headerlink" href="#1-numpy" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작</strong> 🎯</p>
-<p>엑셀 스프레드시트를 떠올려 보세요. 행과 열로 이루어진 칸에 숫자가 빼곡히 들어 있습니다. NumPy 배열(ndarray)은 이 스프레드시트와 비슷합니다. 다만 <strong>수학 연산에 특화</strong>되어 있어서, 수십만 개의 숫자를 한 번에 더하거나 곱하는 작업을 눈 깜짝할 사이에 처리합니다.</p>
-<p><strong>정확한 정의</strong> 📖</p>
-<p><strong>NumPy 배열(ndarray)</strong>은 같은 자료형의 숫자들이 격자 형태로 저장된 다차원 데이터 구조입니다. Python 기본 리스트보다 연산 속도가 수십~수백 배 빠릅니다.</p>
-<p><strong>예시로 확인</strong> 💻</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 1차원 배열: 센서 5개의 온도 값</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">temperatures</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">36.5</span><span class="p">,</span> <span class="mf">37.0</span><span class="p">,</span> <span class="mf">36.8</span><span class="p">,</span> <span class="mf">37.2</span><span class="p">,</span> <span class="mf">36.9</span><span class="p">])</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>        <span class="c1"># [36.5 37.  36.8 37.2 36.9]</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;numpy.ndarray&#39;&gt;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 2차원 배열: 3행 4열 격자</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">])</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (3, 4) → 3행 4열</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>  <span class="c1"># int64 → 정수형</span>
+<h3 id="1-while">개념 1: while 반복문 — "조건이 맞는 한 계속!"<a class="headerlink" href="#1-while" title="Permanent link">&para;</a></h3>
+<p><strong>🎪 비유로 시작</strong></p>
+<p>놀이공원의 회전목마를 떠올려보세요. 운영 시간이 끝나지 않는 한 계속 빙글빙글 돕니다. "운영 시간인가?" → "YES!" → 한 바퀴 돌기 → "운영 시간인가?" → "YES!" → 한 바퀴 돌기… "운영 시간인가?" → "NO!" → 멈춤. 이것이 while 루프의 원리입니다.</p>
+<p><strong>📖 정확한 정의</strong></p>
+<p><code>while</code>문은 <strong>조건이 True인 동안</strong> 코드 블록을 반복 실행하는 구문입니다. 조건이 False가 되면 반복을 멈추고 다음 코드로 넘어갑니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">while</span> <span class="n">조건</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">반복할</span> <span class="n">코드</span>
 </span></code></pre></div>
-<p>배열에는 중요한 속성이 세 가지 있습니다.</p>
-<ul>
-<li><strong>shape</strong>: 배열의 크기 (행, 열, …)</li>
-<li><strong>dtype</strong>: 저장된 숫자의 자료형 (int64, float64, uint8 등)</li>
-<li><strong>ndim</strong>: 차원 수 (1차원, 2차원, 3차원…)</li>
-</ul>
-<blockquote>
-<p><strong>알아보기</strong> 📌</p>
-<p><code>uint8</code>은 0~255 범위의 정수를 저장하는 자료형입니다. 이미지의 밝기 값이 정확히 이 범위에 해당하기 때문에, 이미지 데이터는 거의 항상 <code>uint8</code> 타입으로 저장됩니다.</p>
-</blockquote>
-<hr />
-<h3 id="2">개념 2: 배열 연산과 슬라이싱 — 데이터를 자르고 계산하기<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작</strong> ✂️</p>
-<p>종이에 인쇄된 표에서 "3행부터 5행까지, 2열부터 4열까지"를 가위로 오려낸다고 상상해 보세요. NumPy에서는 이런 작업을 <strong>슬라이싱(slicing)</strong>이라 부르며, 코드 한 줄로 처리합니다.</p>
-<p><strong>정확한 정의</strong> 📖</p>
-<ul>
-<li><strong>배열 연산</strong>: 배열 전체에 동일한 수학 연산을 한꺼번에 적용하는 것 (벡터화 연산)</li>
-<li><strong>슬라이싱</strong>: 배열의 특정 범위를 인덱스로 지정하여 잘라내는 것</li>
-</ul>
-<p><strong>예시로 확인</strong> 💻</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 배열 연산: 모든 원소에 동시 적용</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">95</span><span class="p">])</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>    <span class="c1"># [85 95 80 90 100]  ← 전체에 5점 추가</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>    <span class="c1"># [160 180 150 170 190]</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="o">&gt;</span> <span class="mi">85</span><span class="p">)</span>   <span class="c1"># [False  True False False  True]</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># 2차원 배열 슬라이싱</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">],</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">],</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">120</span><span class="p">]</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">])</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>      <span class="c1"># 30 → 0행 2열의 값</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>       <span class="c1"># [50 60 70 80] → 1행 전체</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">])</span>       <span class="c1"># [40 80 120] → 3열 전체</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>   <span class="c1"># [[20 30] [60 70]] → 0~1행, 1~2열</span>
+<p><strong>💻 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;반복 </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">번째!&quot;</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;루프 종료!&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>슬라이싱 문법 <code>[시작:끝]</code>에서 <strong>시작은 포함, 끝은 미포함</strong>입니다.</p>
-<div class="mermaid">graph LR
-    A["data[0:2, 1:3]"] --&gt; B["행: 0부터 2 미만&lt;br/&gt;(0행, 1행)"]
-    A --&gt; C["열: 1부터 3 미만&lt;br/&gt;(1열, 2열)"]
-    B --&gt; D["결과: 2×2 부분 배열"]
-    C --&gt; D</div>
-<blockquote>
-<p><strong>정리하기</strong> 📋</p>
-<ul>
-<li>배열 연산은 <strong>반복문 없이</strong> 모든 원소에 한꺼번에 적용됩니다</li>
-<li>슬라이싱은 <code>[행범위, 열범위]</code> 형태로 원하는 영역을 추출합니다</li>
-<li>이 두 가지가 이미지 처리의 기본 도구입니다</li>
-</ul>
-</blockquote>
-<hr />
-<h3 id="3">개념 3: 이미지 = 숫자 배열 — 픽셀의 비밀<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작</strong> 🎨</p>
-<p>모자이크 벽화를 가까이서 보면 작은 색 타일의 집합입니다. 멀리서 보면 하나의 그림으로 보이죠. 디지털 이미지도 마찬가지입니다. 수만 개의 <strong>픽셀(pixel)</strong>이라는 작은 색 점이 모여 하나의 사진을 만듭니다.</p>
-<p><strong>정확한 정의</strong> 📖</p>
-<p>디지털 이미지는 <strong>높이 × 너비 × 채널</strong> 크기의 3차원 NumPy 배열입니다.</p>
-<ul>
-<li><strong>높이(height)</strong>: 세로 픽셀 수</li>
-<li><strong>너비(width)</strong>: 가로 픽셀 수</li>
-<li><strong>채널(channel)</strong>: 색상 정보의 수 (그레이스케일은 1, 컬러는 3)</li>
-</ul>
-<p><strong>예시로 확인</strong> 💻</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># 그레이스케일 이미지: 4×5 픽셀 (높이 4, 너비 5)</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 0 = 완전한 검정, 255 = 완전한 흰색</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">gray_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span>   <span class="mi">0</span><span class="p">],</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">[</span><span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">]</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">gray_image</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (4, 5) → 높이 4, 너비 5</span>
-</span></code></pre></div>
-<p>컬러 이미지는 3개의 채널을 가집니다.</p>
-<div class="mermaid">graph TD
-    A["컬러 이미지&lt;br/&gt;(480, 640, 3)"] --&gt; B["채널 0: Blue&lt;br/&gt;파란색 밝기 480×640"]
-    A --&gt; C["채널 1: Green&lt;br/&gt;초록색 밝기 480×640"]
-    A --&gt; D["채널 2: Red&lt;br/&gt;빨간색 밝기 480×640"]
-
-    style B fill:#4444ff,color:#fff
-    style C fill:#44aa44,color:#fff
-    style D fill:#ff4444,color:#fff</div>
-<blockquote>
-<p><strong>알아보기</strong> 📌</p>
-<p>OpenCV는 색상 순서가 <strong>BGR</strong>(파랑-초록-빨강)입니다. 우리가 일반적으로 쓰는 RGB 순서와 반대라는 점을 꼭 기억하세요! 이것은 OpenCV를 처음 사용할 때 가장 많이 실수하는 부분입니다.</p>
-</blockquote>
-<hr />
-<h3 id="4-opencv">개념 4: OpenCV 기본 — 이미지 읽기, 변환, 저장<a class="headerlink" href="#4-opencv" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작</strong> 📷</p>
-<p>카메라로 사진을 찍고(읽기), 필터를 적용하고(변환), 갤러리에 저장하는(저장) 과정을 떠올려 보세요. OpenCV도 정확히 같은 순서로 이미지를 처리합니다.</p>
-<p><strong>정확한 정의</strong> 📖</p>
-<p><strong>OpenCV(Open Source Computer Vision Library)</strong>는 이미지와 영상을 처리하기 위한 오픈소스 라이브러리입니다. Python에서는 <code>cv2</code>라는 이름으로 사용합니다.</p>
-<p><strong>핵심 함수 세 가지</strong></p>
-<ul>
-<li><code>cv2.imread()</code> → 이미지 파일을 NumPy 배열로 읽기</li>
-<li><code>cv2.cvtColor()</code> → 색상 공간 변환 (컬러 ↔ 그레이스케일 등)</li>
-<li><code>cv2.imwrite()</code> → NumPy 배열을 이미지 파일로 저장</li>
-</ul>
-<p><strong>예시로 확인</strong> 💻</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 이미지 읽기</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;road.jpg&#39;</span><span class="p">)</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;numpy.ndarray&#39;&gt;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (480, 640, 3) → 높이, 너비, 채널</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># 그레이스케일 변환</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">gray</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>   <span class="c1"># (480, 640) → 채널이 사라짐</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># 크기 조정</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">resized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">320</span><span class="p">,</span> <span class="mi">240</span><span class="p">))</span>  <span class="c1"># (너비, 높이) 순서 주의!</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">resized</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (240, 320, 3)</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># 이미지 저장</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_gray.jpg&#39;</span><span class="p">,</span> <span class="n">gray</span><span class="p">)</span>
-</span></code></pre></div>
-<div class="mermaid">flowchart LR
-    A["📁 이미지 파일&lt;br/&gt;road.jpg"] --&gt;|"cv2.imread()"| B["🔢 NumPy 배열&lt;br/&gt;(480, 640, 3)"]
-    B --&gt;|"cv2.cvtColor()"| C["🔢 그레이스케일&lt;br/&gt;(480, 640)"]
-    B --&gt;|"cv2.resize()"| D["🔢 크기 조정&lt;br/&gt;(240, 320, 3)"]
-    C --&gt;|"cv2.imwrite()"| E["📁 저장&lt;br/&gt;road_gray.jpg"]</div>
-<blockquote>
-<p><strong>정리하기</strong> 📋</p>
-<p>OpenCV에서 이미지는 곧 NumPy 배열입니다. 이미지를 읽는 순간 NumPy 배열이 되고, NumPy의 모든 연산(슬라이싱, 사칙연산, 조건 필터링)을 그대로 적용할 수 있습니다.</p>
-</blockquote>
-<hr />
-<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>이제 직접 코드를 작성하며 배운 개념을 확인해 봅시다. Jupyter Notebook 또는 Google Colab에서 따라해 보세요.</p>
-<h3 id="step-1-numpy">Step 1: NumPy 배열 만들고 탐색하기<a class="headerlink" href="#step-1-numpy" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 다양한 방법으로 배열 만들기</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">zeros</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>        <span class="c1"># 0으로 채운 3×4 배열</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>          <span class="c1"># 1로 채운 2×3 배열</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">range_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># 0부터 20 미만까지 2씩 증가</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;zeros:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">zeros</span><span class="p">)</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ones:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ones</span><span class="p">)</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;range_arr:&quot;</span><span class="p">,</span> <span class="n">range_arr</span><span class="p">)</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1"># 배열 모양 바꾸기</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>             <span class="c1"># [0, 1, 2, ..., 11]</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>        <span class="c1"># 3행 4열로 재배치</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;grid:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>실행 결과를 확인하세요.</strong> <code>reshape</code>은 원소 개수가 맞아야 합니다. 12개 원소를 3×4=12 칸에 재배치한 것입니다.</p>
-<hr />
-<h3 id="step-2">Step 2: 슬라이싱으로 배열의 일부 추출하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 5×5 배열 생성</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;전체 배열:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 다양한 슬라이싱</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">2행 전체:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:])</span>          <span class="c1"># [10 11 12 13 14]</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3열 전체:&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">])</span>            <span class="c1"># [ 3  8 13 18 23]</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;중앙 3×3:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>     <span class="c1"># 1~3행, 1~3열</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># 값 변경: 특정 영역을 한꺼번에 수정</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">좌상단 수정 후:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">grid</span><span class="p">)</span>
-</span></code></pre></div>
-<blockquote>
-<p><strong>생각해보기</strong> 🤔</p>
-<p><code>grid[1:4, 1:4]</code>를 이미지에 적용한다면? 이미지의 특정 사각형 영역만 잘라내는 것과 같습니다. 이것이 바로 <strong>ROI(Region of Interest, 관심 영역) 추출</strong>입니다.</p>
-</blockquote>
-<hr />
-<h3 id="step-3">Step 3: 간단한 이미지를 직접 만들어보기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
-<p>실제 이미지 파일이 없어도 NumPy로 이미지를 직접 만들 수 있습니다.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># 검은 바탕의 200×300 컬러 이미지 만들기</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">canvas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;캔버스 shape:&quot;</span><span class="p">,</span> <span class="n">canvas</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (200, 300, 3)</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1"># 빨간 사각형 그리기 (BGR 순서이므로 B=0, G=0, R=255)</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">canvas</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span><span class="mi">200</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1"># 저장</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;red_rectangle.png&#39;</span><span class="p">,</span> <span class="n">canvas</span><span class="p">)</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;이미지 저장 완료: red_rectangle.png&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p>저장된 <code>red_rectangle.png</code>를 열어보면 검은 바탕 위에 빨간 사각형이 보입니다. 슬라이싱 <code>[50:150, 100:200]</code>이 곧 사각형의 위치와 크기를 결정한 것입니다.</p>
-<hr />
-<h3 id="step-4">Step 4: 실제 이미지 읽고 변환하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
-<p>여기서는 테스트용 이미지를 직접 생성하여 진행합니다. 실제 도로 사진이 있다면 파일명을 바꿔 사용하세요.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 테스트용 도로 이미지 생성 (실제로는 cv2.imread(&#39;road.jpg&#39;) 사용)</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">road</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">road</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>    <span class="c1"># 하단: 회색 도로</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">road</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>      <span class="c1"># 상단: 하늘색 배경</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">road</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">150</span><span class="p">:</span><span class="mi">250</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>  <span class="c1"># 흰색 차선</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># 1) 그레이스케일 변환</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">road</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;원본 shape:&quot;</span><span class="p">,</span> <span class="n">road</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (300, 400, 3)</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;그레이 shape:&quot;</span><span class="p">,</span> <span class="n">gray</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (300, 400)</span>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1"># 2) 크기 조정 (절반 크기)</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="n">half</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">road</span><span class="p">,</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">))</span>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;절반 shape:&quot;</span><span class="p">,</span> <span class="n">half</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>    <span class="c1"># (150, 200, 3)</span>
-</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
-</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="c1"># 3) 관심 영역(ROI) 추출 - 도로 부분만 잘라내기</span>
-</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="n">roi</span> <span class="o">=</span> <span class="n">road</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span>
-</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROI shape:&quot;</span><span class="p">,</span> <span class="n">roi</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>      <span class="c1"># (100, 400, 3)</span>
-</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
-</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="c1"># 저장</span>
-</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_original.png&#39;</span><span class="p">,</span> <span class="n">road</span><span class="p">)</span>
-</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_gray.png&#39;</span><span class="p">,</span> <span class="n">gray</span><span class="p">)</span>
-</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_half.png&#39;</span><span class="p">,</span> <span class="n">half</span><span class="p">)</span>
-</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_roi.png&#39;</span><span class="p">,</span> <span class="n">roi</span><span class="p">)</span>
-</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;모든 이미지 저장 완료!&quot;</span><span class="p">)</span>
-</span></code></pre></div>
+<p>실행 결과:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>반복 0번째!
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>반복 1번째!
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>반복 2번째!
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>반복 3번째!
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>반복 4번째!
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>루프 종료!
+</span></code></pre></div></p>
+<p><code>count</code>가 5가 되면 <code>count &lt; 5</code>가 False가 되어 루프를 빠져나옵니다.</p>
 <div class="mermaid">flowchart TD
-    A["원본 이미지&lt;br/&gt;(300, 400, 3)"] --&gt; B["그레이스케일&lt;br/&gt;(300, 400)"]
-    A --&gt; C["크기 조정&lt;br/&gt;(150, 200, 3)"]
-    A --&gt; D["ROI 추출&lt;br/&gt;(100, 400, 3)"]
-
-    B --&gt; E["road_gray.png"]
-    C --&gt; F["road_half.png"]
-    D --&gt; G["road_roi.png"]</div>
+    A[시작] --&gt; B{조건 확인}
+    B -- "True" --&gt; C[코드 블록 실행]
+    C --&gt; B
+    B -- "False" --&gt; D[루프 종료]</div>
 <hr />
-<h3 id="step-5">Step 5: 이미지 밝기 조절하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
-<p>NumPy 배열 연산을 이미지에 바로 적용할 수 있습니다.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 이미지 읽기 (Step 4에서 만든 이미지 사용)</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;road_original.png&#39;</span><span class="p">)</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># 밝기 올리기: 모든 픽셀에 50을 더함</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">bright</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># 밝기 내리기: 모든 픽셀에서 50을 뺌</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">dark</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span> <span class="o">-</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_bright.png&#39;</span><span class="p">,</span> <span class="n">bright</span><span class="p">)</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;road_dark.png&#39;</span><span class="p">,</span> <span class="n">dark</span><span class="p">)</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;밝기 조절 이미지 저장 완료!&quot;</span><span class="p">)</span>
+<h3 id="2">개념 2: 무한 루프 — "멈추라 할 때까지 영원히!"<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>🎪 비유로 시작</strong></p>
+<p>24시간 편의점을 생각해보세요. "영업 중인가?" → 항상 YES! 특별한 사건(정전, 폐업 결정 등)이 없는 한 영원히 문을 열고 있죠. 이것이 <strong>무한 루프</strong>입니다.</p>
+<p><strong>📖 정확한 정의</strong></p>
+<p><code>while True:</code>는 조건이 항상 True이므로 <strong>스스로는 절대 멈추지 않는</strong> 반복문입니다. 로봇 제어에서는 "계속 센서를 읽고 반응하라"는 의미로 무한 루프를 많이 사용합니다.</p>
+<p><strong>💻 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;계속 실행 중...&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <blockquote>
-<p><strong>알아보기</strong> 📌</p>
-<p><code>np.clip()</code>은 값의 범위를 제한합니다. 픽셀값에 50을 더하면 255를 넘을 수 있고, 50을 빼면 0 미만이 될 수 있습니다. <code>clip(값, 0, 255)</code>로 안전하게 범위를 지켜줍니다. <code>astype(np.int16)</code>으로 잠시 자료형을 바꾸는 이유도 <code>uint8</code>에서는 255를 넘으면 다시 0부터 돌아가는 <strong>오버플로우</strong> 문제가 생기기 때문입니다.</p>
+<p>⚠️ 위 코드를 실행하면 정말로 영원히 출력됩니다! 멈추려면 <code>Ctrl + C</code>를 눌러야 해요. 그래서 <strong>안전한 종료 방법</strong>이 필요합니다. (개념 4에서 배웁니다!)</p>
 </blockquote>
 <hr />
-<h3 id="step-6-hsv">Step 6: 특정 색상 추출하기 (HSV 필터링)<a class="headerlink" href="#step-6-hsv" title="Permanent link">&para;</a></h3>
-<p>자율주행에서 차선을 검출하려면 특정 색상만 걸러내야 합니다. 이를 <strong>색상 필터링</strong>이라고 합니다.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># 테스트 이미지: 다양한 색이 포함된 이미지 생성</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">img</span><span class="p">[</span><span class="mi">200</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>         <span class="c1"># 회색 도로</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>           <span class="c1"># 하늘</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">img</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">150</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>      <span class="c1"># 노란 차선 (BGR)</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">img</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="mi">250</span><span class="p">:</span><span class="mi">350</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>   <span class="c1"># 흰색 차선</span>
-</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c1"># BGR → HSV 변환</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="n">hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
-</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c1"># 노란색 범위 지정 (HSV 기준)</span>
-</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">lower_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">upper_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">35</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">])</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
-</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c1"># 마스크 생성: 노란색인 픽셀만 흰색(255), 나머지는 검정(0)</span>
-</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span> <span class="n">lower_yellow</span><span class="p">,</span> <span class="n">upper_yellow</span><span class="p">)</span>
-</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
-</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c1"># 원본에서 노란색 부분만 추출</span>
-</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="n">result</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
-</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>
-</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;yellow_mask.png&#39;</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span>
-</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;yellow_only.png&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
-</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;노란색 필터링 완료!&quot;</span><span class="p">)</span>
-</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;마스크 shape:&quot;</span><span class="p">,</span> <span class="n">mask</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;마스크에서 흰색 픽셀 수:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">255</span><span class="p">))</span>
+<h3 id="3">개념 3: 센서 + 루프 = 실시간 제어<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>🎪 비유로 시작</strong></p>
+<p>운전할 때를 생각해보세요. 운전자는 이런 과정을 <strong>끊임없이</strong> 반복합니다:</p>
+<ol>
+<li>👀 앞을 본다 (센서 읽기)</li>
+<li>🧠 상황을 판단한다 (if문으로 조건 확인)</li>
+<li>🖐️ 핸들/브레이크를 조작한다 (모터 제어)</li>
+<li>1번으로 돌아간다</li>
+</ol>
+<p>이 과정을 코드로 옮기면 바로 <strong>실시간 제어 루프</strong>가 됩니다!</p>
+<p><strong>📖 정확한 정의</strong></p>
+<p>실시간 제어 루프란, while 루프 안에서 <strong>"감지 → 판단 → 행동"</strong>을 반복하는 구조입니다. 로봇 프로그래밍의 가장 핵심적인 패턴이에요.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">sensor</span> <span class="o">=</span> <span class="n">센서값_읽기</span><span class="p">()</span>      <span class="c1"># 1. 감지</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">if</span> <span class="n">sensor</span> <span class="o">&gt;</span> <span class="n">기준값</span><span class="p">:</span>         <span class="c1"># 2. 판단</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">장애물_회피</span><span class="p">()</span>           <span class="c1"># 3. 행동</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="n">직진</span><span class="p">()</span>                  <span class="c1"># 3. 행동</span>
 </span></code></pre></div>
 <div class="mermaid">flowchart LR
-    A["원본 이미지&lt;br/&gt;(BGR)"] --&gt;|"cvtColor&lt;br/&gt;BGR→HSV"| B["HSV 이미지"]
-    B --&gt;|"inRange&lt;br/&gt;노란색 범위"| C["마스크&lt;br/&gt;(흰/검)"]
-    A --&gt; D["bitwise_and"]
-    C --&gt; D
-    D --&gt; E["노란색만&lt;br/&gt;추출된 이미지"]</div>
+    A["👀 감지&lt;br/&gt;(센서 읽기)"] --&gt; B["🧠 판단&lt;br/&gt;(if문)"]
+    B --&gt; C["🖐️ 행동&lt;br/&gt;(모터 제어)"]
+    C --&gt; A</div>
+<p>이 순환 구조가 이 챕터의 <strong>가장 중요한 핵심</strong>입니다!</p>
+<hr />
+<h3 id="4-try-except">개념 4: try-except — "비상구를 만들어두자!"<a class="headerlink" href="#4-try-except" title="Permanent link">&para;</a></h3>
+<p><strong>🎪 비유로 시작</strong></p>
+<p>건물에는 반드시 비상구가 있죠. 평소에는 사용하지 않지만, 비상 상황에서 안전하게 빠져나올 수 있습니다. <code>try-except</code>는 프로그램의 <strong>비상구</strong>입니다.</p>
+<p><strong>📖 정확한 정의</strong></p>
+<p><code>try-except</code>는 코드 실행 중 <strong>예외(에러)가 발생했을 때</strong> 프로그램이 갑자기 죽지 않고 지정된 처리를 하도록 하는 구문입니다. 무한 루프에서 <code>Ctrl + C</code>를 누르면 <code>KeyboardInterrupt</code>라는 예외가 발생하는데, 이걸 잡아서 <strong>로봇을 안전하게 정지</strong>시킬 수 있습니다.</p>
+<p><strong>💻 예시로 확인</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;열심히 일하는 중...&quot;</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;안전하게 종료합니다!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>Ctrl + C</code>를 누르면 "안전하게 종료합니다!"가 출력되고 프로그램이 깔끔하게 끝납니다. 로봇 제어에서는 이 부분에 <strong>모터 정지 명령</strong>을 넣어야 합니다. 그래야 프로그램이 끝난 후에도 로봇이 멈추지 않고 돌아다니는 사태를 막을 수 있어요! 😅</p>
+<hr />
+<h2 id="_4">🔨 따라하기: 장애물 회피 로봇 만들기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이제 핵심 개념을 모두 조합해서 <strong>스스로 장애물을 피하는 로봇</strong>을 만들어봅시다! 🚀</p>
+<h3 id="step-1">Step 1: 센서를 반복해서 읽어보기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>먼저, while 루프로 근접 센서 값을 계속 읽어 화면에 출력해봅시다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">roboid</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">hamster</span> <span class="o">=</span> <span class="n">Hamster</span><span class="p">()</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="n">left</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">left_proximity</span><span class="p">()</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="n">right</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">right_proximity</span><span class="p">()</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;왼쪽: </span><span class="si">{</span><span class="n">left</span><span class="si">}</span><span class="s2">, 오른쪽: </span><span class="si">{</span><span class="n">right</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        <span class="n">wait</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;종료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>실행해보세요!</strong> 로봇 앞에 손을 가까이 대거나 멀리하면 숫자가 실시간으로 변합니다. <code>Ctrl + C</code>를 누르면 안전하게 종료됩니다.</p>
 <blockquote>
-<p><strong>알아보기</strong> 📌</p>
-<p><strong>HSV 색상 공간</strong>은 색을 세 가지로 분리합니다.
-- <strong>H(Hue)</strong>: 색상 (0~179, OpenCV 기준). 빨강≈0, 노랑≈25, 초록≈60, 파랑≈120
-- <strong>S(Saturation)</strong>: 채도, 색의 선명도 (0~255)
-- <strong>V(Value)</strong>: 명도, 밝기 (0~255)</p>
-<p>BGR보다 HSV에서 특정 색상을 분리하기가 훨씬 쉽습니다. 밝기가 변해도 H 값은 비교적 일정하기 때문입니다.</p>
+<p>💡 <code>wait(100)</code>은 0.1초 대기입니다. 이것이 없으면 너무 빠르게 반복되어 화면이 폭포처럼 쏟아져요!</p>
+</blockquote>
+<hr />
+<h3 id="step-2">Step 2: 기준값 정하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>손이나 장애물을 로봇 앞 다양한 거리에 두면서 센서 값을 관찰하세요.</p>
+<ul>
+<li>아무것도 없을 때: 보통 <strong>0~10</strong> 정도</li>
+<li>손을 가까이 대면: <strong>30~70</strong> 정도로 올라감</li>
+</ul>
+<p>우리는 <strong>기준값 30</strong>을 사용하겠습니다. 센서 값이 30 이상이면 "장애물이 가까이 있다!"고 판단합니다.</p>
+<blockquote>
+<p>🔧 환경에 따라 기준값은 다를 수 있어요. Step 1에서 관찰한 값을 바탕으로 조정하세요!</p>
+</blockquote>
+<hr />
+<h3 id="step-3">Step 3: "감지 → 판단 → 행동" 완성하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>이제 본격적으로 로봇에게 판단 능력을 부여합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">roboid</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">hamster</span> <span class="o">=</span> <span class="n">Hamster</span><span class="p">()</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">THRESHOLD</span> <span class="o">=</span> <span class="mi">30</span>  <span class="c1"># 장애물 감지 기준값</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="n">left</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">left_proximity</span><span class="p">()</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="n">right</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">right_proximity</span><span class="p">()</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        <span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>            <span class="c1"># 양쪽 다 장애물 → 뒤로!</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;뒤로!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>        <span class="k">elif</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>            <span class="c1"># 왼쪽에 장애물 → 오른쪽으로 회전</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;오른쪽 회전!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>        <span class="k">elif</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>            <span class="c1"># 오른쪽에 장애물 → 왼쪽으로 회전</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;왼쪽 회전!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>            <span class="c1"># 장애물 없음 → 직진</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;직진!&quot;</span><span class="p">)</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>        <span class="n">wait</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>
+</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-7-31"><a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-7-32"><a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;로봇 정지. 안전하게 종료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="step-4">Step 4: 실행하고 관찰하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>코드를 실행합니다</li>
+<li>로봇이 앞으로 직진하는 것을 확인합니다</li>
+<li>손이나 책을 로봇 <strong>왼쪽 앞</strong>에 가져다 대보세요 → 오른쪽으로 회전하나요?</li>
+<li><strong>오른쪽 앞</strong>에 가져다 대보세요 → 왼쪽으로 회전하나요?</li>
+<li><strong>정면</strong>에 가져다 대보세요 → 뒤로 가나요?</li>
+<li><code>Ctrl + C</code>로 종료합니다</li>
+</ol>
+<p>🎉 축하합니다! 여러분이 만든 로봇은 <strong>스스로 판단하고 행동하는 자율 로봇</strong>입니다!</p>
+<hr />
+<h3 id="step-5">Step 5: 동작을 부드럽게 개선하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p>Step 3의 로봇을 보면 움직임이 다소 "딱딱"합니다. 장애물과의 <strong>거리에 따라</strong> 회전 속도를 다르게 하면 더 자연스러워집니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">roboid</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">hamster</span> <span class="o">=</span> <span class="n">Hamster</span><span class="p">()</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">THRESHOLD</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        <span class="n">left</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">left_proximity</span><span class="p">()</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="n">right</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">right_proximity</span><span class="p">()</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>        <span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>        <span class="k">elif</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>            <span class="n">speed</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>  <span class="c1"># 가까울수록 빠르게 회전</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="n">speed</span><span class="p">,</span> <span class="o">-</span><span class="n">speed</span><span class="p">)</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>        <span class="k">elif</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>            <span class="n">speed</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="n">speed</span><span class="p">,</span> <span class="n">speed</span><span class="p">)</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>        <span class="n">wait</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;종료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p>💡 <code>min(left, 60)</code>은 센서 값과 60 중 작은 값을 선택합니다. 속도가 너무 빨라지는 것을 방지하는 <strong>안전장치</strong>예요!</p>
 </blockquote>
 <hr />
 <h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>아래는 이번 장의 핵심 내용을 하나의 파일로 정리한 전체 코드입니다.</p>
-<p>```python
-"""
-Chapter 5: NumPy와 이미지 데이터 다루기 - 전체 실습 코드
-실행 환경: Python 3.8+, numpy, opencv-python 설치 필요
-설치: pip install numpy opencv-python
-"""</p>
-<p>import numpy as np
-import cv2</p>
-<h1 id="_6">=============================================<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
-<h1 id="part-1-numpy">Part 1: NumPy 배열 기초<a class="headerlink" href="#part-1-numpy" title="Permanent link">&para;</a></h1>
-<h1 id="_7">=============================================<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
-<p>print("=" * 50)
-print("Part 1: NumPy 배열 기초")
-print("=" * 50)</p>
-<h1 id="_8">배열 생성<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
-<p>arr = np.arange(20).reshape(4, 5)
-print("4×5 배열:\n", arr)
-print("shape:", arr.shape, "/ dtype:", arr.dtype)</p>
-<h1 id="_9">슬라이싱<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
-<p>print("\n2행:", arr[2, :])
-print("중앙 2×3:\n", arr[1:3, 1:4])</p>
-<h1 id="_10">배열 연산<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
-<p>print("\n전체 +10:\n", arr + 10)
-print("짝수인 위치:\n", arr % 2 == 0)</p>
-<h1 id="_11">=============================================<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h1>
-<h1 id="part-2">Part 2: 이미지 생성 및 기본 변환<a class="headerlink" href="#part-2" title="Permanent link">&para;</a></h1>
-<h1 id="_12">=============================================<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h1>
-<p>print("\n" + "=" * 50)
-print("Part 2: 이미지 생성 및 변환")
-print("=" * 50)</p>
-<h1 id="_13">도로 이미지 생성<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h1>
-<p>road = np.zeros((300, 400, 3), dtype=np.uint8)
-road[0:200, :] = [200, 150, 100]           # 하늘
-road[200:300, :] = [100, 100, 100]         # 도로
-road[250:260, 50:150] = [0, 255, 255]      # 노란 차선
-road[250:260, 250:350] = [255, 255, 255]   # 흰 차선</p>
-<h1 id="_14">기본 변환<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h1>
-<p>gray = cv2.cvtColor(road, cv2.COLOR_BGR2GRAY)
-resized = cv2.resize(road, (200, 150))
-roi = road[200:300, :]</p>
-<h1 id="_15">밝기 조절<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h1>
-<p>bright = np.clip(road.astype(np.int16) + 50, 0, 255).astype(np.uint8)</p>
-<p>print(f"원본: {road.shape}")
-print(f"그레이: {gray.shape}")
-print(f"리사이즈: {resized.shape}")
-print(f"ROI: {roi.shape}")</p>
-<h1 id="_16">=============================================<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h1>
-<h1 id="part-3">Part 3: 색상 필터링 (차선 검출 기초)<a class="headerlink" href="#part-3" title="Permanent link">&para;</a></h1>
-<h1 id="_17">=============================================<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h1>
-<p>print("\n" + "=" * 50)
-print("Part 3: 색상 필터링")
-print("=" * 50)</p>
-<h1 id="hsv">HSV 변환 후 노란색 필터링<a class="headerlink" href="#hsv" title="Permanent link">&para;</a></h1>
-<p>hsv = cv2.cvtColor(road, cv2.COLOR_BGR2HSV)
-lower_yellow = np.array([20, 100, 100])
-upper_yellow = np.array([35, 255, 255])
-mask_yellow = cv2.inRange(hsv, lower_yellow, upper_yellow)
-yellow_only = cv2.bitwise_and(road, road, mask=mask_yellow)</p>
-<h1 id="_18">흰색 필터링<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h1>
-<p>lower_</p>
+<p>최종 완성된 장애물 회피 로봇의 전체 코드입니다. 복사해서 바로 실행할 수 있습니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">roboid</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 햄스터 로봇 연결</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">hamster</span> <span class="o">=</span> <span class="n">Hamster</span><span class="p">()</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># 장애물 감지 기준값 (환경에 따라 조정하세요)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">THRESHOLD</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;장애물 회피 로봇 시작! (Ctrl+C로 종료)&quot;</span><span class="p">)</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>        <span class="c1"># 1. 감지: 센서 값 읽기</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        <span class="n">left</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">left_proximity</span><span class="p">()</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>        <span class="n">right</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">right_proximity</span><span class="p">()</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>        <span class="c1"># 2. 판단 &amp; 3. 행동</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>        <span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>            <span class="c1"># 정면에 장애물 → 후진</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">)</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        <span class="k">elif</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>            <span class="c1"># 왼쪽에 장애물 → 오른쪽 회전</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>            <span class="n">speed</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="n">speed</span><span class="p">,</span> <span class="o">-</span><span class="n">speed</span><span class="p">)</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>        <span class="k">elif</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>            <span class="c1"># 오른쪽에 장애물 → 왼쪽 회전</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>            <span class="n">speed</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="n">speed</span><span class="p">,</span> <span class="n">speed</span><span class="p">)</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>            <span class="c1"># 장애물 없음 → 직진</span>
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>            <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>        <span class="c1"># 0.1초 대기 후 다시 반복</span>
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>        <span class="n">wait</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+</span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>    <span class="c1"># Ctrl+C 누르면 로봇 안전 정지</span>
+</span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;로봇 안전 정지 완료!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="mermaid">flowchart TD
+    Start["🚀 프로그램 시작"] --&gt; Loop{"while True"}
+    Loop --&gt; Read["👀 센서 읽기&lt;br/&gt;left, right"]
+    Read --&gt; Both{양쪽 다&lt;br/&gt;장애물?}
+    Both -- "Yes" --&gt; Back["⬅️ 후진"]
+    Both -- "No" --&gt; Left{왼쪽&lt;br/&gt;장애물?}
+    Left -- "Yes" --&gt; TurnR["➡️ 오른쪽 회전"]
+    Left -- "No" --&gt; Right{오른쪽&lt;br/&gt;장애물?}
+    Right -- "Yes" --&gt; TurnL["⬅️ 왼쪽 회전"]
+    Right -- "No" --&gt; Go["⬆️ 직진"]
+    Back --&gt; Wait["⏱️ 0.1초 대기"]
+    TurnR --&gt; Wait
+    TurnL --&gt; Wait
+    Go --&gt; Wait
+    Wait --&gt; Loop
+    Loop -- "Ctrl+C" --&gt; Stop["🛑 로봇 정지 &amp; 종료"]</div>
+<hr />
+<h2 id="_6">⚠️ 자주 하는 실수<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>실수 1: <code>try-except</code> 없이 무한 루프 실행</strong> 😱</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># ❌ 위험한 코드</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>Ctrl + C</code>로 강제 종료하면 모터 정지 명령이 실행되지 않아 <strong>로봇이 계속 달립니다!</strong> 반드시 <code>try-except</code>로 감싸고 <code>except</code> 블록에서 <code>hamster.wheels(0, 0)</code>을 호출하세요.</p>
+<hr />
+<p><strong>실수 2: <code>wait()</code> 빼먹기</strong> 😵‍💫</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># ❌ wait 없는 코드</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="n">left</span> <span class="o">=</span> <span class="n">hamster</span><span class="o">.</span><span class="n">left_proximity</span><span class="p">()</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>  <span class="c1"># 엄청난 속도로 출력됨!</span>
+</span></code></pre></div>
+<p><code>wait(100)</code> 없이 실행하면 루프가 초당 수백~수천 번 돌아갑니다. 화면에 숫자가 폭포처럼 쏟아지고, 컴퓨터 자원도 불필요하게 소모됩니다. <strong>센서를 0.1초 간격으로 읽어도 충분합니다.</strong></p>
+<hr />
+<p><strong>실수 3: 조건 순서를 잘못 배치하기</strong> 🤔</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># ❌ 잘못된 순서</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="k">elif</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># 여기 절대 도달 못함!</span>
+</span></code></pre></div>
+<p><code>left &gt; THRESHOLD</code>가 먼저 True가 되면 <code>elif</code>는 확인하지 않습니다! <strong>더 구체적인 조건(양쪽 다 감지)을 먼저</strong> 적어야 합니다.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># ✅ 올바른 순서</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">and</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>  <span class="c1"># 구체적 조건 먼저!</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">elif</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">wheels</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_7">✅ 스스로 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>아래 질문에 자신 있게 대답할 수 있다면 이 챕터를 잘 이해한 것입니다! 🎯</p>
+<p><strong>1. while 루프의 동작 원리</strong></p>
+<blockquote>
+<p>Q: <code>while count &lt; 3:</code>에서 count가 0부터 시작하면 루프 안의 코드는 몇 번 실행될까요?
+정답: <strong>3번</strong> (count가 0, 1, 2일 때 실행, 3이 되면 조건이 False)</p>
+</blockquote>
+<p><strong>2. 무한 루프</strong></p>
+<blockquote>
+<p>Q: <code>while True:</code>는 왜 스스로 멈추지 않나요?
+정답: True는 항상 True이므로 조건이 절대 False가 되지 않기 때문</p>
+</blockquote>
+<p><strong>3. 안전 종료</strong></p>
+<blockquote>
+<p>Q: <code>try-except KeyboardInterrupt</code>에서 <code>except</code> 블록은 언제 실행되나요?
+정답: 사용자가 <code>Ctrl + C</code>를 눌렀을 때</p>
+</blockquote>
+<p><strong>4. 실시간 제어</strong></p>
+<blockquote>
+<p>Q: 장애물 회피 로봇의 핵심 구조 3단계는?
+정답: <strong>감지 → 판단 → 행동</strong>의 반복</p>
+</blockquote>
+<hr />
+<h2 id="_8">🚀 더 해보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>기본 장애물 회피에 성공했다면 도전해보세요!</p>
+<p><strong>도전 1: 소리로 알려주는 로봇</strong> 🔊
+장애물을 감지하면 버저 소리를 내도록 해보세요.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span> <span class="ow">or</span> <span class="n">right</span> <span class="o">&gt;</span> <span class="n">THRESHOLD</span><span class="p">:</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">buzzer</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>  <span class="c1"># 1000Hz 경고음</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">hamster</span><span class="o">.</span><span class="n">buzzer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>     <span class="c1"># 소리 끄기</span>
+</span></code></pre></div>
+<p><strong>도전 2: LED로 상태 표시하기</strong> 💡
+직진할 때는 초록색, 회전할 때는 노란색, 후진할 때는 빨간색 LED를 켜보세요.</p>
+<p><strong>도전 3: 기준값을 변수로 쉽게 조절하기</strong>
+<code>THRESHOLD</code> 값을 20, 40, 50으로 바꿔가며 실행해보세요. 값이 작으면 더 <strong>민감하게</strong> 반응하고, 크면 더 <strong>가까이</strong> 와야 반응합니다. 여러분의 환경에 가장 적합한 값을 찾아보세요!</p>
+<hr />
+<h2 id="_9">🔗 다음 장으로<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>이번 장에서 우리는 로봇에게 <strong>"계속 감지하고 판단하고 행동하는"</strong> 능력을 부여했습니다. while 루프 안의 <code>감지 → 판단 → 행동</code> 구조는 로봇 프로그래밍의 <strong>가장 기본적인 뼈대</strong>입니다.</p>
+<p>다음 장에서는 이 구조를 활용하여 <strong>바닥의 검은 선을 따라가는 라인트레이싱 로봇</strong>을 만들어봅니다. 근접 센서 대신 <strong>바닥 센서</strong>를 사용하고, 단순한 회피가 아니라 <strong>경로를 추적하는</strong> 더 정교한 제어를 경험하게 됩니다. 오늘 배운 while 루프 구조가 얼마나 강력한 도구인지 다시 한번 느끼게 될 거예요! 🏎️💨</p>
 
 
 
